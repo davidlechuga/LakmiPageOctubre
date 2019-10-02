@@ -1,0 +1,24 @@
+
+/*:::: VARIABLES CSS DE USO GLOBAL ::::*/
+:root {
+    --navbarcolor: #0fb3af;
+}
+
+/*:::: NAVBAR STYLES ::::*/
+
+#logo{
+    width: 130px;
+    height: 40px;
+}
+
+.navbar {
+    background: var(--navbarcolor);
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+
+
+
