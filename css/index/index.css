@@ -1,11 +1,59 @@
 
-/*:::: VARIABLES CSS DE USO GLOBAL ::::*/
+/**************************/
+/*	 VARIABLES CSS        */
+/**************************/
 :root {
-    --navbarcolor: #3cfdfa;
-
-   --gray-dark-bg: #748187;
-   --gray-light-bg:#e1e5e6;
+	--encabezados_h2: 1.6em;
+	--encabezados_h3: 1.1em;
+	--fondo_foot: #2F2F2F;
+	--color_title_foot:  #00E7AD;
+	--color_subtitle_foot: #4EFCFF;
+	--color_navbar_fondo: #0EA1FD;
+	--color_p_foot: #fff; 
+	--tamaño_parrafo: 1em;
 }
+/**************************/
+/*	fIN VARIABLES CSS      */
+/**************************/
+
+
+/**************************/
+/*	 ESTILOS FOOTER       */
+/**************************/
+.footer {
+	background: var(--fondo_foot);
+	padding-top: 80px;
+}
+
+.foot_conntact_title,
+.foot_ubication_title,
+.foot_legal_title {
+	color: var(--color_title_foot);
+	font-size: var(--encabezados_h2);
+	padding-bottom: .8em;
+}
+
+.foot_contact_subtitle1,
+.foot_contact_subtitle2 {
+	color: var(--color_subtitle_foot);
+	font-size: var(--encabezados_h3);
+	padding-bottom: .4em;
+}
+
+.foot_p {
+	color: var(--color_p_foot);
+	font-size: var(--tamaño_parrafo);
+}
+
+.foot_copyright {
+	padding-top: 40px;
+	width: 100%;
+}
+/**************************/
+/*	 FIN ESTILOS FOOTER   */
+/**************************/
+
+
 
 /*:::: NAVBAR STYLES ::::*/
 
@@ -15,13 +63,22 @@
 }
 
 .navbar {
-    background: var(--navbarcolor);
+	background: var(--color_navbar_fondo);
+}
+
+.navbar-subheader {
+	display: flex;
+    justify-content: space-between;
 }
 
 .nav-item {
     margin-left: 10px;
 }
 
+.header-img-1 {
+	width: 100%;
+	
+}
 
 
 
@@ -30,84 +87,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.input-group-btn{
-    width: 32px;
- }
- .btn-search{
-    width: 100%;
-    height: 100%;
-    padding: 0.4rem;
- }
- .input-group-btn, .input-group .form-control{
-    border: none;
-    background-color: inherit;
-    height: 30px;
- }
- .input-group .form-control{
-    color: var(--gray-light-bg);
-    padding: 0;
-    padding-right: 0.2rem;
- }
- .form-inline .input-group{
-    flex-wrap: nowrap;
-    padding-left: 0.8rem;
-    width: 50px;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: var(--gray-dark-bg);
-    border: 1px solid var(--gray-light-bg);
-    transition: all 0.8s linear;
- }
-
-
-
-
-
-
-/* Responsive Web Design */
-@media (min-width:768px){
-    .navbar .form-inline{
-       position: absolute;
-       right: 1rem;
-    }
-    .form-inline .input-group{
-       justify-content: flex-end;
-       border-color: transparent;
-    }
-    .input-group .form-control{
-       display: none;
-       width: 0.01rem;
-       transition: all 0.6s 0.2s ease-out;
-    }
-
-
-
-
-
-
-
-
-
-    /* Elementos con pseudoclases */
-.form-control:focus{
-    box-shadow: none;
- }
- .input-group-btn:enabled{
-    outline: none;
- }
- 
 
