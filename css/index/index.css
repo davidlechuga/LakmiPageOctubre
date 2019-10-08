@@ -12,9 +12,52 @@
 	--color_p_foot: #fff; 
 	--tamaño_parrafo: 1em;
 }
+
 /**************************/
-/*	fIN VARIABLES CSS      */
+/*	  ESTILOS HEADER 	  */
 /**************************/
+
+.main_header_img {
+    background: url("../../img/index/header-index-1.jpg"); no-repeat center top;
+    background-attachment: fixed !important;
+    background-size: cover;
+    height: 100vh;
+	padding: 0;
+}
+
+.header__main__subtitles {
+	margin: 0 auto; 
+	width: 95%;
+	border-bottom: 2px solid #82A2BC;
+}
+
+
+.main__header__subtitle1 > a {
+	color: var(--color_p_foot);
+}
+
+.main__header__subtitle1 > a:hover {
+	text-decoration: none;
+}
+
+.main__header__subtitle1,
+.main__header__subtitle2 {
+ 	padding: 0;
+ 	color: var(--color_p_foot);
+ 	padding-top: .8em; 
+}
+
+.main__header__subtitle1 {
+	font-size: 1.8em;
+	padding-left: 1.5em;
+
+}
+
+.main__header__subtitle2 {
+	font-size: 1.5em;
+	padding-right: 1.5em;
+	padding-top: 1.1em; 
+}
 
 
 /**************************/
@@ -49,11 +92,6 @@
 	padding-top: 40px;
 	width: 100%;
 }
-/**************************/
-/*	 FIN ESTILOS FOOTER   */
-/**************************/
-
-
 
 /*:::: NAVBAR STYLES ::::*/
 
