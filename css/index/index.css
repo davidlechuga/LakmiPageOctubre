@@ -1,96 +1,26 @@
-
 /**************************/
 /*	 VARIABLES CSS        */
 /**************************/
 :root {
-	--encabezados_h2: 1.6em;
-	--encabezados_h3: 1.1em;
-	--fondo_foot: #2F2F2F;
-	--color_title_foot:  #00E7AD;
-	--color_subtitle_foot: #4EFCFF;
-	--color_navbar_fondo: #0EA1FD;
-	--color_p_foot: #fff; 
 	--tamaño_parrafo: 1em;
+	--tamaño_parrafo_foot: .9em;
+	--tamaho_h1: 2em;
+	--tamaño_h2: 1.5em;
+	--fondo_color_cuerpo: #D0DBE2;
+	--color_navbar_fondo: #0EA1FD;
+	--color_head: #fff;
+	--color_foot: #000;
+	--fondo_foot: #fff;
+	--color_foot_copyright: rgba(255, 255, 255, .9); 
+	--fondo_foot_copyright: #01AEF0;
 }
 
 /**************************/
-/*	  ESTILOS IMG-HEADER 	  */
+/*	 ESTILOS GENERALES    */
 /**************************/
 
-.main_header_img {
-    background: url("../../img/index/header-index-1.jpg"); 
-    background-attachment: fixed !important;
-    background-size: cover;
-    height: 100vh;
-	padding: 0;
-}
-
-.header__main__subtitles {
-	margin: 0 auto; 
-	width: 95%;
-	border-bottom: 2px solid #82A2BC;
-}
-
-
-.main__header__subtitle1 > a {
-	color: var(--color_p_foot);
-}
-
-.main__header__subtitle1 > a:hover {
-	text-decoration: none;
-}
-
-.main__header__subtitle1,
-.main__header__subtitle2 {
- 	padding: 0;
- 	color: var(--color_p_foot);
- 	padding-top: .8em; 
-}
-
-.main__header__subtitle1 {
-	font-size: 1.8em;
-	padding-left: 1.5em;
-
-}
-
-.main__header__subtitle2 {
-	font-size: 1.5em;
-	padding-right: 1.5em;
-	padding-top: 1.1em; 
-}
-
-
-/**************************/
-/*	 ESTILOS FOOTER       */
-/**************************/
-.footer {
-	background: var(--fondo_foot);
-	padding-top: 80px;
-}
-
-.foot_conntact_title,
-.foot_ubication_title,
-.foot_legal_title {
-	color: var(--color_title_foot);
-	font-size: var(--encabezados_h2);
-	padding-bottom: .8em;
-}
-
-.foot_contact_subtitle1,
-.foot_contact_subtitle2 {
-	color: var(--color_subtitle_foot);
-	font-size: var(--encabezados_h3);
-	padding-bottom: .4em;
-}
-
-.foot_p {
-	color: var(--color_p_foot);
-	font-size: var(--tamaño_parrafo);
-}
-
-.foot_copyright {
-	padding-top: 40px;
-	width: 100%;
+body {
+	background: var(--fondo_color_cuerpo);
 }
 
 /*:::: NAVBAR STYLES ::::*/
@@ -114,10 +44,121 @@
 }
 
 .header-img-1 {
-	width: 100%;
-	
+	width: 100%;	
 }
 
+/**************************/
+/*	  INICIO PAGE 	 	  */
+/**************************/
+
+.initial__page {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.initial__content {
+	padding: .3em 0;
+}
+
+.initial__content h2 {
+	font-size: var(--tamaño_h2);
+	color: rgba(0, 0, 0, .6);
+}
+
+/**************************/
+/*	  ESTILOS HEADER 	  */
+/**************************/
+
+.main_header_img {
+    background: url("../../img/index/header-index-1.jpg"); no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+	padding: 0;
+}
+
+.header__main__subtitles {
+	color: var(--color_head);
+	height: 100vh;
+}
+
+.header__main__subtitles > h1 {
+	font-size:var(--tamaho_h1);
+	font-weight: bold;
+}
+
+.header__main__subtitles > h2 {
+	font-size: var(--tamaño_h2);
+	padding-top: .8em;
+}
+
+
+/**************************/
+/*	 WHAT DOES LAKMI      */
+/**************************/
+.what_does {
+	margin: 0 auto;
+	width: 95%;
+	padding: 3em 0;
+}
+
+.what__does__title {
+	font-size: var(--tamaho_h1);
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+
+.what__does__title + p {
+	color: rgba(0, 0, 0, .6);
+}
+
+
+/**************************/
+/*	   NUEVAS NORMAS      */
+/**************************/
+.info__rules {
+	background: #961CE4;
+}
+
+/**************************/
+/*	 ESTILOS FOOTER       */
+/**************************/
+
+.footer {
+	background: var(--fondo_foot);
+	color: var(--color_foot);
+	padding-top: 6em;
+}
+
+.contact__footer,
+.ubication__footer,
+.legal__footer {
+	padding-left: 4em;
+}
+
+.contact__foot__title,
+.ubication__foot__title,
+.legal__foot__title {
+	font-size: var(--tamaño_h2);
+	padding: 1.7em 0 1.7em 0;
+}
+
+.contact__foot__title ~ p,
+.ubication__foot__title ~ p,
+.legal__foot__title ~ p {
+	font-size: var(--tamaño_parrafo_foot);
+	color: rgba(0, 0, 0, .8);
+	line-height: .8em;
+}
+
+.foot_copyright {
+	background: var(--fondo_foot_copyright);
+	color:  var(--color_foot_copyright);
+	font-size: .9em;
+	font-weight: bold;
+	height: 80px;
+	padding-top: 2em;
+	width: 100%;
+}
 
 
 
