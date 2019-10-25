@@ -2,10 +2,11 @@
 /*	 VARIABLES CSS        */
 /**************************/
 :root {
+	--color_cuerpo_pagina: #F9F9F9;
 	--tamaño_parrafo: 1em;
 	--tamaño_parrafo_foot: .9em;
 	--tamaño_header_description: 1.3em;
-	--fondo_header_description: rgba(1, 174, 240, .6);
+	--fondo_header_description: rgba(73, 115, 136, 1);
 	--tamaño_h1: 2em;
 	--tamaño_h2: 1.5em;
 	--color_navbar_fondo: #0EA1FD;
@@ -14,7 +15,16 @@
 	--color_foot: #000;
 	--fondo_foot: #F1F1F1;
 	--color_foot_copyright: rgba(255, 255, 255, .9); 
-	--fondo_foot_copyright: #01AEF0;
+	--fondo_foot_copyright: #6997AF;
+}
+
+
+/***************************/
+/*	 ESTILOS GENERALES     */
+/***************************/
+
+body {
+	background: var(--color_cuerpo_pagina);
 }
 
 
@@ -47,7 +57,7 @@
 /********************************/
 
 .main_header_img {
-    background: url("../../img/index/header-index-1.jpg"); no-repeat center top;
+    background: url("../../img/index/presentacion.jpg") no-repeat center top;
     background-size: cover;
     height: 100vh;
 	padding: 0;
@@ -59,7 +69,7 @@
 	font-size: var(--tamaño_header_description);
 	line-height: 1.7;
 	margin-bottom: 5%;
-	padding: 30px 55px 15px 50px;
+	padding: 10px 70px 10px 50px;
 	clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
 }
 
