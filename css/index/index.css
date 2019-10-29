@@ -34,12 +34,17 @@ body {
 /*:::: NAVBAR STYLES ::::*/
 
 #logo{
-    width: 125px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
 }
 
 .navbar {
 	background: var(--color_navbar_fondo);
+	position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    width: 100%;
+
 }
 
 .navbar-subheader {
