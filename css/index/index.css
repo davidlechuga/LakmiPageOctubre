@@ -11,7 +11,7 @@
 	--tamaño_h2: 1.5em;
 	--color_navbar_fondo: #0EA1FD;
 	--color_head: #fff;
-	--fondo_fintech: #58595B;
+	--fondo_promos: #578793;
 	--color_foot: #000;
 	--fondo_foot: #F1F1F1;
 	--color_foot_copyright: rgba(255, 255, 255, .9); 
@@ -95,24 +95,19 @@ body {
 /**************************/
 /* SECCIONWHAT DOES LAKMI */
 /**************************/
+
 .what_does {
 	margin: 0 auto;
 	width: 95%;
-	padding: 3em 0;
+	padding: 80px 0 150px 0;
 }
 
 .what_does_description {
 	padding-left: 50px;
 }
 
-.what__does__title {
-	font-size: var(--tamaño_h1);
-	font-weight: bold;
-	padding-bottom: .3em;
-}
-
-.what__does__title + p {
-	font-size: 1.1em;
+.what_does_description > p {
+	font-size: 1.2em;
 }
 
 
@@ -121,11 +116,11 @@ body {
 /****************************/
 
 .rules {
-	background: var(--fondo_foot_copyright);
+	background: var(--fondo_promos);
 }
 
 .img__rules {
-	background: url(../../img/index/10-entregables.svg) no-repeat center top;
+	background: url(../../img/index/arrendamiento.svg) no-repeat center top;
 	padding: 0;
 	clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%);
 	width: 100%;
@@ -168,59 +163,6 @@ body {
 }
 
 /******************************/
-/*   SECCION FINTECH          */
-/******************************/
-
-.fintech {
-	background: var(--fondo_fintech);
-	margin: 4em 0;
-}
-
-.img__fintech {
-	background: url(../../img/index/11-entregables.svg) no-repeat center top;
-	padding: 0;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
-	width: 100%;
-	height: 100%;
-}
-
-.info__fintech {
-	padding-left: 50px;
-}
-
-.fintech__description__title, 
-.fintech__description__title ~ p {
-	color: var(--color_head);
-}
-
-.fintech__description__title {
-	font-size: var(--tamaño_h2);
-	font-weight: bold;
-	padding: 2.5em 0 .8em 0;
-}
-
-.fintech__description__title ~ p {
-	font-size: 1.1em;
-}
-
-.fintech__links {
-	padding: 1em 0 3em 0;
-}
-
-.fintech__links > a  {
-    background-color: #fff;
-    border-radius: 6px;
-    color: rgba(0, 0, 0, .8);
-    font-size: 1em;
-    font-weight: bold;
-    padding: .3em 2.8em;
-	text-decoration: none;
-}
-
-.fitnech_link_entragables {
-	margin-left: 1.8em;
-}
-/******************************/
 /*	 SECCIÓN ESTILOS FOOTER   */
 /******************************/
 
@@ -234,28 +176,34 @@ body {
 .ubication__footer,
 .legal__footer {
 	padding-left: 4em;
+	padding-bottom: 3em;
 }
+
 
 .contact__foot__title,
 .ubication__foot__title,
 .legal__foot__title {
 	font-size: var(--tamaño_h2);
-	padding: 1.7em 0 1.7em 0;
+	padding: 1em 0 1.7em 0;
 }
 
-.contact__foot__title ~ p,
-.ubication__foot__title ~ p,
-.legal__foot__title ~ p {
+.contact__foot__title {
+	padding-top: .7em;
+}
+
+.contact__foot__description > p,
+.ubication__foot__description > p,
+.legal__foot__description > p {
 	font-size: var(--tamaño_parrafo_foot);
 	color: rgba(0, 0, 0, .7);
 	line-height: .8em;
+	text-align: left;
 }
 
 .foot_copyright {
 	background: var(--fondo_foot_copyright);
 	color:  var(--color_foot_copyright);
 	font-size: 1em;
-	font-weight: bold;
 	height: 80px;
 	padding-top: 2em;
 	width: 100%;
