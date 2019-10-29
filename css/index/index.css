@@ -191,14 +191,22 @@ body {
 	padding-top: .7em;
 }
 
-.contact__foot__description > p,
-.ubication__foot__description > p,
-.legal__foot__description > p {
+.contact__foot__description  p,
+.ubication__foot__description  p,
+.legal__foot__description  p {
 	font-size: var(--tamaño_parrafo_foot);
-	color: rgba(0, 0, 0, .7);
+	color: rgba(0, 0, 0, .6);
 	line-height: .8em;
 	text-align: left;
 }
+
+.contact__foot__description  .contact__foot__subtitle {
+	color: #000;
+	font-size: 1em;
+	line-height: .9em;
+	padding-bottom: .3em;
+}
+
 
 .foot_copyright {
 	background: var(--fondo_foot_copyright);
