@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS/INDEX/index.css [STYLE css]-->
     <link rel="stylesheet" href="css/contactenos/contactenos.css">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Lakmi Systems</title>
 </head>
 
@@ -65,42 +64,90 @@
                 </form>
             </div>
     </nav>
+    <!-- IIMAGENES CONTACTENOS -->
     <section class="container-fluid px-0 mx-0">
-        <!-- FOOTER-->
-        <footer class="row footer mx-0 px-0">
-            <picture class="col-12 col-md-4 foot_contact d-flex flex-column align-items-center justify-content-center">
-                <section class="section__footer">
-                    <h2 class="foot_conntact_title">Contáctenos</h2>
-                    <h3 class="foot_contact_subtitle1">Division de Sistemas</h3>
-                    <p class="foot_p text-break">+52 (55) 397 505 88<br>
-                        Software.solutions@lakmusystems.com.mx</p>
-                    <h3 class="foot_contact_subtitle2">División de Asesoría y Consultoría</h3>
-                    <p class="foot_p text-break">52 (55) 726 865 01<br>
-                        consulting.services@lakmisystems.com.mx</p>
-                </section>
-            </picture>
-            <picture class="col-12 col-md-4 foot_ubication d-flex flex-column align-items-center">
-                <section class="section__footer">
-                    <h2 class="foot_ubication_title">Ubicación</h2>
-                    <p class="foot_p text-break">Avenida Benjamín Franklin,Numbero 186<br>
-                        Colonia Escandón || Sección,C.P.11800<br>
-                        Alcaldia Miguel Hidalgo,Ciudad de México.</p>
-                </section>
-            </picture>
-            <picture class="col-12 col-md-4 foot_legal d-flex flex-column align-items-center">
-                <section class="section__footer">
-                    <h2 class="foot_legal_title">Legal</h2>
-                    <p class="foot_p text-break">Aviso de privacidad<br>
-                        Política de cookies y Web beacons</p>
-                </section>
-            </picture>
-            <picture class="foot_copyright d-flex justify-content-center">
-                <p class="foot_p text-break text-center">® 2019 LakmiSystems, S.A.S. de C.V. Todos los derechos reservados
-                </p>
-            </picture>
-        </footer>
-        <!--FOOTER END-->
+        <main class="row">
+            <div class="col-12 ">
+                <img class="main_img_contactenos" > 
+            </div>
+        </main>
+
+        <div class="row title_contactanos">
+            <div class="col-7">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label for="inputEmail4">NOMBRE:</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="inputPassword4">E-MAIL:</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress">TELÉFONO</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress2">COMPAÑÍA / ORGANIZACIÓN:</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">MENSAJE: </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                         </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+            </div>
+            <div class="col-5">
+                <h1>jddjsk</h1>
+            </div>
+        </div>
+    </section>   
+
+
+    <section class="container-fluid px-0 mx-0">
+        <!--SECTION FOOTER-->
+        <footer class="row footer mx-0 px-0">   
+           <address class="col-4 contact__footer d-flex flex-column align-items-center">
+               <img srcset="iconos/footer/Contacto.svg" class="contact__foot__icon" alt="icono de contacto"width="36px">
+               <h2 class="contact__foot__title">Contáctenos</h2>
+               <div class="contact__foot__description">
+                   <h3 class="contact__foot__subtitle text-break">División de Asesoría y Consultoría</h3>
+                   <p class="text-break">+52 (55) 7587 6533</p>
+                   <p class="text-break">consulting.services@lakmisystems.com.mx</p>
+                   <h3 class="contact__foot__subtitle text-break">División de soluciones de software</h3>
+                   <p class="text-break">+52 (55) 7587 6533</p>
+                   <p class="text-break">Software.solutions@lakmusystems.com.mx</p>
+               </div>
+           </address>
+           <address class="col-4 ubication__footer d-flex flex-column align-items-center">
+               <img srcset="iconos/footer/ubicación.svg" class="ubication__foot__icon" alt="icono de ubicación" width="36px">
+               <h2 class="ubication__foot__title">Ubicación</h2>
+               <div class="ubication__foot__description">
+                   <p class="text-break">Avenida Benjamín Franklin 186, Colonia</p>
+                   <p class="text-break">Escuadrón II Sección, Delegación Miguel</p>
+                   <p class="text-break">Hidalgo, C.P.11800 Ciudad de México, México.</p>
+               </div>
+           </address>
+           <picture class="col-4 legal__footer d-flex flex-column align-items-center">
+               <img srcset="iconos/footer/legal.svg" class="legal__foot__icon" alt="icono de legal" width="36px">
+               <h2 class="legal__foot__title">Legal</h2>
+               <div class="legal__foot__description">
+                   <p class="text-break">Aviso de Privacidad</p>
+                   <p class="text-break">Política de Cookies y Web Beacons</p>
+               </div>
+           </picture>
+           <picture class="foot_copyright d-flex justify-content-center align-items-center">
+               <p class="foot_p text-break">® 2020 Lakmi Systems, S.A.S. de C.V. Todos los derechos reservados
+               </p>
+           </picture>
+       </footer>
+       <!--SECTION FOOTER END-->
     </section>
+
     <!-- JS , POPPER AND JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
