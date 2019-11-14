@@ -41,16 +41,35 @@ p {
     /*	 MOVIL    */
 /***************************/
 
-/*:::: NAVBAR STYLES ::::*/
-
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-    overflow: hidden;
-    z-index: 999;
-    width: 100%;
-
-}
+/*:::: LOGO STYLES ::::*/
+#logo{
+    display: none;
+ }
+ #logo1{
+     display: flex;
+     margin-left: 25px;
+     margin-right: 90px;
+  }
+  .input-group1 {
+      display: flex;
+  }
+  .form-inline{
+     margin-right: 10px;
+     margin-left: 15px;
+  }
+ /*:::: NAVBAR STYLES ::::*/
+ .navbar {
+     background: #FFFFFF;
+     position: fixed;
+     overflow: hidden;
+     z-index: 999;
+     width: 100%;
+     justify-content: start;
+ }
+ .navbar-toggler{
+     margin-right: 60px;
+     border: none;
+ }
 
 /*:::: NOSOTROS IMG PRINCIPAL ::::*/
 
@@ -219,6 +238,14 @@ p {
 #logo{
     width: 250px;
     height: 70px;
+    display: flex;
+}
+#logo1{
+    display: none;
+ }
+
+ .input-group1 {
+    display: none;
 }
 
 .navbar {
@@ -227,7 +254,10 @@ p {
     overflow: hidden;
     z-index: 999;
     width: 100%;
+}
 
+.navbar-toggler{
+    display: none;
 }
 
 .form-inline {
@@ -253,6 +283,7 @@ p {
 .header-img-1 {
 	width: 100%;	
 }
+
 
 
 /******************************/
