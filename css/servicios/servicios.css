@@ -1,40 +1,145 @@
+/**************************/
+/*	 VARIABLES CSS        */
+/**************************/
+:root {
+	--color_cuerpo_pagina: #F9F9F9;
+	--tamaño_parrafo: 1em;
+	--tamaño_parrafo_foot: .9em;
+	--tamaño_header_description: 1.3em;
+	--fondo_header_description: rgba(73, 115, 136, 1);
+	--tamaño_h1: 2em;
+	--tamaño_h2: 1.5em;
+	--color_navbar_fondo: #0EA1FD;
+	--color_head: #fff;
+	--fondo_promos: #578793;
+	--color_foot: #000;
+	--fondo_foot: #F1F1F1;
+	--color_foot_copyright: rgba(255, 255, 255, .9); 
+	--fondo_foot_copyright: #6997AF;
+}
 
-/*:::: NAVBAR STYLES ::::*/
+/***************************/
+/*	 ESTILOS GENERALES     */
+/***************************/
 
+body {
+	font-family: 'MyriadPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	background: var(--color_cuerpo_pagina);
+}
+
+.h1_size {
+    font-size: var(--tamaño_h1);
+}
+
+p {
+    font-size: var(--tamaño_parrafo);
+}
+
+/***************************/
+    /*	 MOVIL    */
+/***************************/
+
+/*:::: LOGO STYLES ::::*/
 #logo{
-    width: 250px;
-    height: 70px;
-}
+    display: none;
+ }
+ #logo1{
+     display: flex;
+     margin-left: 25px;
+     margin-right: 90px;
+  }
+  .input-group1 {
+      display: flex;
+  }
+  .form-inline{
+     margin-right: 10px;
+     margin-left: 15px;
+  }
+ /*:::: NAVBAR STYLES ::::*/
+ .navbar {
+     background: #FFFFFF;
+     position: fixed;
+     overflow: hidden;
+     z-index: 999;
+     width: 100%;
+     justify-content: start;
+ }
+ .navbar-toggler{
+     margin-right: 60px;
+     border: none;
+ }
 
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-    overflow: hidden;
-    z-index: 999;
-    width: 100%;
 
-}
 
-.form-inline {
-	margin-left: auto;
-    margin-right: 40px;
-}
 
-.navbar-subheader {
-	display: flex;
-    justify-content: space-between;
-}
 
-.nav-link {
-	font-size: 24px;
-	font-weight: 400;
-	color: black !important;
-}
 
-.nav-item {
-    margin-left: 10px;
-}
 
-.header-img-1 {
-	width: 100%;	
+
+
+
+
+
+
+/***************************/
+ /*	 QUERY BREAK POINT     */
+/***************************/
+
+
+@media only screen and (min-width: 768px){  
+
+
+    /*:::: NAVBAR STYLES ::::*/
+    
+    #logo{
+        width: 250px;
+        height: 70px;
+        display: flex;
+    }
+    #logo1{
+        display: none;
+     }
+    
+     .input-group1 {
+        display: none;
+    }
+    
+    .navbar {
+        background: #FFFFFF;
+        position: fixed;
+        overflow: hidden;
+        z-index: 999;
+        width: 100%;
+    }
+    
+    .navbar-toggler{
+        display: none;
+    }
+    
+    .form-inline {
+        margin-left: auto;
+        margin-right: 40px;
+    }
+    
+    .navbar-subheader {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-link {
+        font-size: 24px;
+        font-weight: 400;
+        color: black !important;
+    }
+    
+    .nav-item {
+        margin-left: 10px;
+    }
+    
+    .header-img-1 {
+        width: 100%;	
+    }
+
 }
