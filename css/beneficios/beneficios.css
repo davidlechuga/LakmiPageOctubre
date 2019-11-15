@@ -189,58 +189,7 @@ p {
 	}
 }
 
-@media (min-width: 768px) {
-    /*:::: NAVBAR STYLES ::::*/
-    
-    #logo{
-        width: 250px;
-        height: 70px;
-        display: flex;
-    }
-    #logo1{
-        display: none;
-     }
-    
-     .input-group1 {
-        display: none;
-    }
-    
-    .navbar {
-        background: #FFFFFF;
-        position: fixed;
-        overflow: hidden;
-        z-index: 999;
-        width: 100%;
-    }
-    
-    .navbar-toggler{
-        display: none;
-    }
-    
-    .form-inline {
-        margin-left: auto;
-        margin-right: 40px;
-    }
-    
-    .navbar-subheader {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .nav-link {
-        font-size: 24px;
-        font-weight: 400;
-        color: black !important;
-    }
-    
-    .nav-item {
-        margin-left: 10px;
-    }
-    
-    .header-img-1 {
-        width: 100%;	
-    }
-
+@media (min-width: 768px) {	
 	.benefits__header {
 		background: url("../../img/beneficio/beneficios-escritorio-1.png") no-repeat center top;
 		background-size: 100% 100%;
