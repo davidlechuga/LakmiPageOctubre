@@ -83,6 +83,29 @@ p {
 @media only screen and (min-width: 768px){ 
 
 
+.navbar-parent {
+	position: absolute;
+    background: transparent;
+    height: 90px;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.navbar-parent:hover .navbar  {
+
+	visibility: visible; /* shows sub-menu */
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+
+
+
+
 /*:::: NAVBAR STYLES ::::*/
 
 #logo{
@@ -103,7 +126,17 @@ p {
 	position: fixed;
     overflow: hidden;
     z-index: 999;
-    width: 100%;
+	width: 100%;
+	
+
+	display: flex;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-5em);
+	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+
 }
 
 .navbar-toggler{

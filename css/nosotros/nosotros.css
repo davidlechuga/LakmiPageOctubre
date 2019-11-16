@@ -14,12 +14,14 @@ p {
 .main_img_nosotros {
     background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
     background-size: cover;
-    height: 190px;
-    width: 100%;
+    height: 210px;
+    width: 101%;
     margin-left: 0px;
+    margin-top: 65px;
+    margin-top: 0px;
+
+
 }
-
-
 
 /*:::: SECCION PRIMER CONTENIDO DE NOSOTROS 1 ::::*/
 
@@ -51,7 +53,7 @@ p {
     background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
     background-size: cover;
     height: 402px;
-    width: 100%;
+    width: 101%;
     display: none;
 }
 .img_segundo_contenido1 {
@@ -84,6 +86,14 @@ p {
     padding: 80px 0 150px 0;
 }
 
+
+
+
+
+
+
+
+
 /***************************/
  /*	 QUERY BREAK POINT     */
 /***************************/
@@ -99,63 +109,8 @@ p {
 .contenido1_principios{
     line-height: 1.5;
 }
-}
 
 
-/******************************/
-/*	 SECCIÓN ESTILOS FOOTER   */
-/******************************/
-
-.footer {
-	background: var(--fondo_foot);
-	color: var(--color_foot);
-	padding-top: 6em;
-}
-
-.contact__footer,
-.ubication__footer,
-.legal__footer {
-	padding-left: 4em;
-	padding-bottom: 3em;
-}
-
-
-.contact__foot__title,
-.ubication__foot__title,
-.legal__foot__title {
-	font-size: var(--tamaño_h2);
-	padding: 1em 0 1.7em 0;
-}
-
-.contact__foot__title {
-	padding-top: .7em;
-}
-
-.contact__foot__description  p,
-.ubication__foot__description  p,
-.legal__foot__description  p {
-	font-size: var(--tamaño_parrafo_foot);
-	color: rgba(0, 0, 0, .6);
-	line-height: .8em;
-	text-align: left;
-}
-
-.contact__foot__description  .contact__foot__subtitle {
-	color: #000;
-	font-size: 1em;
-	line-height: .9em;
-	padding-bottom: .3em;
-}
-
-
-.foot_copyright {
-	background: var(--fondo_foot_copyright);
-	color:  var(--color_foot_copyright);
-	font-size: 1em;
-	height: 80px;
-	padding-top: 2em;
-	width: 100%;
-}
 
 
 /*:::: NOSOTROS IMG PRINCIPAL ::::*/
@@ -164,9 +119,9 @@ p {
 .main_img_nosotros {
     background: url(../../img/nosotros/nosotros-escritorio-1.png) no-repeat center top;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding-top: 550px;
+    height: 535px;
+    width: 101%;
+    display: flex;
 }
 
 /*:::: SECCION PRIMER CONTENIDO DE NOSOTROS 1 ::::*/
@@ -222,8 +177,4 @@ p {
 }
 
 
-
-
-    
 }
-
