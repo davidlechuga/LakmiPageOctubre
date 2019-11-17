@@ -31,8 +31,12 @@ p {
     background: url(../../img/contactenos/mobil-contacto.svg) !important;
     background-size: cover !important;
     height: 145px;
-    width: 100%;
+    width: 104%;
     margin-top: 0px;
+}
+
+.form-inline{
+    margin-right: 10px;
 }
 
 /*::::  FORM  STYLES  ::::*/
