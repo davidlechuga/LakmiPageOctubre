@@ -14,15 +14,43 @@ p {
 
 
 
+
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
 .main_img_contactenos {
-    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat center top;
-    background-size: contain;
+    background: url(../../img/contactenos/mobil-contacto.svg) !important;
+    background-size: cover !important;
+    height: 149px;
+    width: 100%;
+    margin-top: 155px;
+}
+
+
+
+/**************************/
+/*	 MEDIA QUERIES    	  */
+/**************************/
+
+@media (min-width: 376px) {
+
+/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+.main_img_contactenos {
+    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+    background-size: cover !important;
     height: 67%;
     width: 100%;
     padding-top: 206px;
     margin-top: 84px;
 }
+}
+
+
+
+}
+
+
+
+
+
 
 /*::::  FORM  STYLES  ::::*/
 
@@ -47,6 +75,11 @@ p {
 }
 
 
+
+
+
+@media (min-width: 768px) {	
+
 /*:::: NOSOTROS IMG PRINCIPAL ::::*/
 
 .main_img_contactenos {
@@ -56,6 +89,10 @@ p {
     width: 100%;
     padding-top: 550px;
     margin-top: 0px;
+
+}
+
+
 }
 
 
