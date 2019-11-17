@@ -1,3 +1,43 @@
+/**************************/
+/*	 VARIABLES CSS        */
+/**************************/
+:root {
+	--color_cuerpo_pagina: #F9F9F9;
+	--tamaño_parrafo: 1em;
+	--tamaño_parrafo_foot: .9em;
+	--tamaño_header_description: 1.3em;
+	--fondo_header_description: rgba(73, 115, 136, 1);
+	--tamaño_h1: 2em;
+	--tamaño_h2: 1.5em;
+	--color_navbar_fondo: #0EA1FD;
+	--color_head: #fff;
+	--fondo_promos: #578793;
+	--color_foot: #000;
+	--fondo_foot: #F1F1F1;
+	--color_foot_copyright: rgba(255, 255, 255, .9); 
+	--fondo_foot_copyright: #6997AF;
+}
+
+/***************************/
+/*	 ESTILOS GENERALES     */
+/***************************/
+
+body {
+	font-family: 'MyriadPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	background: var(--color_cuerpo_pagina);
+}
+
+.h1_size {
+    font-size: var(--tamaño_h1);
+}
+
+p {
+    font-size: var(--tamaño_parrafo);
+}
+
+
 /********************************/
 /*	 SECCIÓN ESTILOS HEADER     */
 /********************************/
@@ -88,3 +128,233 @@
     padding: .3em 2.8em;
 	text-decoration: none;
 }
+
+
+
+/******************************/
+/*	 SECCIÓN ESTILOS FOOTER   */
+/******************************/
+
+.footer {
+	background: var(--fondo_foot);
+	color: var(--color_foot);
+	padding-top: 6em;
+}
+
+.contact__footer,
+.ubication__footer,
+.legal__footer {
+	padding-left: 4em;
+	padding-bottom: 3em;
+}
+
+
+.contact__foot__title,
+.ubication__foot__title,
+.legal__foot__title {
+	font-size: var(--tamaño_h2);
+	padding: 1em 0 1.7em 0;
+}
+
+.contact__foot__title {
+	padding-top: .7em;
+}
+
+.contact__foot__description  p,
+.ubication__foot__description  p,
+.legal__foot__description  p {
+	font-size: var(--tamaño_parrafo_foot);
+	color: rgba(0, 0, 0, .6);
+	line-height: .8em;
+	text-align: left;
+}
+
+.contact__foot__description  .contact__foot__subtitle {
+	color: #000;
+	font-size: 1em;
+	line-height: .9em;
+	padding-bottom: .3em;
+}
+
+
+.foot_copyright {
+	background: var(--fondo_foot_copyright);
+	color:  var(--color_foot_copyright);
+	font-size: 1em;
+	height: 80px;
+	padding-top: 2em;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************************/
+/*	 M Ó V I L     */
+/***************************/
+
+#logo{
+    display: none;
+ }
+
+
+#separador{
+	display: none;
+}
+
+
+
+/**************************/
+/*	 MEDIA QUERIES    	  */
+/**************************/
+
+@media (min-width: 376px) {
+
+	/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+	.main_img_contactenos {
+		background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+		background-size: cover !important;
+		height: 67%;
+		width: 100%;
+		padding-top: 206px;
+		margin-top: 84px;
+		}
+	
+	/*:::: LOGO STYLES ::::*/
+#logo{
+    display: none;
+ }
+ #logo1{
+
+		display: flex;
+		margin-left: -20px;
+		margin-right: 29px;
+	
+  }
+
+
+  .input-group1 {
+	display: flex;
+}
+
+.form-inline{
+   margin-right: 10px;
+   
+}
+ /*:::: NAVBAR STYLES ::::*/
+ .navbar {
+     background: #FFFFFF;
+     position: fixed;
+     overflow: hidden;
+     z-index: 999;
+     width: 100%;
+     justify-content: start;
+ }
+
+ .navbar-toggler{
+     margin-right: 60px;
+     border: none;
+ }
+
+
+}
+
+
+ @media only screen and (min-width: 768px){ 
+
+
+.navbar-parent {
+	position: absolute;
+	background: transparent;
+	height: 90px;
+	z-index: 2;
+	width: 100%;
+
+}
+
+.navbar-parent:hover .navbar  {
+
+	visibility: visible; /* shows sub-menu */
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+
+/*:::: NAVBAR STYLES ::::*/
+
+#logo{
+	width: 250px;
+	height: 70px;
+	display: flex;
+}
+#logo1{
+	display: none;
+	}
+
+	.input-group1 {
+	display: none;
+}
+
+.navbar {
+	background: #FFFFFF;
+	position: fixed;
+	overflow: hidden;
+	z-index: 999;
+	width: 100%;
+	
+
+	display: flex;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-5em);
+	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+
+}
+
+.navbar-toggler{
+	display: none;
+}
+
+.form-inline {
+	margin-left: auto;
+	margin-right: 40px;
+}
+
+.navbar-subheader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-link {
+	font-size: 24px;
+	font-weight: 400;
+	color: black !important;
+}
+
+.nav-item {
+	margin-left: 10px;
+}
+
+.header-img-1 {
+	width: 100%;	
+}
+	
+	
+
+ }
+	
+	
+	
+	
