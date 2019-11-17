@@ -10,46 +10,14 @@ p {
     font-size: var(--tamaño_parrafo);
 }
 
-
-
-
-
-
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
 .main_img_contactenos {
     background: url(../../img/contactenos/mobil-contacto.svg) !important;
     background-size: cover !important;
-    height: 149px;
+    height: 145px;
     width: 100%;
-    margin-top: 155px;
+    margin-top: 89px;
 }
-
-
-
-/**************************/
-/*	 MEDIA QUERIES    	  */
-/**************************/
-
-@media (min-width: 376px) {
-
-/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
-.main_img_contactenos {
-    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
-    background-size: cover !important;
-    height: 67%;
-    width: 100%;
-    padding-top: 206px;
-    margin-top: 84px;
-}
-}
-
-
-
-}
-
-
-
-
 
 
 /*::::  FORM  STYLES  ::::*/
@@ -77,25 +45,6 @@ p {
 
 
 
-
-@media (min-width: 768px) {	
-
-/*:::: NOSOTROS IMG PRINCIPAL ::::*/
-
-.main_img_contactenos {
-    background: url(../../img/contactenos/contacto.svg) no-repeat center top;
-    background-size: cover;
-    height: 87%;
-    width: 100%;
-    padding-top: 550px;
-    margin-top: 0px;
-
-}
-
-
-}
-
-
 /*:::: SECCION FORMULARIO CONTACTENOS::::*/
 
 .title_contactanos{
@@ -110,4 +59,73 @@ p {
     color: white;
     width: 83%;
 }
+
+
+
+
+/**************************/
+/*	 MEDIA QUERIES    	  */
+/**************************/
+
+@media (min-width: 376px) {
+
+/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+.main_img_contactenos {
+    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+    background-size: cover !important;
+    height: 67%;
+    width: 100%;
+    padding-top: 206px;
+    margin-top: 84px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {	
+
+/*:::: NOSOTROS IMG PRINCIPAL ::::*/
+
+.main_img_contactenos {
+
+    background: url(../../img/contactenos/contacto.svg) no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+    padding-top: 420px;
+    margin-top: 0px;
+
+    }
+
+
+    @media (min-width: 992px) { 
+
+        .main_img_contactenos {
+        
+        background: url(../../img/contactenos/contacto.svg) no-repeat !important;
+        background-size: cover !important;
+        height: 100%;
+        width: 100%;
+        padding-top: 600px;
+        margin-top: 0px;
+
+        }
+
+    }
+
+
+
+
+
+}
+
+
+
+
 
