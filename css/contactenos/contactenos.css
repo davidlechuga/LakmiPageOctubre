@@ -11,19 +11,29 @@ p {
 }
 
 
+/***************************/
+/*	 M Ó V I L     */
+/***************************/
 
+/*:::: LOGO STYLES ::::*/
 
+#logo{
+    display: none;
+}
 
+#separador{
+    display: none;
+}
 
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+
 .main_img_contactenos {
     background: url(../../img/contactenos/mobil-contacto.svg) !important;
     background-size: cover !important;
     height: 145px;
     width: 100%;
-    margin-top: 89px;
+    margin-top: 0px;
 }
-
 
 /*::::  FORM  STYLES  ::::*/
 
@@ -31,7 +41,6 @@ p {
     padding-bottom: 100px;
 }
 
-
 /*:::: SECCION FORMULARIO CONTACTENOS::::*/
 
 .title_contactanos{
@@ -39,25 +48,6 @@ p {
     padding: 80px 0 150px 0;
     margin-left: 50px;
 }
-
-
-.btn-form{
-    background: #386F85;
-    color: white;
-    width: 100%;
-}
-
-
-
-
-/*:::: SECCION FORMULARIO CONTACTENOS::::*/
-
-.title_contactanos{
-    width: 82%;
-    padding: 80px 0 150px 0;
-    margin-left: 50px;
-}
-
 
 .btn-form{
     background: #386F85;
@@ -85,6 +75,37 @@ p {
     }
 
 
+/*:::: LOGO STYLES ::::*/
+#logo{
+    display: none;
+ }
+ #logo1{
+     display: flex;
+     margin-left: 25px;
+     margin-right: 90px;
+  }
+  .input-group1 {
+      display: flex;
+  }
+  .form-inline{
+     margin-right: 10px;
+     margin-left: 15px;
+  }
+ /*:::: NAVBAR STYLES ::::*/
+ .navbar {
+     background: #FFFFFF;
+     position: fixed;
+     overflow: hidden;
+     z-index: 999;
+     width: 100%;
+     justify-content: start;
+ }
+ .navbar-toggler{
+     margin-right: 60px;
+     border: none;
+ }
+
+
 
 }
 
@@ -106,7 +127,6 @@ p {
 
 }
 
-
 .navbar-parent {
 	position: absolute;
     background: transparent;
@@ -124,6 +144,7 @@ p {
 	transform: translateY(0%);
 	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
+
 
 
 /*:::: NAVBAR STYLES ::::*/
@@ -146,8 +167,7 @@ p {
 	position: fixed;
     overflow: hidden;
     z-index: 999;
-    width: 100%;
-    justify-content: start;
+	width: 100%;
 	
 
 	display: flex;
@@ -164,7 +184,10 @@ p {
     display: none;
 }
 
-
+.form-inline {
+	margin-left: auto;
+    margin-right: 40px;
+}
 
 .navbar-subheader {
 	display: flex;
@@ -184,7 +207,6 @@ p {
 .header-img-1 {
 	width: 100%;	
 }
-
 
 
 @media (min-width: 992px) { 
