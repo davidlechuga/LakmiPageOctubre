@@ -11,6 +11,24 @@ p {
 }
 
 
+
+
+.navbar-toggler{
+    margin-left: -14px;
+}
+
+#logo1 {
+    display: flex;
+    margin-right: 12px;
+    margin-left: -56px;
+}
+
+
+.form-inline {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
 .main_img_contactenos {
     background: url(../../img/contactenos/mobil-contacto.svg) no-repeat center top;
