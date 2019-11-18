@@ -127,10 +127,10 @@ p {
 
 .main_img_nosotros {
     background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 142px;
-    width: 100%;
-    margin-top: 83px;
+    width: 104%;
+    margin-top: 0px;
 
 }
 
@@ -161,6 +161,10 @@ p {
     width: 345px;
     padding-left: 61px;
     padding-right: 40px;
+}
+
+.form-inline{
+    margin-left: 10px;
 }
 
 /*:::: SECCION PRINCIPIOS DE NEGOCIO  NOSOTROS ::::*/
