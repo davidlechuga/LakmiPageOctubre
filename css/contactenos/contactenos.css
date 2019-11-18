@@ -11,6 +11,72 @@ p {
 }
 
 
+
+/******************************/
+/*	 SECCIÓN ESTILOS FOOTER   */
+/******************************/
+
+.footer {
+	background: var(--fondo_foot);
+	color: var(--color_foot);
+	padding-top: 6em;
+}
+
+.contact__footer,
+.ubication__footer,
+.legal__footer {
+	padding-left: 4em;
+	padding-bottom: 3em;
+}
+
+
+.contact__foot__title,
+.ubication__foot__title,
+.legal__foot__title {
+	font-size: var(--tamaño_h2);
+	padding: 1em 0 1.7em 0;
+}
+
+.contact__foot__title {
+	padding-top: .7em;
+}
+
+.contact__foot__description  p,
+.ubication__foot__description  p,
+.legal__foot__description  p {
+	font-size: var(--tamaño_parrafo_foot);
+	color: rgba(0, 0, 0, .6);
+	line-height: .8em;
+	text-align: left;
+}
+
+.contact__foot__description  .contact__foot__subtitle {
+	color: #000;
+	font-size: 1em;
+	line-height: .9em;
+	padding-bottom: .3em;
+}
+
+
+.foot_copyright {
+	background: var(--fondo_foot_copyright);
+	color:  var(--color_foot_copyright);
+	font-size: 1em;
+	height: 80px;
+	padding-top: 2em;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 /***************************/
 /*	 M Ó V I L     */
 /***************************/

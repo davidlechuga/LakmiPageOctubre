@@ -217,50 +217,50 @@ p {
 
 @media (min-width: 376px) {
 
-	/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
-	.main_img_contactenos {
-		background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
-		background-size: cover !important;
-		height: 67%;
-		width: 100%;
-		padding-top: 206px;
-		margin-top: 84px;
-		}
+/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+.main_img_contactenos {
+	background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+	background-size: cover !important;
+	height: 67%;
+	width: 100%;
+	padding-top: 206px;
+	margin-top: 84px;
+	}
 	
-	/*:::: LOGO STYLES ::::*/
+/*:::: LOGO STYLES ::::*/
 #logo{
     display: none;
  }
- #logo1{
 
-		display: flex;
-		margin-left: -20px;
-		margin-right: 29px;
+#logo1{
+
+	display: flex;
+	margin-left: -20px;
+	margin-right: 29px;
 	
   }
 
-
-  .input-group1 {
+.input-group1 {
 	display: flex;
 }
 
 .form-inline{
-   margin-right: 10px;
+    margin-right: 10px;
    
 }
  /*:::: NAVBAR STYLES ::::*/
- .navbar {
-     background: #FFFFFF;
-     position: fixed;
-     overflow: hidden;
-     z-index: 999;
-     width: 100%;
-     justify-content: start;
+.navbar {
+	background: #FFFFFF;
+	position: fixed;
+	overflow: hidden;
+	z-index: 999;
+	width: 100%;
+	justify-content: start;
  }
 
  .navbar-toggler{
-     margin-right: 60px;
-     border: none;
+    margin-right: 60px;
+    border: none;
  }
 
 
@@ -319,7 +319,6 @@ p {
 	width: 100%;
 	transform: translateY(-5em);
 	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
 
 }
 
