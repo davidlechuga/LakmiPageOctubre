@@ -141,22 +141,18 @@ body {
 /***************************/
 
 .navegation {
-	display: none;
-}
+	display: none;}
 
 /********************************/
 /*   SECCIÓN ESTILOS HEADER     */
 /********************************/
 
-.mainpag {
-	padding-top: 110px;
-}
-
 .main_header_img {
     background: url("../../img/index/presentacion.jpg") no-repeat center center;
-	background-size: 100% 100%;
-	height: 30vh;
+  	background-size: 100% 100%;
+    height: 30vh;
 	padding: 0;
+	margin: 0;
 }
 
 .main__heder__info {
@@ -179,7 +175,6 @@ body {
 .ornament3 {
 	display: none;
 }
-
 
 /**************************/
 /* SECCIONWHAT DOES LAKMI */
@@ -227,7 +222,7 @@ body {
 
 
 .img__rules {
-	background: url(../../img/beneficio/beneficios-escritorio-2.png) no-repeat center top;
+	background: url(../../img/beneficio/beneficios-escritorio-3.png) no-repeat center top;
 }
 
 .img__fintech {
@@ -583,12 +578,21 @@ body {
 	.internal {
 		margin-top: 180px;
 	}
+
 }
 
-
-
-
 @media (min-width: 768px) {
+	
+	.main_header_img {
+		height: 60vh;
+	}
+}
+
+@media (min-width: 992px) {
+	
+	.main_header_img {
+		height: 80vh;
+	}
 
 	.navegation {
 		display: block;
@@ -610,32 +614,6 @@ body {
 	.navigation__view > a {
 		color:red;
 		text-decoration: none;
-	}
-
-	.mainpag {
-	padding-top: 0px;
-}
-	.main_header_img {
-		height: 60vh;
-	}
-
-	.rules {
-		margin-top: 80px;
-	}
-
-	.fintech,
-	.contribute,
-	.risks,
-	.internal {
-		margin-top: 150px;
-	}
-
-}
-
-@media (min-width: 992px) {
-	
-	.main_header_img {
-		height: 80vh;
 	}
 
 	.main__heder__info {
@@ -681,6 +659,10 @@ body {
 		right: 160px;
 		width: 100px;
 	}
+
+
+
+
 	.img__rules,
 	.img__fintech,
 	.img__contribute,
@@ -689,6 +671,7 @@ body {
 		width: 100%;
 		height: 100%;
 	}
+	
 	
 	.img__rules,
 	.img__contribute,
@@ -766,6 +749,7 @@ body {
 
 	}
 }
+
 
 
 /***************************/
