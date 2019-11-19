@@ -94,11 +94,11 @@ p {
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
 
 .main_img_contactenos {
-    background: url(../../img/contactenos/mobil-contacto.svg) !important;
+    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
     background-size: cover !important;
-    height: 145px;
-    width: 104%;
-    margin-top: 0px;
+    height: 140px;
+    width: 115%;
+    margin-top: 83px;
 }
 
 .form-inline{
@@ -146,6 +146,9 @@ p {
 
 
 /*:::: LOGO STYLES ::::*/
+#separador{
+    display: flex;
+}
 #logo{
     display: none;
  }
