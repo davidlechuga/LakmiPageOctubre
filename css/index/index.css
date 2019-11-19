@@ -141,24 +141,7 @@ body {
 /***************************/
 
 .navegation {
-	position: fixed;
-	top: 45vh;
-	right: 3%;
-	z-index: 10;
-}
-
-.navegation__page {
-	list-style: none;
-	text-align: right;
-}
-
-.navigation__view {
-	padding-top: .8em;
-}
-
-.navigation__view > a {
-	color:red;
-	text-decoration: none;
+	display: none;
 }
 
 /********************************/
@@ -606,6 +589,30 @@ body {
 
 
 @media (min-width: 768px) {
+
+	.navegation {
+		display: block;
+		position: fixed;
+		top: 45vh;
+		right: 3%;
+		z-index: 10;
+	}
+
+	.navegation__page {
+	list-style: none;
+	text-align: right;
+	}
+
+	.navigation__view {
+		padding-top: .8em;
+	}
+
+	.navigation__view > a {
+		color:red;
+		text-decoration: none;
+	}
+
+
 	.mainpag {
 	padding-top: 0px;
 }
@@ -647,7 +654,7 @@ body {
 		clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
 	}
 
-.ornament1,
+	.ornament1,
 	.ornament2,	
 	.ornament3 {
 		display: block;
@@ -760,14 +767,6 @@ body {
 
 	}
 }
-
-
-
-
-
-
-
-
 
 
 /***************************/
