@@ -78,6 +78,15 @@
             <img src="img/contactenos/Grupo-1.svg" id="separador" style="width: 100% ; position: absolute; top: 5px;" >
         </div>
     </div>
+    <nav class="navegation">
+        <ul class="navegation__page">
+            <li class="navigation__view"><a data-scroll href="#sec-1">Nuevas formas de Arrendamiento</a></li>
+            <li class="navigation__view"><a data-scroll href="#sec-2">Sector Fintech</a></li>
+            <li class="navigation__view"><a data-scroll href="#sec-3">Servicios que aportan valor</a></li>
+            <li class="navigation__view"><a data-scroll href="#sec-4">Gestión de riesgos empresariales</a></li>
+            <li class="navigation__view"><a data-scroll href="#sec-5">Control Interno</a></li>
+        </ul>
+    </nav>
     <article class="container-fluid mainpag">
         <!--HEADER-->
         <header class="row main_header">
@@ -115,7 +124,7 @@
         <!--END SECTION WHAT DOES LAKMI-->
         <!--CARDS-->
         <!--SECTION NORMAS-->
-        <section class="row rules">
+        <section class="row rules" id="sec-1"> 
             <article class="col-12 col-lg-6 container_rules">
                 <div class="img__rules "></div>
             </article>
@@ -137,7 +146,7 @@
         </section>
         <!--END SECTION NORMAS-->
         <!--SECTION FINTECH-->
-        <section class="row fintech d-lg-flex">
+        <section class="row fintech d-lg-flex" id="sec-2">
             <article class="col-12 col-lg-6 container_fintech order-lg-2">
                 <div class="img__fintech"></div>
             </article>
@@ -157,7 +166,7 @@
         </section>
         <!--END SECTION FINTECH-->
         <!--SECTION SERVICES VAULES-->
-        <section class="row contribute">
+        <section class="row contribute" id="sec-3">
             <article class="col-12 col-lg-6 container_contribute">
                 <div class="img__contribute"></div>
             </article>
@@ -176,7 +185,7 @@
         </section>
         <!--END SERVICES VALUES-->
         <!--SECTION RISKS-->
-        <section class="row risks d-lg-flex">
+        <section class="row risks d-lg-flex" id="sec-4">
             <article class="col-12 col-lg-6 container_risks order-lg-2">
                 <div class="img__risks"></div>
             </article>
@@ -196,7 +205,7 @@
         </section>
         <!--END SERVICES RISKS-->
         <!--SECTION SERVICES INTERNAL-->
-        <section class="row internal">
+        <section class="row internal" id="sec-5">
             <article class="col-12 col-lg-6 container_internal">
                 <div class="img__internal"></div>
             </article>
@@ -270,6 +279,14 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
+        <!--SCROLL-->
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                offset: 200,
+                speed: 1000
+            });
+        </script>
         <!-- Google Analytics:-->
         <script>
             window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

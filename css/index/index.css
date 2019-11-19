@@ -134,6 +134,33 @@ body {
 	width: 100%;	
 	}
 }
+
+
+/***************************/
+/*	 NAVIGATION VIEW       */
+/***************************/
+
+.navegation {
+	position: fixed;
+	top: 45vh;
+	right: 3%;
+	z-index: 10;
+}
+
+.navegation__page {
+	list-style: none;
+	text-align: right;
+}
+
+.navigation__view {
+	padding-top: .8em;
+}
+
+.navigation__view > a {
+	color:red;
+	text-decoration: none;
+}
+
 /********************************/
 /*   SECCIÓN ESTILOS HEADER     */
 /********************************/
@@ -563,6 +590,16 @@ body {
 		height: 45vh;
 	}
 
+	.rules {
+		margin-top: 80px;
+	}
+
+	.fintech,
+	.contribute,
+	.risks,
+	.internal {
+		margin-top: 180px;
+	}
 }
 
 
