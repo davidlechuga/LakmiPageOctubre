@@ -599,8 +599,8 @@ body {
 	}
 
 	.navegation__page {
-	list-style: none;
-	text-align: right;
+		list-style: none;
+		text-align: right;
 	}
 
 	.navigation__view {
@@ -611,7 +611,6 @@ body {
 		color:red;
 		text-decoration: none;
 	}
-
 
 	.mainpag {
 	padding-top: 0px;
