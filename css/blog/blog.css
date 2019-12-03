@@ -1,7 +1,13 @@
 /* Estilos generales */
 
 .pdd-text {
-	padding: 50px;
+	padding: 70px;
+}
+
+.btn-styles {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px;
 }
 
 .img_blog_1 {
