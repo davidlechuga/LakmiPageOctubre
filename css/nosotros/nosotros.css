@@ -2,20 +2,20 @@
 /*	 VARIABLES CSS        */
 /**************************/
 :root {
-	--color_cuerpo_pagina: #F9F9F9;
+	--color_cuerpo_pagina: #f9f9f9;
 	--tamaño_parrafo: 1em;
 	--tamaño_parrafo_foot: .9em;
 	--tamaño_header_description: 1.3em;
 	--fondo_header_description: rgba(73, 115, 136, 1);
 	--tamaño_h1: 2em;
 	--tamaño_h2: 1.5em;
-	--color_navbar_fondo: #0EA1FD;
+	--color_navbar_fondo: #0ea1fd;
 	--color_head: #fff;
 	--fondo_promos: #578793;
 	--color_foot: #000;
-	--fondo_foot: #F1F1F1;
-	--color_foot_copyright: rgba(255, 255, 255, .9); 
-	--fondo_foot_copyright: #6997AF;
+	--fondo_foot: #f1f1f1;
+	--color_foot_copyright: rgba(255, 255, 255, .9);
+	--fondo_foot_copyright: #6997af;
 }
 
 /***************************/
@@ -30,14 +30,12 @@ body {
 }
 
 .h1_size {
-    font-size: var(--tamaño_h1);
+	font-size: var(--tamaño_h1);
 }
 
 p {
-    font-size: var(--tamaño_parrafo);
+	font-size: var(--tamaño_parrafo);
 }
-
-
 
 /******************************/
 /*	 SECCIÓN ESTILOS FOOTER   */
@@ -56,7 +54,6 @@ p {
 	padding-bottom: 3em;
 }
 
-
 .contact__foot__title,
 .ubication__foot__title,
 .legal__foot__title {
@@ -68,369 +65,316 @@ p {
 	padding-top: .7em;
 }
 
-.contact__foot__description  p,
-.ubication__foot__description  p,
-.legal__foot__description  p {
+.contact__foot__description p,
+.ubication__foot__description p,
+.legal__foot__description p {
 	font-size: var(--tamaño_parrafo_foot);
 	color: rgba(0, 0, 0, .6);
 	line-height: .8em;
 	text-align: left;
 }
 
-.contact__foot__description  .contact__foot__subtitle {
+.contact__foot__description .contact__foot__subtitle {
 	color: #000;
 	font-size: 1em;
 	line-height: .9em;
 	padding-bottom: .3em;
 }
 
-
 .foot_copyright {
 	background: var(--fondo_foot_copyright);
-	color:  var(--color_foot_copyright);
+	color: var(--color_foot_copyright);
 	font-size: 1em;
 	height: 80px;
 	padding-top: 2em;
 	width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***************************/
 /*	 M Ó V I L     */
 /***************************/
 
 /*:::: LOGO STYLES ::::*/
+.navbar-toggler {
+	margin-right: 0px !important;
+}
 
 #logo {
-    display: none;
+	display: none;
 }
 
 #separador {
-    display: none;
+	display: none;
 }
 
 /*:::: NOSOTROS IMG PRINCIPAL ::::*/
 
 .main_img_nosotros {
-    background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
-    background-size: cover;
-    height: 142px;
-    width: 104%;
-    margin-top: 0px;
-
+	background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
+	background-size: contain;
+	height: 142px;
+	width: 100%;
+	margin-top: 85px;
 }
 
 .navbar-toggler {
-    margin-right: -10px;
-    border: none;
+	margin-right: -10px;
+	border: none;
 }
 
 /*:::: SECCION PRIMER CONTENIDO DE NOSOTROS 1 ::::*/
 
-.title1_nosotros{
-    width: 82%;
-    padding: 80px 0 150px 0;
-    margin-left: 50px;
-
+.title1_nosotros {
+	width: 82%;
+	padding: 80px 0 150px 0;
+	margin-left: 50px;
 }
 
-.contenido1_nosotros{
-    line-height: 2.5;
+.contenido1_nosotros {
+	line-height: 2.5;
 }
 
-.contenido1_principios{
-    line-height: 2.5;
+.contenido1_principios {
+	line-height: 2.5;
 }
 
-.contenido1_valores{
-    line-height: 2.5;
-    width: 345px;
-    padding-left: 61px;
-    padding-right: 40px;
+.contenido1_valores {
+	line-height: 2.5;
+	width: 345px;
+	padding-left: 61px;
+	padding-right: 40px;
 }
 
-.form-inline{
-    margin-left: 10px;
+.form-inline {
+	margin-left: 10px;
 }
 
 /*:::: SECCION PRINCIPIOS DE NEGOCIO  NOSOTROS ::::*/
 
 .img_segundo_contenido {
-    background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
-    background-size: cover;
-    height: 402px;
-    width: 101%;
-    display: none;
+	background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
+	background-size: cover;
+	height: 402px;
+	width: 101%;
+	display: none;
 }
 .img_segundo_contenido1 {
-    background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
-    background-size: cover;
-    height: 402px;
-    width: 100%;
-    display: flex;
+	background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
+	background-size: cover;
+	height: 402px;
+	width: 100%;
+	display: flex;
 }
 
 .principios_contenido {
-    width: 82%;
-    padding: 80px 0 150px 0;
-    margin-left: 50px;
+	width: 82%;
+	padding: 80px 0 150px 0;
+	margin-left: 50px;
 }
 
 /*:::: SECCION VALORES CORPORATIVOS NOSOTROS ::::*/
 
 .img1_valores {
-    background: url(../../img/nosotros/nosotros-escritorio-3.png) no-repeat;
-    background-size: cover;
-    height: 390px;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
+	background: url(../../img/nosotros/nosotros-escritorio-3.png) no-repeat;
+	background-size: cover;
+	height: 390px;
+	width: 100%;
+	margin-top: 60px;
+	display: flex;
 }
 
 .valores_contenido {
-    padding: 80px 0 150px 0;
+	padding: 80px 0 150px 0;
 }
-
-
-
-
 
 /**************************/
 /*	 MEDIA QUERIES    	  */
 /**************************/
 
 @media (min-width: 376px) {
+	/*:::: LOGO STYLES ::::*/
+	#logo {
+		display: none;
+	}
+	#logo1 {
+		display: flex;
+		margin-left: -13px;
+		margin-right: 25px;
+	}
+	.input-group1 {
+		display: flex;
+	}
+	.form-inline {
+		margin-right: 10px;
+		margin-left: 15px;
+	}
+	/*:::: NAVBAR STYLES ::::*/
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+		justify-content: start;
+	}
+	.navbar-toggler {
+		margin-right: 35px;
+		border: none;
+	}
 
+	#separador {
+		display: flex;
+	}
 
-/*:::: LOGO STYLES ::::*/
-#logo{
-    display: none;
- }
- #logo1{
-     display: flex;
-     margin-left: -13px;
-     margin-right: 25px;
-  }
-  .input-group1 {
-      display: flex;
-  }
-  .form-inline{
-     margin-right: 10px;
-     margin-left: 15px;
-  }
- /*:::: NAVBAR STYLES ::::*/
- .navbar {
-     background: #FFFFFF;
-     position: fixed;
-     overflow: hidden;
-     z-index: 999;
-     width: 100%;
-     justify-content: start;
- }
- .navbar-toggler{
-     margin-right: 35px;
-     border: none;
- }
-
- #separador {
-    display: flex;
+	.main_img_nosotros {
+		background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
+		background-size: cover;
+		height: 205px;
+		width: 100%;
+		margin-top: 83px;
+	}
 }
 
-.main_img_nosotros {
-    background: url(../../img/nosotros/new-mob-1.svg) no-repeat;
-    background-size: cover;
-    height: 205px;
-    width: 100%;
-    margin-top: 83px;
-}
+@media only screen and (min-width: 768px) {
+	.navbar-parent {
+		position: absolute;
+		background: transparent;
+		height: 90px;
+		z-index: 2;
+		width: 100%;
+	}
 
+	.navbar-parent:hover .navbar {
+		visibility: visible; /* shows sub-menu */
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+		transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+	}
 
-    
-}
+	/*:::: NAVBAR STYLES ::::*/
 
+	#logo {
+		width: 250px;
+		height: 70px;
+		display: flex;
+	}
+	#logo1 {
+		display: none;
+	}
 
+	.input-group1 {
+		display: none;
+	}
 
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
 
+		display: flex;
+		top: 0%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-5em);
+		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	}
 
+	.navbar-toggler {
+		display: none;
+	}
 
+	.form-inline {
+		margin-left: auto;
+		margin-right: 40px;
+	}
 
+	.navbar-subheader {
+		display: flex;
+		justify-content: space-between;
+	}
 
-@media only screen and (min-width: 768px){ 
+	.nav-link {
+		font-size: 24px;
+		font-weight: 400;
+		color: black !important;
+	}
 
-.navbar-parent {
-    position: absolute;
-    background: transparent;
-    height: 90px;
-    z-index: 2;
-    width: 100%;
+	.nav-item {
+		margin-left: 10px;
+	}
 
-}
+	.header-img-1 {
+		width: 100%;
+	}
 
-.navbar-parent:hover .navbar  {
+	#separador  {
+		display: flex;
+	}
 
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-}
+	.contenido1_nosotros {
+		line-height: 1.5;
+	}
 
+	.contenido1_principios {
+		line-height: 1.5;
+	}
 
+	/*:::: NOSOTROS IMG PRINCIPAL ::::*/
 
-/*:::: NAVBAR STYLES ::::*/
+	.main_img_nosotros {
+		background: url(../../img/nosotros/nosotros-escritorio-1.png) no-repeat center top;
+		background-size: cover;
+		height: 535px;
+		width: 101%;
+		display: flex;
+		margin-top: 0px;
+	}
 
-#logo{
-    width: 250px;
-    height: 70px;
-    display: flex;
-}
-#logo1{
-    display: none;
-    }
+	/*:::: SECCION PRIMER CONTENIDO DE NOSOTROS 1 ::::*/
 
-    .input-group1 {
-    display: none;
-}
+	.title1_nosotros {
+		width: 95%;
+		padding: 80px 0 150px 0;
+		margin-left: 50px;
+	}
 
-.navbar {
-    background: #FFFFFF;
-    position: fixed;
-    overflow: hidden;
-    z-index: 999;
-    width: 100%;
-    
+	/*:::: SECCION PRINCIPIOS DE NEGOCIO  NOSOTROS ::::*/
 
-    display: flex;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-5em);
-    transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	.img_segundo_contenido {
+		background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
+		background-size: cover;
+		height: 80%;
+		width: 85%;
+		margin-left: 54px;
+		margin-top: 60px;
+		display: flex;
+	}
 
+	.principios_contenido {
+		width: 100%;
+		padding: 0px;
+		margin-left: 0px;
+	}
 
-}
+	/*:::: SECCION VALORES CORPORATIVOS NOSOTROS ::::*/
 
-.navbar-toggler{
-    display: none;
-}
+	.valores_contenido {
+		width: 100%;
+		padding: 0px;
+		margin-left: 0px;
+		margin-top: 100px;
+	}
 
-.form-inline {
-    margin-left: auto;
-    margin-right: 40px;
-}
-
-.navbar-subheader {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-link {
-    font-size: 24px;
-    font-weight: 400;
-    color: black !important;
-}
-
-.nav-item {
-    margin-left: 10px;
-}
-
-.header-img-1 {
-    width: 100%;	
-}
-
-#separador {
-    display: flex;
-}
-
-
-
-.contenido1_nosotros{
-    line-height: 1.5;
-}
-
-.contenido1_principios{
-    line-height: 1.5;
-}
-
-
-
-/*:::: NOSOTROS IMG PRINCIPAL ::::*/
-
-
-.main_img_nosotros {
-    background: url(../../img/nosotros/nosotros-escritorio-1.png) no-repeat center top;
-    background-size: cover;
-    height: 535px;
-    width: 101%;
-    display: flex;
-    margin-top: 0px;
-}
-
-/*:::: SECCION PRIMER CONTENIDO DE NOSOTROS 1 ::::*/
-
-.title1_nosotros{
-    width: 95%;
-    padding: 80px 0 150px 0;
-    margin-left: 50px;
-
-}
-
-/*:::: SECCION PRINCIPIOS DE NEGOCIO  NOSOTROS ::::*/
-
-
-.img_segundo_contenido {
-    background: url(../../img/nosotros/nosotros-escritorio-2.png) no-repeat;
-    background-size: cover;
-    height: 80%;
-    width: 85%;
-    margin-left: 54px;
-    margin-top: 60px;
-    display: flex;
-}
-
-
-
-.principios_contenido {
-    width: 100%;
-    padding: 0px;
-    margin-left: 0px;
-}
-
-
-/*:::: SECCION VALORES CORPORATIVOS NOSOTROS ::::*/
-
-.valores_contenido{
-
-    width: 100%;
-    padding: 0px;
-    margin-left: 0px;
-    margin-top: 100px;
-    
-}
-
-.img_valores {
-    background: url(../../img/nosotros/nosotros-escritorio-3.png) no-repeat;
-    background-size: cover;
-    height: 383px;
-    width: 75%;
-    margin-left: 113px;
-    margin-top: 60px;
-    display: flex;
-}
-
-
+	.img_valores {
+		background: url(../../img/nosotros/nosotros-escritorio-3.png) no-repeat;
+		background-size: cover;
+		height: 383px;
+		width: 75%;
+		margin-left: 113px;
+		margin-top: 60px;
+		display: flex;
+	}
 }
