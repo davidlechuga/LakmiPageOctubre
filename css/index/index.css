@@ -1,40 +1,372 @@
+/******************/
+/*	 VARIABLES	  */
+/******************/
 
-/**************************/
-/*	 VARIABLES CSS        */
-/**************************/
 :root {
-	--color_cuerpo_pagina: #F9F9F9;
-	--tamaño_parrafo: 1em;
-	--tamaño_parrafo_foot: .9em;
-	--tamaño_header_description: 1.3em;
-	--fondo_header_description: rgba(73, 115, 136, 1);
-	--tamaño_h1: 2em;
-	--tamaño_h2: 1.5em;
-	--color_navbar_fondo: #0EA1FD;
-	--color_head: #fff;
-	--fondo_promos: #578793;
-	--color_foot: #000;
-	--fondo_foot: #F1F1F1;
-	--color_foot_copyright: rgba(255, 255, 255, 1); 
-	--fondo_foot_copyright: #6997AF;
+	--background__body: #F9F9F9;
+  --font__mobile: 1em;
+  --h1__mobile: 1.3em;
+  --h2__mobile: 1.1em;
+  --color__red: #D93955;
+  --color__white: #fff;
+  --color__red__foot1: #2B2B2B;
+  --color__red__foot2: #D93955;
 }
 
-
-/***************************/
-/*	 ESTILOS GENERALES     */
-/***************************/
+/**************************/
+/*	 ESTILOS GENERALES	  */
+/**************************/
 
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-	font-family: 'MyriadPro', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	background: var(--color_cuerpo_pagina);
+	background: var(--background__body);
 }
+
+
+/**************************/
+/*	    LOGO HEADER	      */
+/**************************/
+
+.logo__header {
+	padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+
+/**********************/
+/*      HEADER        */
+/**********************/
+
+
+.header__img {
+  background: url("../../img/index/presentacion.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  height: 30vh;
+}
+
+/*
+.header {
+  margin: 0 auto;
+  width: 90%;
+}
+*/
+
+.header__info > p {
+  font-size: var(--font__mobile);
+  line-height: 1.8;
+}
+
+
+/**********************/
+/*   SECTIONS CARDS   */
+/**********************/
+
+.lease,
+.fintech,
+.contribute,
+.risks,
+.internal {
+  margin-top: 30px;
+}
+
+.lease__img {
+  background: url("../../img/index/ini1.svg") no-repeat center center;
+}
+
+.fintech__img {
+  background: url("../../img/index/ini2.svg") no-repeat center center;
+}
+
+.contribute__img {
+  background: url("../../img/index/ini3.svg") no-repeat center center;
+}
+
+.risks__img {
+  background: url("../../img/index/ini4.svg") no-repeat center center;
+}
+
+.internal__img {
+  background: url("../../img/index/ini5.svg") no-repeat center center;
+}
+
+.lease__img,
+.fintech__img,
+.contribute__img,
+.risks__img,
+.internal__img {
+  background-size: 100% 100%;
+  height: 40vh;
+} 
+
+.lease__title,
+.fintech__title,
+.contribute__title,
+.risks__title,
+.internal__title {
+  font-size: var(--h2__mobile);
+  font-weight: bold;
+  padding: 0 .5em .5em 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.lease__title ~ p,
+.fintech__title ~ p,
+.contribute__title ~ p,
+.risks__title ~ p,
+.internal__title ~ p {
+  line-height: 1.8;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.lease__info,
+.fintech__info,
+.contribute__info,
+.risks__info,
+.internal__info {
+  padding: 0;
+}
+
+.lease__info p:nth-child(4) {
+  font-size: 1.1em;
+}
+
+.lease__links,
+.fintech__links,
+.contribute__links,
+.risks__links,
+.internal__links {
+  padding-top: 1.5em;
+}
+
+.lease__links .btn,
+.fintech__links .btn,
+.contribute__links .btn,
+.risks__links .btn,
+.internal__links .btn {
+  background: var(--color__red);
+  border-radius: 0;
+  color: var(--color__white);
+  font-size: 1.1em;
+  font-weight: bold;
+  position: relative;
+  text-align: center; 
+  text-decoration: none;
+  width: 50%;
+}
+
+.contribute__links .btn,
+.risks__links .btn,
+.internal__links .btn {
+  width: 100%;
+}
+
+.lease__links .btn:before,
+.fintech__links .btn:before,
+.contribute__links .btn:before,
+.risks__links .btn:before,
+.internal__links .btn:before {
+  content:"";
+  background: rgba(144, 38, 56, .1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  transition: all 1s ease;
+}
+
+.lease__links .btn:hover:before,
+.fintech__links .btn:hover:before,
+.contribute__links .btn:hover:before,
+.risks__links .btn:hover:before,
+.internal__links .btn:hover:before {
+  height: 100%;
+  color: var(--color_head);
+}
+
+.lease__links a:nth-child(1),
+.fintech__links a:nth-child(1) {
+  margin-right: 1px;
+}
+
+.lease__links a:nth-child(2),
+.fintech__links a:nth-child(2) {
+  margin-left: 1px;
+}
+
+/******************************/
+/*   SECCIÓN ESTILOS FOOTER   */
+/******************************/
+
+.footer {
+    background: var(--color__red__foot1);
+    color: var(--color__white);
+    margin-top: 6em;
+    padding-top: 6em;
+}
+
+
+.contact__footer,
+.ubication__footer,
+.legal__footer {
+    padding-bottom: 3em;
+}
+
+.contact__foot__description {
+  position: relative;
+}
+
+.icon__face,
+.icon__linked {
+  display: none;
+  position: absolute;
+  width: 36px;
+}
+
+.icon__face {  
+  top: 0;
+  right: -50px;
+}
+
+.icon__linked {
+  top: 50px;
+  right: -50px;
+}
+
+.contact__foot__title,
+.ubication__foot__title,
+.legal__foot__title {
+    font-size: var(--h1__mobile);
+    font-weight: bold;
+    padding: 2em 0 1.7em 0;
+}
+
+.contact__foot__title {
+    padding-top: .7em;
+}
+
+.contact__foot__subtitle {
+  line-height: 3;
+}
+
+.contact__foot__description  p,
+.ubication__foot__description  p,
+.legal__foot__description  p {
+    font-size: var(--font__mobile);
+    color: var(--color__white);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contact__foot__description  .contact__foot__subtitle {
+    color: var(--color__white);
+    font-size: 1em;
+    font-weight: bold;
+    line-height: .9em;
+    padding-bottom: .3em;
+}
+
+.legal__foot__description {
+  position: relative;
+}
+
+.icon__avion {
+  display: none;
+  position: absolute;
+  padding: 0;
+  width: 150px;
+  top: 20px;
+  right: -120px;
+}
+
+
+.foot_copyright {
+    background: var(--color__red__foot2);
+    color: var(--color__white);
+    font-size: .9em;
+    font-weight: bold;
+    height: 80px;
+    padding-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+/**********************/
+/*   MEDIA QUERIES    */
+/**********************/
+
+@media (min-width: 420px)  {
+  .icon__face,
+  .icon__linked {
+    display: block;
+  }
+  .icon__avion {
+    display: block;
+  }
+}
+
+
+@media (min-width: 480px)  {
+  .icon__avion {
+     right: -180px;
+  }
+}
+
+@media (min-width: 576px)  {
+  .icon__avion {
+     right: -150px;
+  }
+}
+
+
+@media (min-width: 768px)  {
+  .icon__avion {
+     display: none;
+  }
+}
+
+@media (min-width: 992px)  {
+  .contact__footer,
+  .ubication__footer,
+  .legal__footer {
+    padding-left: 4em;
+  }
+
+  .ubication__foot__title,
+  .legal__foot__title  {
+    padding-top: 1.1em;
+  }
+  
+  .icon__face {  
+    left: -50px;
+  } 
+
+  .icon__linked {
+    left: -50px;
+  }
+
+
+  .icon__avion {
+     display: block;
+     top: 160px;
+     left: -100px;
+     bottom: 50px;
+     width: 150px;
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -73,11 +405,6 @@ body {
  .search2 {
 	 display: none;
  }
-
-
-
-
-
 
 
 @media only screen and (min-width: 768px){ 
@@ -135,629 +462,6 @@ body {
 	}
 }
 
-
-/***************************/
-/*	 NAVIGATION VIEW       */
-/***************************/
-
-.navegation {
-	display: none;
-}
-
-.navegation:hover {
-	opacity: 1;	
-}
-
-/********************************/
-/*   SECCIÓN ESTILOS HEADER     */
-/********************************/
-
-.main_header_img {
-    background: url("../../img/index/presentacion.jpg") no-repeat center center;
-  	background-size: 100% 100%;
-    height: 30vh;
-	padding: 0;
-	margin: 0;
-}
-
-.main__heder__info {
-	background: var(--fondo_header_description);
-	color: var(--color_head);
-	padding: 1.8em 2em 1em 1.3em;
-}
-
-.main__header__description {
-	font-size: .9em;
-	line-height: 2;
-}
-
-.main__header__description_large {
-	display: none;
-}
-
-.ornament1,
-.ornament2,	
-.ornament3 {
-	display: none;
-}
-
-/**************************/
-/* SECCIONWHAT DOES LAKMI */
-/**************************/
-
-.what_does_description {
-	padding: 5em 2em 6em 1.3em;	
-}
-.what_does_description > p {
-    font-size: .9em;
-    color: rgba(0, 0, 0, .8);
-    line-height: 2;
-}
-
-.what_does_description p:nth-child(2) {
-	padding-top: 1.3em;
-}
-
-/****************************/
-/*   		CARDS  			*/
-/****************************/
-
-.rules,
-.fintech,
-.contribute,
-.risks,
-.internal {
-	background: var(--fondo_promos);
-}
-
-.fintech,
-.contribute,
-.risks,
-.internal {
-	margin-top: 100px;
-}
-
-.container_rules,
-.container_fintech,
-.container_contribute,
-.container_risks,
-.container_internal {
-	padding: 0;
-}
-
-
-.img__rules {
-	background: url(../../img/index/ini1.svg) no-repeat center right;
-}
-
-.img__fintech {
-    background: url(../../img/index/Fintech.svg) no-repeat center top;
-}
-
-.img__contribute {
-	background: url(../../img/index/ini3.svg) no-repeat center top;
-}
-
-.img__risks {
-	background: url(../../img/index/ini4.svg) no-repeat center top;
-}
-
-.img__internal {
-    background: url(../../img/index/ini5.svg) no-repeat center top;
-}
-
-.img__rules,
-.img__fintech,
-.img__contribute,
-.img__risks,
-.img__internal {
-  	background-size: cover;
-    height: 30vh;
-	padding: 0;
-}
-
-.info__rules,
-.info__fintech,
-.info__contribute,
-.info__risks,
-.info__internal {
-	color: var(--color_head);
-	padding: 0;
-}
-
-.rules__description,
-.fintech__description,
-.contribute__description,
-.risks__description,
-.internal__description {
-	padding: 2em 0 0 0;
-}
-
-.rules__description___title,
-.fintech__description___title,
-.contribute__description___title,
-.risks__description___title,
-.internal__description___title {
-	font-size: 1.03em;
-	font-weight: bold;
-	padding-right: .2rem;	
-	padding-left: .2rem;
-	text-align: center;	
-}
-
-.rules__description  p:nth-child(2),
-.fintech__description  p:nth-child(2),
-.contribute__description  p:nth-child(2),
-.risks__description  p:nth-child(2),
-.internal__description  p:nth-child(2) {
-	padding-top: 1em;
-}
-
-.rules__description___title ~ p, 
-.fintech__description___title ~ p,
-.contribute__description___title ~ p,
-.risks__description___title ~ p,
-.internal__description___title ~ p {
-	font-size: .9em;
-	padding-left: 1em;
-	padding-right: 1em;	
-	line-height: 2;
-}
-
-.rules__question {
-	font-size: 1.2em;
-}
-
-
-.rules__links,
-.contribute__links,
-.risks__links,
-.internal__links {
-	padding-top: 1.5em;
-}
-
-.fintech__links,
-.contribute__links,
-.risks__links,
-.internal__links {
-	padding-top: 5em;
-}
-
-.rules__links .btn,
-.fintech__links .btn,
-.contribute__links .btn,
-.risks__links .btn,
-.internal__links .btn {
-    background-color: var(--fondo_header_description);
-    border-radius: 0;
-    color: var(--color_head);
-    font-size: 1.2em;
-    font-weight: bold;
-    position: relative;
-    text-align: center;	
-    text-decoration: none;
-    width: 50%; 
-}
-
-.contribute__links .btn,
-.risks__links .btn,
-.internal__links .btn {
-	width: 100%
-}
-
-.rules__links .btn:before,
-.fintech__links .btn:before,
-.contribute__links .btn:before,
-.risks__links .btn:before,
-.internal__links .btn:before {
-  content:"";
-  background: rgba(48, 76, 90, .1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 0px;
-  transition: all 1s ease;
-} 
-
-.rules__links .btn:hover:before,
-.fintech__links .btn:hover:before,
-.contribute__links .btn:hover:before,
-.risks__links .btn:hover:before,
-.internal__links .btn:hover:before {
-	height: 100%;
-	color: var(--color_head);
-}
-
-
-.rules__links  a:nth-child(1),
-.fintech__links  a:nth-child(1) {
-	margin-right: 1px;
-}
-
-.rules__links  a:nth-child(2),
-.fintech__links  a:nth-child(2)  {
-	margin-left: 1px;
-}
-
-
-/******************************/
-/*   SECCIÓN ESTILOS FOOTER   */
-/******************************/
-
-.footer {
-    background: var(--fondo_foot);
-    color: var(--color_foot);
-    margin-top: 6em;
-    padding-top: 6em;
-}
-
-
-.contact__footer,
-.ubication__footer,
-.legal__footer {
-    /*padding-left: 4em;*/
-    padding-bottom: 3em;
-}
-
-.contact__foot__description {
-	position: relative;
-}
-
-.icon__face,
-.icon__linked {
-	display: none;
-	position: absolute;
-	width: 36px;
-}
-
-.icon__face {  
-	top: 0;
-	right: -50px;
-}
-
-.icon__linked {
-	top: 50px;
-	right: -50px;
-}
-
-.contact__foot__title,
-.ubication__foot__title,
-.legal__foot__title {
-    font-size: var(--tamaño_h2);
-    padding: 2em 0 1.7em 0;
-}
-
-.contact__foot__title {
-    padding-top: .7em;
-}
-
-.contact__foot__subtitle {
-	line-height: 3;
-}
-
-.contact__foot__description  p,
-.ubication__foot__description  p,
-.legal__foot__description  p {
-    font-size: var(--tamaño_parrafo_foot);
-    color: rgba(0, 0, 0, .8);
-    line-height: 1.5;
-    text-align: left;
-}
-
-.contact__foot__description  .contact__foot__subtitle {
-    color: #000;
-    font-size: 1em;
-    line-height: .9em;
-    padding-bottom: .3em;
-}
-
-.legal__foot__description {
-	position: relative;
-}
-
-.icon__avion {
-	display: none;
-	position: absolute;
-	padding: 0;
-	width: 150px;
-	top: 20px;
-	right: -100px;
-}
-
-
-.foot_copyright {
-    background: var(--fondo_foot_copyright);
-    color:  var(--color_foot_copyright);
-    font-size: .9em;
-    height: 80px;
-    padding-top: 2em;
-    text-align: center;
-    width: 100%;
-}
-
-/*************************/
-/*     MEDIA QUERIES     */
-/*************************/
-
-@media (min-width: 286px) {
-	.rules__description___title,
-	.fintech__description___title,
-	.contribute__description___title,
-	.risks__description___title,
-	.internal__description___title {
-		text-align: initial;
-	}
-}
-
-
-@media (min-width: 300px) {
-	.rules__description___title,
-	.fintech__description___title,
-	.contribute__description___title,
-	.risks__description___title,
-	.internal__description___title {
-		text-align: initial;	
-		padding-left: 1em;
-	}
-}
-
-@media (min-width: 322px) {
-	.icon__face,
-	.icon__linked,
-	.icon__avion {
-		display: block;
-	}
-}
-
-@media (min-width: 362px) {
-
-	.main__header__description,
-	.what_does_description > p {
-		font-size: 1em;
-	}
-	
-
-	.rules__description___title {
-		font-size: 1.2em;
-		text-align: initial;
-	}
-
-	.rules__description___title,
-	.fintech__description___title,
-	.contribute__description___title,
-	.risks__description___title,
-	.internal__description___title {
-		font-size: 1.2em;
-	}
-
-	.rules__description___title ~ p, 
-	.fintech__description___title ~ p,
-	.contribute__description___title ~ p,
-	.risks__description___title ~ p,
-	.internal__description___title ~ p {
-		font-size: 1em;
-	}
-	
-	.contact__foot__title {
-		padding-top: 1.7em;
-	}
-
-	.contact__foot__description  p,
-	.ubication__foot__description  p,
-	.legal__foot__description  p {
-		font-size: 1em;
-	}
-
-	.icon__avion {
-		right: -150px;
-	}
-
-	.foot_copyright {
-		font-size: 1em;
-	}
-
-}
-
-@media (min-width: 650px) {
-	.main_header_img {
-		height: 45vh;
-	}
-
-	.img__rules,
-	.img__fintech,
-	.img__contribute,
-	.img__risks,
-	.img__internal {
-		height: 45vh;
-	}
-
-	.rules {
-		margin-top: 80px;
-	}
-
-	.fintech,
-	.contribute,
-	.risks,
-	.internal {
-		margin-top: 180px;
-	}
-
-}
-
-@media (min-width: 768px) {
-	
-	.main_header_img {
-		height: 60vh;
-	}
-}
-
-@media (min-width: 992px) {
-	
-	.main_header_img {
-		height: 80vh;
-	}
-
-	.navegation {
-		display: block;
-		position: fixed;
-		top: 45vh;
-		right: 3%;
-		z-index: 10;
-		opacity: 0;
-		transition: opacity 0.9s ease;
-	}
-
-	.navegation__page {
-		list-style: none;
-		text-align: right;
-	}
-
-	.navigation__view {
-		padding-top: .8em;
-	}
-
-	.navigation__view > a {
-		color:red;
-		text-decoration: none;
-	}
-
-	.main__heder__info {
-		display: none;
-	}
-
-	.main__header__description_large {
-		background: var(--fondo_header_description);
-		color: var(--color_head);
-		display: block;
-		font-size: var(--tamaño_header_description);
-		line-height: 1.7;
-		margin-bottom: 5%;
-		padding: 10px 70px 10px 50px;
-		clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
-	}
-
-	.ornament1,
-	.ornament2,	
-	.ornament3 {
-		display: block;
-		background: #615F61;
-		position: relative;
-		height: 90px;
-		margin-bottom: 5%;
-	}
-
-	.ornament1 {
-		clip-path: polygon(0 0, 26% 0, 100% 100%, 71% 100%);
-		right: 38px;
-		width: 80px;
-	}
-
-	.ornament2 {
-		clip-path: polygon(9% 0, 21% 0, 85% 100%, 72% 100%);
-		right: 90px;
-		width: 100px;
-	}
-
-
-	.ornament3 {
-		clip-path: polygon(9% 0, 17% 0, 81% 100%, 72% 100%);
-		right: 160px;
-		width: 100px;
-	}
-
-
-
-
-	.img__rules,
-	.img__fintech,
-	.img__contribute,
-	.img__risks,
-	.img__internal {
-		width: 100%;
-		height: 100%;
-	}
-	
-	
-	.img__rules,
-	.img__contribute,
-	.img__internal {
-		clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%);
-	}
-
-	.img__fintech,
-	.img__risks {
-		clip-path: polygon(46% 0, 100% 0, 100% 100%, 0% 100%);	}
-
-	.rules__question {
-		display: block;
-	}
-
-	.rules__description,
-	.contribute__description,
-	.internal__description {
-		padding-right: 50px;
-	}
-
-	.risks__description,
-	.fintech__description {
-		padding-left: 40px;
-	}
-
-	.rules__description___title,
-	.fintech__description___title,
-	.contribute__description___title,
-	.risks__description___title,
-	.internal__description___title {
-		font-size: 1.5em;
-	}
-
-	.rules__description___title ~ p, 
-	.fintech__description___title ~ p,
-	.contribute__description___title ~ p,
-	.risks__description___title ~ p,
-	.internal__description___title ~ p {
-		font-size: 1.1em;
-	}
-
-
-	.fintech__links,
-	.contribute__links,
-	.risks__links,
-	.internal__links {
-		padding-top: 7em;
-	}
-
-	.contact__footer,
-	.ubication__footer,
-	.legal__footer {
-    	padding-left: 4em;
-	}
-	.icon__face,
-	.icon__linked {
-		width: 40px;
-	}
-
-	.icon__face {
-		top: 10px;
-		left: -50px;
-	}
-
-	.icon__linked {
-		top: 60px;
-		left: -50px;
-	}
-
-	.icon__avion {
-		width: 200px;
-		top: 140px;
-		left: -100px;
-
-	}
-}
-
-
-
 /***************************/
 /*	 M Ó V I L     */
 /***************************/
@@ -771,25 +475,7 @@ body {
 	display: none;
 }
 
-
-
-/**************************/
-/*	 MEDIA QUERIES    	  */
-/**************************/
-
-@media (min-width: 376px) {
-
-/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
-.main_img_contactenos {
-	background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
-	background-size: cover !important;
-	height: 67%;
-	width: 100%;
-	padding-top: 206px;
-	margin-top: 84px;
-	}
-	
-/*:::: LOGO STYLES ::::*/
+/* LECHUGA<<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:::: LOGO STYLES ::::*/
 #logo{
     display: none;
  }
@@ -917,11 +603,8 @@ body {
 
 .header-img-1 {
 	width: 100%;	
+	}
 }
-	
-	
-
- }
 
  
 
