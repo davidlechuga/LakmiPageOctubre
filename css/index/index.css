@@ -277,16 +277,6 @@ body {
   position: relative;
 }
 
-.icon__avion {
-  display: none;
-  position: absolute;
-  padding: 0;
-  width: 150px;
-  top: 20px;
-  right: -120px;
-}
-
-
 .foot_copyright {
     background: var(--color__red__foot2);
     color: var(--color__white);
@@ -307,30 +297,8 @@ body {
   .icon__linked {
     display: block;
   }
-  .icon__avion {
-    display: block;
-  }
 }
 
-
-@media (min-width: 480px)  {
-  .icon__avion {
-     right: -180px;
-  }
-}
-
-@media (min-width: 576px)  {
-  .icon__avion {
-     right: -150px;
-  }
-}
-
-
-@media (min-width: 768px)  {
-  .icon__avion {
-     display: none;
-  }
-}
 
 @media (min-width: 992px)  {
   .contact__footer,
@@ -350,15 +318,6 @@ body {
 
   .icon__linked {
     left: -50px;
-  }
-
-
-  .icon__avion {
-     display: block;
-     top: 160px;
-     left: -100px;
-     bottom: 50px;
-     width: 150px;
   }
 }
 
