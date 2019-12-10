@@ -1,0 +1,19 @@
+/* Estilos generales */
+
+.pdd-text {
+	padding: 70px;
+}
+
+.btn-styles {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px;
+}
+
+.img_blog_1 {
+	background-image: url(../../img/beneficio/beneficios-escritorio-1.png);
+	background-size: cover;
+	background-repeat: round;
+	height: 300px;
+	width: 100%;
+}
