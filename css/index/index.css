@@ -299,8 +299,132 @@ body {
   }
 }
 
+@media (min-width: 576px)  {
+  .logo__header {
+    padding-bottom: 20px;
+  }
+
+  .header__img {
+    height: 40vh;
+  }
+
+  .lease__img,
+  .fintech__img,
+  .contribute__img,
+  .risks__img,
+  .internal__img {
+  height: 50vh;
+  } 
+}
+
+@media (min-width: 770px) {
+  .lease,
+  .fintech,
+  .contribute,
+  .risks,
+  .internal {
+    margin-top: 80px;
+  }
+
+  .lease__links,
+  .fintech__links {
+    width: 60%;
+  }
+
+  .contribute__links,
+  .risks__links,
+  .internal__links {
+    width: 50%;
+  }
+
+  .lease__links a:nth-child(1),
+  .fintech__links a:nth-child(1) {
+    margin-right: 5px;
+  }
+
+  .lease__links a:nth-child(2),
+  .fintech__links a:nth-child(2) {
+    margin-left: 5px;
+  }
+
+  .lease__links .btn,
+  .fintech__links .btn,
+  .contribute__links .btn,
+  .risks__links .btn,
+  .internal__links .btn {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
 
 @media (min-width: 992px)  {
+  .container {
+    margin: 0 auto;
+    width: 75%;
+  }
+  
+  .header__img,
+  .lease__img,
+  .fintech__img,
+  .contribute__img,
+  .risks__img,
+  .internal__img {
+    background-size: 100% 100%;
+    height: 50vh;
+  }
+
+  .header__img {
+    height: 60vh;
+  } 
+
+  .lease,
+  .fintech,
+  .contribute,
+  .risks,
+  .internal {
+    margin-top: 120px;
+  }
+
+  .lease__title,
+  .fintech__title,
+  .contribute__title,
+  .risks__title,
+  .internal__title { 
+    padding-top: 2em;
+  }
+  
+  .lease__info,
+  .fintech__info
+  .contribute__info
+  .risks__info
+  .internal__info {
+    text-align: center
+  }
+
+  .lease__info p:nth-child(2) {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+  .fintech__info p:nth-child(2),
+  .contribute__info p:nth-child(2),
+  .risks__info p:nth-child(2),
+  .internal__info p:nth-child(2) {
+     padding-right: 15%;
+      padding-left: 15%;
+  }
+
+  .lease__links,
+  .fintech__links {
+    width: 50%;
+  }
+
+  .contribute__links,
+  .risks__links,
+  .internal__links {
+    width: 30%;
+  }
+
   .contact__footer,
   .ubication__footer,
   .legal__footer {
