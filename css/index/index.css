@@ -3,14 +3,14 @@
 /******************/
 
 :root {
-	--background__body: #F9F9F9;
-  --font__mobile: 1em;
-  --h1__mobile: 1.3em;
-  --h2__mobile: 1.1em;
-  --color__red: #D93955;
-  --color__white: #fff;
-  --color__red__foot1: #2B2B2B;
-  --color__red__foot2: #D93955;
+	--background__body: #f9f9f9;
+	--font__mobile: 1em;
+	--h1__mobile: 1.3em;
+	--h2__mobile: 1.1em;
+	--color__red: #d93955;
+	--color__white: #fff;
+	--color__red__foot1: #2b2b2b;
+	--color__red__foot2: #d93955;
 }
 
 /**************************/
@@ -27,26 +27,23 @@ body {
 	background: var(--background__body);
 }
 
-
 /**************************/
 /*	    LOGO HEADER	      */
 /**************************/
 
 .logo__header {
 	padding-top: 130px;
-  padding-bottom: 50px;
+	padding-bottom: 50px;
 }
-
 
 /**********************/
 /*      HEADER        */
 /**********************/
 
-
 .header__img {
-  background: url("../../img/index/presentacion.jpg") no-repeat center center;
-  background-size: 100% 100%;
-  height: 30vh;
+	background: url("../../img/index/presentacion.jpg") no-repeat center center;
+	background-size: 100% 100%;
+	height: 30vh;
 }
 
 /*
@@ -57,10 +54,9 @@ body {
 */
 
 .header__info > p {
-  font-size: var(--font__mobile);
-  line-height: 1.8;
+	font-size: var(--font__mobile);
+	line-height: 1.8;
 }
-
 
 /**********************/
 /*   SECTIONS CARDS   */
@@ -71,27 +67,27 @@ body {
 .contribute,
 .risks,
 .internal {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .lease__img {
-  background: url("../../img/index/ini1.svg") no-repeat center center;
+	background: url("../../img/index/ini1.svg") no-repeat center center;
 }
 
 .fintech__img {
-  background: url("../../img/index/ini2.svg") no-repeat center center;
+	background: url("../../img/index/ini2.svg") no-repeat center center;
 }
 
 .contribute__img {
-  background: url("../../img/index/ini3.svg") no-repeat center center;
+	background: url("../../img/index/ini3.svg") no-repeat center center;
 }
 
 .risks__img {
-  background: url("../../img/index/ini4.svg") no-repeat center center;
+	background: url("../../img/index/ini4.svg") no-repeat center center;
 }
 
 .internal__img {
-  background: url("../../img/index/ini5.svg") no-repeat center center;
+	background: url("../../img/index/ini5.svg") no-repeat center center;
 }
 
 .lease__img,
@@ -99,20 +95,20 @@ body {
 .contribute__img,
 .risks__img,
 .internal__img {
-  background-size: 100% 100%;
-  height: 40vh;
-} 
+	background-size: 100% 100%;
+	height: 40vh;
+}
 
 .lease__title,
 .fintech__title,
 .contribute__title,
 .risks__title,
 .internal__title {
-  font-size: var(--h2__mobile);
-  font-weight: bold;
-  padding: 0 .5em .5em 0;
-  text-align: center;
-  line-height: 1.6;
+	font-size: var(--h2__mobile);
+	font-weight: bold;
+	padding: 0 .5em .5em 0;
+	text-align: center;
+	line-height: 1.6;
 }
 
 .lease__title ~ p,
@@ -120,9 +116,9 @@ body {
 .contribute__title ~ p,
 .risks__title ~ p,
 .internal__title ~ p {
-  line-height: 1.8;
-  padding-left: 1em;
-  padding-right: 1em;
+	line-height: 1.8;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .lease__info,
@@ -130,11 +126,11 @@ body {
 .contribute__info,
 .risks__info,
 .internal__info {
-  padding: 0;
+	padding: 0;
 }
 
 .lease__info p:nth-child(4) {
-  font-size: 1.1em;
+	font-size: 1.1em;
 }
 
 .lease__links,
@@ -142,7 +138,7 @@ body {
 .contribute__links,
 .risks__links,
 .internal__links {
-  padding-top: 1.5em;
+	padding-top: 1.5em;
 }
 
 .lease__links .btn,
@@ -150,21 +146,21 @@ body {
 .contribute__links .btn,
 .risks__links .btn,
 .internal__links .btn {
-  background: var(--color__red);
-  border-radius: 0;
-  color: var(--color__white);
-  font-size: 1.1em;
-  font-weight: bold;
-  position: relative;
-  text-align: center; 
-  text-decoration: none;
-  width: 50%;
+	background: var(--color__red);
+	border-radius: 0;
+	color: var(--color__white);
+	font-size: 1.1em;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 50%;
 }
 
 .contribute__links .btn,
 .risks__links .btn,
 .internal__links .btn {
-  width: 100%;
+	width: 100%;
 }
 
 .lease__links .btn:before,
@@ -172,14 +168,14 @@ body {
 .contribute__links .btn:before,
 .risks__links .btn:before,
 .internal__links .btn:before {
-  content:"";
-  background: rgba(144, 38, 56, .1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 0px;
-  transition: all 1s ease;
+	content: "";
+	background: rgba(144, 38, 56, .1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	transition: all 1s ease;
 }
 
 .lease__links .btn:hover:before,
@@ -187,18 +183,18 @@ body {
 .contribute__links .btn:hover:before,
 .risks__links .btn:hover:before,
 .internal__links .btn:hover:before {
-  height: 100%;
-  color: var(--color_head);
+	height: 100%;
+	color: var(--color_head);
 }
 
 .lease__links a:nth-child(1),
 .fintech__links a:nth-child(1) {
-  margin-right: 1px;
+	margin-right: 1px;
 }
 
 .lease__links a:nth-child(2),
 .fintech__links a:nth-child(2) {
-  margin-left: 1px;
+	margin-left: 1px;
 }
 
 /******************************/
@@ -206,342 +202,328 @@ body {
 /******************************/
 
 .footer {
-    background: var(--color__red__foot1);
-    color: var(--color__white);
-    margin-top: 6em;
-    padding-top: 6em;
+	background: var(--color__red__foot1);
+	color: var(--color__white);
+	margin-top: 6em;
+	padding-top: 6em;
 }
-
 
 .contact__footer,
 .ubication__footer,
 .legal__footer {
-    padding-bottom: 3em;
+	padding-bottom: 3em;
 }
 
 .contact__foot__description {
-  position: relative;
+	position: relative;
 }
 
 .icon__face,
 .icon__linked {
-  display: none;
-  position: absolute;
-  width: 36px;
+	display: none;
+	position: absolute;
+	width: 36px;
 }
 
-.icon__face {  
-  top: 0;
-  right: -50px;
+.icon__face {
+	top: 0;
+	right: -50px;
 }
 
 .icon__linked {
-  top: 50px;
-  right: -50px;
+	top: 50px;
+	right: -50px;
 }
 
 .contact__foot__title,
 .ubication__foot__title,
 .legal__foot__title {
-    font-size: var(--h1__mobile);
-    font-weight: bold;
-    padding: 2em 0 1.7em 0;
+	font-size: var(--h1__mobile);
+	font-weight: bold;
+	padding: 2em 0 1.7em 0;
 }
 
 .contact__foot__title {
-    padding-top: .7em;
+	padding-top: .7em;
 }
 
 .contact__foot__subtitle {
-  line-height: 3;
+	line-height: 3;
 }
 
-.contact__foot__description  p,
-.ubication__foot__description  p,
-.legal__foot__description  p {
-    font-size: var(--font__mobile);
-    color: var(--color__white);
-    line-height: 1.5;
-    text-align: left;
+.contact__foot__description p,
+.ubication__foot__description p,
+.legal__foot__description p {
+	font-size: var(--font__mobile);
+	color: var(--color__white);
+	line-height: 1.5;
+	text-align: left;
 }
 
-.contact__foot__description  .contact__foot__subtitle {
-    color: var(--color__white);
-    font-size: 1em;
-    font-weight: bold;
-    line-height: .9em;
-    padding-bottom: .3em;
+.contact__foot__description .contact__foot__subtitle {
+	color: var(--color__white);
+	font-size: 1em;
+	font-weight: bold;
+	line-height: .9em;
+	padding-bottom: .3em;
 }
 
 .legal__foot__description {
-  position: relative;
+	position: relative;
 }
 
 .foot_copyright {
-    background: var(--color__red__foot2);
-    color: var(--color__white);
-    font-size: .9em;
-    font-weight: bold;
-    height: 80px;
-    padding-top: 2em;
-    text-align: center;
-    width: 100%;
+	background: var(--color__red__foot2);
+	color: var(--color__white);
+	font-size: .9em;
+	font-weight: bold;
+	height: 80px;
+	padding-top: 2em;
+	text-align: center;
+	width: 100%;
 }
 
 /**********************/
 /*   MEDIA QUERIES    */
 /**********************/
 
-@media (min-width: 420px)  {
-  .icon__face,
-  .icon__linked {
-    display: block;
-  }
+@media (min-width: 420px) {
+	.icon__face,
+	.icon__linked {
+		display: block;
+	}
 }
 
-@media (min-width: 576px)  {
-  .logo__header {
-    padding-bottom: 20px;
-  }
+@media (min-width: 576px) {
+	.logo__header {
+		padding-bottom: 20px;
+	}
 
-  .header__img {
-    height: 40vh;
-  }
+	.header__img {
+		height: 40vh;
+	}
 
-  .lease__img,
-  .fintech__img,
-  .contribute__img,
-  .risks__img,
-  .internal__img {
-  height: 50vh;
-  } 
+	.lease__img,
+	.fintech__img,
+	.contribute__img,
+	.risks__img,
+	.internal__img {
+		height: 50vh;
+	}
 }
 
 @media (min-width: 770px) {
-  .lease,
-  .fintech,
-  .contribute,
-  .risks,
-  .internal {
-    margin-top: 80px;
-  }
+	.lease,
+	.fintech,
+	.contribute,
+	.risks,
+	.internal {
+		margin-top: 80px;
+	}
 
-  .lease__links,
-  .fintech__links {
-    width: 60%;
-  }
+	.lease__links,
+	.fintech__links {
+		width: 60%;
+	}
 
-  .contribute__links,
-  .risks__links,
-  .internal__links {
-    width: 50%;
-  }
+	.contribute__links,
+	.risks__links,
+	.internal__links {
+		width: 50%;
+	}
 
-  .lease__links a:nth-child(1),
-  .fintech__links a:nth-child(1) {
-    margin-right: 5px;
-  }
+	.lease__links a:nth-child(1),
+	.fintech__links a:nth-child(1) {
+		margin-right: 5px;
+	}
 
-  .lease__links a:nth-child(2),
-  .fintech__links a:nth-child(2) {
-    margin-left: 5px;
-  }
+	.lease__links a:nth-child(2),
+	.fintech__links a:nth-child(2) {
+		margin-left: 5px;
+	}
 
-  .lease__links .btn,
-  .fintech__links .btn,
-  .contribute__links .btn,
-  .risks__links .btn,
-  .internal__links .btn {
-    padding-right: 1em;
-    padding-left: 1em;
-  }
+	.lease__links .btn,
+	.fintech__links .btn,
+	.contribute__links .btn,
+	.risks__links .btn,
+	.internal__links .btn {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
 }
 
-@media (min-width: 992px)  {
-  .container {
-    margin: 0 auto;
-    width: 75%;
-  }
-  
-  .header__img,
-  .lease__img,
-  .fintech__img,
-  .contribute__img,
-  .risks__img,
-  .internal__img {
-    background-size: 100% 100%;
-    height: 50vh;
-  }
+@media (min-width: 992px) {
+	.container {
+		margin: 0 auto;
+		width: 75%;
+	}
 
-  .header__img {
-    height: 60vh;
-  } 
+	.header__img,
+	.lease__img,
+	.fintech__img,
+	.contribute__img,
+	.risks__img,
+	.internal__img {
+		background-size: 100% 100%;
+		height: 50vh;
+	}
 
-  .lease,
-  .fintech,
-  .contribute,
-  .risks,
-  .internal {
-    margin-top: 120px;
-  }
+	.header__img {
+		height: 60vh;
+	}
 
-  .lease__title,
-  .fintech__title,
-  .contribute__title,
-  .risks__title,
-  .internal__title { 
-    padding-top: 2em;
-  }
-  
-  .lease__info,
-  .fintech__info
-  .contribute__info
-  .risks__info
-  .internal__info {
-    text-align: center
-  }
+	.lease,
+	.fintech,
+	.contribute,
+	.risks,
+	.internal {
+		margin-top: 120px;
+	}
 
-  .lease__info p:nth-child(2) {
-    padding-right: 20%;
-    padding-left: 20%;
-  }
+	.lease__title,
+	.fintech__title,
+	.contribute__title,
+	.risks__title,
+	.internal__title {
+		padding-top: 2em;
+	}
 
-  .fintech__info p:nth-child(2),
-  .contribute__info p:nth-child(2),
-  .risks__info p:nth-child(2),
-  .internal__info p:nth-child(2) {
-     padding-right: 15%;
-      padding-left: 15%;
-  }
+	.lease__info,
+	.fintech__info .contribute__info .risks__info .internal__info {
+		text-align: center;
+	}
 
-  .lease__links,
-  .fintech__links {
-    width: 50%;
-  }
+	.lease__info p:nth-child(2) {
+		padding-right: 20%;
+		padding-left: 20%;
+	}
 
-  .contribute__links,
-  .risks__links,
-  .internal__links {
-    width: 30%;
-  }
+	.fintech__info p:nth-child(2),
+	.contribute__info p:nth-child(2),
+	.risks__info p:nth-child(2),
+	.internal__info p:nth-child(2) {
+		padding-right: 15%;
+		padding-left: 15%;
+	}
 
-  .contact__footer,
-  .ubication__footer,
-  .legal__footer {
-    padding-left: 4em;
-  }
+	.lease__links,
+	.fintech__links {
+		width: 50%;
+	}
 
-  .ubication__foot__title,
-  .legal__foot__title  {
-    padding-top: 1.1em;
-  }
-  
-  .icon__face {  
-    left: -50px;
-  } 
+	.contribute__links,
+	.risks__links,
+	.internal__links {
+		width: 30%;
+	}
 
-  .icon__linked {
-    left: -50px;
-  }
+	.contact__footer,
+	.ubication__footer,
+	.legal__footer {
+		padding-left: 4em;
+	}
+
+	.ubication__foot__title,
+	.legal__foot__title {
+		padding-top: 1.1em;
+	}
+
+	.icon__face {
+		left: -50px;
+	}
+
+	.icon__linked {
+		left: -50px;
+	}
 }
-
-
-
-
-
-
-
-
 
 /***************************/
 /*	 M Ó V I L     */
 /***************************/
 
 /*:::: LOGO STYLES ::::*/
-#logo{
-    display: none;
- }
- #logo1{
-     display: flex;
-  }
-  .input-group1 {
-      display: flex;
-  }
-  .form-inline{
-     margin-right: 10px;
-     margin-left: 15px;
-  }
- /*:::: NAVBAR STYLES ::::*/
- .navbar {
-     background: #FFFFFF;
-     position: fixed;
-     overflow: hidden;
-     z-index: 999;
-     width: 100%;
-     justify-content: start;
- }
- .navbar-toggler{
-     margin-right: 10px;
-     border: none;
- }
-
- .search2 {
-	 display: none;
- }
-
-
-@media only screen and (min-width: 768px){ 
-
-
-/*:::: NAVBAR STYLES ::::*/
-
-#logo{
-    width: 250px;
-    height: 70px;
-    display: flex;
+#logo {
+	display: none;
 }
-#logo1{
-    display: none;
- }
-
- .input-group1 {
-    display: none;
-}
-
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-    overflow: hidden;
-    z-index: 999;
-    width: 100%;
-}
-
-.navbar-toggler{
-    display: none;
-}
-
-.form-inline {
-	margin-left: auto;
-    margin-right: 40px;
-}
-
-.navbar-subheader {
+#logo1 {
 	display: flex;
-    justify-content: space-between;
+}
+.input-group1 {
+	display: flex;
+}
+.form-inline {
+	margin-right: 10px;
+	margin-left: 15px;
+}
+/*:::: NAVBAR STYLES ::::*/
+.navbar {
+	background: #ffffff;
+	position: fixed;
+	overflow: hidden;
+	z-index: 999;
+	width: 100%;
+	justify-content: start;
+}
+.navbar-toggler {
+	margin-right: 10px;
+	border: none;
 }
 
-.nav-link {
-	font-size: 24px;
-	font-weight: 400;
-	color: black !important;
+.search2 {
+	display: none;
 }
 
-.nav-item {
-    margin-left: 10px;
-}
+@media only screen and (min-width: 768px) {
+	/*:::: NAVBAR STYLES ::::*/
 
-.header-img-1 {
-	width: 100%;	
+	#logo {
+		width: 250px;
+		height: 35px;
+		display: flex;
+		margin-left: 150px;
+	}
+	#logo1 {
+		display: none;
+	}
+
+	.input-group1 {
+		display: none;
+	}
+
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	.form-inline {
+		margin-left: auto;
+		margin-right: 40px;
+	}
+
+	.navbar-subheader {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav-link {
+		font-size: 24px;
+		font-weight: 400;
+		color: black !important;
+	}
+
+	.nav-item {
+		margin-left: 10px;
+	}
+
+	.header-img-1 {
+		width: 100%;
 	}
 }
 
@@ -549,146 +531,126 @@ body {
 /*	 M Ó V I L     */
 /***************************/
 
-#logo{
-    display: none;
- }
+#logo {
+	display: none;
+}
 
-
-#separador{
+#separador {
 	display: none;
 }
 
 /* LECHUGA<<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:::: LOGO STYLES ::::*/
-#logo{
-    display: none;
- }
+#logo {
+	display: none;
+}
 
-#logo1{
-
+#logo1 {
 	display: flex;
 	margin-left: -20px;
 	margin-right: 29px;
-	
-  }
+}
 
 .input-group1 {
 	display: flex;
 }
 
-.form-inline{
-    margin-right: 10px;
-   
+.form-inline {
+	margin-right: 10px;
 }
- /*:::: NAVBAR STYLES ::::*/
+/*:::: NAVBAR STYLES ::::*/
 .navbar {
-	background: #FFFFFF;
+	background: #ffffff;
 	position: fixed;
 	overflow: hidden;
 	z-index: 999;
 	width: 100%;
 	justify-content: start;
- }
-
- .navbar-toggler{
-    margin-right: 60px;
-    border: none;
- }
-
-
 }
 
-
- @media only screen and (min-width: 768px){ 
-
-
-.navbar-parent {
-	position: absolute;
-	background: transparent;
-	height: 90px;
-	z-index: 2;
-	width: 100%;
-
+.navbar-toggler {
+	margin-right: 60px;
+	border: none;
 }
 
-.navbar-parent:hover .navbar  {
+@media only screen and (min-width: 768px) {
+	.navbar-parent {
+		position: absolute;
+		background: transparent;
+		height: 90px;
+		z-index: 2;
+		width: 100%;
+	}
 
-	visibility: visible; /* shows sub-menu */
-	opacity: 1;
-	z-index: 1;
-	transform: translateY(0%);
-	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-}
+	.navbar-parent:hover .navbar {
+		visibility: visible; /* shows sub-menu */
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+		transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+	}
 
+	/*:::: NAVBAR STYLES ::::*/
+	#separador {
+		display: flex;
+	}
 
+	.search2 {
+		display: flex;
+	}
 
-/*:::: NAVBAR STYLES ::::*/
-#separador{
-	display: flex;
-}
-
-.search2{
-	display: flex;
-}
-
-#logo{
-	width: 250px;
-	height: 70px;
-	display: flex;
-}
-#logo1{
-	display: none;
+	#logo {
+		width: 250px;
+		height: 70px;
+		display: flex;
+	}
+	#logo1 {
+		display: none;
 	}
 
 	.input-group1 {
-	display: none;
-}
+		display: none;
+	}
 
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-	overflow: hidden;
-	z-index: 999;
-	width: 100%;
-	
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
 
-	display: flex;
-	top: 0%;
-	left: 0;
-	width: 100%;
-	transform: translateY(-5em);
-	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+		display: flex;
+		top: 0%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-5em);
+		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	}
 
-}
+	.navbar-toggler {
+		display: none;
+	}
 
-.navbar-toggler{
-	display: none;
-}
+	.form-inline {
+		margin-left: auto;
+		margin-right: 40px;
+	}
 
-.form-inline {
-	margin-left: auto;
-	margin-right: 40px;
-}
+	.navbar-subheader {
+		display: flex;
+		justify-content: space-between;
+	}
 
-.navbar-subheader {
-	display: flex;
-	justify-content: space-between;
-}
+	.nav-link {
+		font-size: 24px;
+		font-weight: 400;
+		color: black !important;
+	}
 
-.nav-link {
-	font-size: 24px;
-	font-weight: 400;
-	color: black !important;
-}
+	.nav-item {
+		margin-left: 10px;
+	}
 
-.nav-item {
-	margin-left: 10px;
-}
-
-.header-img-1 {
-	width: 100%;	
+	.header-img-1 {
+		width: 100%;
 	}
 }
-
- 
-
- 
