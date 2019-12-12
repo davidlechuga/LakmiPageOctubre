@@ -2,20 +2,20 @@
 /*	 VARIABLES CSS        */
 /**************************/
 :root {
-	--color_cuerpo_pagina: #F9F9F9;
+	--color_cuerpo_pagina: #f9f9f9;
 	--tamaño_parrafo: 1em;
 	--tamaño_parrafo_foot: .9em;
 	--tamaño_header_description: 1.3em;
 	--fondo_header_description: rgba(73, 115, 136, 1);
 	--tamaño_h1: 2em;
 	--tamaño_h2: 1.5em;
-	--color_navbar_fondo: #0EA1FD;
+	--color_navbar_fondo: #0ea1fd;
 	--color_head: #fff;
 	--fondo_promos: #578793;
 	--color_foot: #000;
-	--fondo_foot: #F1F1F1;
-	--color_foot_copyright: rgba(255, 255, 255, .9); 
-	--fondo_foot_copyright: #6997AF;
+	--fondo_foot: #f1f1f1;
+	--color_foot_copyright: rgba(255, 255, 255, .9);
+	--fondo_foot_copyright: #6997af;
 }
 
 /***************************/
@@ -30,135 +30,161 @@ body {
 }
 
 .h1_size {
-    font-size: var(--tamaño_h1);
+	font-size: var(--tamaño_h1);
 }
 
 p {
-    font-size: var(--tamaño_parrafo);
+	font-size: var(--tamaño_parrafo);
 }
 
+@media (min-width: 320px) {
+	/***************************/
+	/*	 M Ó V I L     */
+	/***************************/
 
-
-
-/***************************/
-/*	 M Ó V I L     */
-/***************************/
-
-/*:::: LOGO STYLES ::::*/
-#logo{
-    display: none;
- }
- #logo1{
-     display: flex;
-     margin-left: 25px;
-     margin-right: 90px;
-  }
-  .input-group1 {
-      display: flex;
-  }
-  .form-inline{
-     margin-right: 10px;
-     margin-left: 15px;
-  }
- /*:::: NAVBAR STYLES ::::*/
- .navbar {
-     background: #FFFFFF;
-     position: fixed;
-     overflow: hidden;
-     z-index: 999;
-     width: 100%;
-     justify-content: start;
- }
- .navbar-toggler{
-     margin-right: 60px;
-     border: none;
- }
-
-
-
-
-
-@media only screen and (min-width: 768px){ 
-
-
-.navbar-parent {
-	position: absolute;
-    background: transparent;
-    height: 90px;
-    z-index: 2;
-    width: 100%;
-
+	/*:::: LOGO STYLES ::::*/
+	#logo {
+		display: none;
+	}
+	#logo1 {
+		display: flex;
+		margin-left: 25px;
+		margin-right: 90px;
+	}
+	.input-group1 {
+		display: flex;
+	}
+	.form-inline {
+		margin-right: 10px;
+		margin-left: 15px;
+	}
+	/*:::: NAVBAR STYLES ::::*/
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+		justify-content: start;
+	}
+	.navbar-toggler {
+		margin-right: 0px;
+		border: none;
+	}
 }
 
-.navbar-parent:hover .navbar  {
-
-	visibility: visible; /* shows sub-menu */
-	opacity: 1;
-	z-index: 1;
-	transform: translateY(0%);
-	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+@media (min-width: 420px) {
+	/*:::: LOGO STYLES ::::*/
+	#logo {
+		display: none;
+	}
+	#logo1 {
+		display: flex;
+		margin-left: 25px;
+		margin-right: 90px;
+	}
+	.input-group1 {
+		display: flex;
+	}
+	.form-inline {
+		margin-right: 10px;
+		margin-left: 15px;
+	}
+	/*:::: NAVBAR STYLES ::::*/
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+		justify-content: start;
+	}
+	.navbar-toggler {
+		margin-right: 60px;
+		border: none;
+	}
 }
 
+@media only screen and (min-width: 768px) {
+	.navbar-parent {
+		position: absolute;
+		background: transparent;
+		height: 90px;
+		z-index: 2;
+		width: 100%;
+	}
 
+	.navbar-parent:hover .navbar {
+		visibility: visible; /* shows sub-menu */
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+		transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+	}
 
-/*:::: NAVBAR STYLES ::::*/
+	/*:::: NAVBAR STYLES ::::*/
 
-#logo{
-    width: 250px;
-    height: 70px;
-    display: flex;
+	#logo {
+		width: 250px;
+		height: 35px;
+		display: flex;
+		margin-left: 200px;
+	}
+	#logo1 {
+		display: none;
+	}
+
+	.input-group1 {
+		display: none;
+	}
+
+	.search2 {
+		width: 18px;
+	}
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+
+		display: flex;
+		top: 0%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-5em);
+		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	.navbar-collapse {
+		margin-left: -100px;
+		margin-right: 335px;
+	}
+	.form-inline {
+		margin-left: auto;
+		margin-right: 40px;
+	}
+
+	.navbar-subheader {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav-link {
+		font-size: 16px;
+		font-weight: 400;
+		color: black !important;
+	}
+
+	.nav-item {
+		margin-left: 10px;
+	}
+
+	.header-img-1 {
+		width: 100%;
+	}
 }
-#logo1{
-    display: none;
- }
-
- .input-group1 {
-    display: none;
-}
-
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-    overflow: hidden;
-    z-index: 999;
-	width: 100%;
-	
-
-	display: flex;
-	top: 0%;
-	left: 0;
-	width: 100%;
-	transform: translateY(-5em);
-	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
-
-}
-
-.navbar-toggler{
-    display: none;
-}
-
-.form-inline {
-	margin-left: auto;
-    margin-right: 40px;
-}
-
-.navbar-subheader {
-	display: flex;
-    justify-content: space-between;
-}
-
-.nav-link {
-	font-size: 24px;
-	font-weight: 400;
-	color: black !important;
-}
-
-.nav-item {
-    margin-left: 10px;
-}
-
-.header-img-1 {
-	width: 100%;	
-}
-
