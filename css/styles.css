@@ -48,8 +48,10 @@ p {
 	}
 	#logo1 {
 		display: flex;
-		margin-left: 25px;
-		margin-right: 90px;
+		margin-left: 5px;
+		margin-right: 5px;
+		width: 150px;
+		height: 35px;
 	}
 	.input-group1 {
 		display: flex;
