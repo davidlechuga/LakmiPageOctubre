@@ -22,3 +22,9 @@
     font-weight: normal;
     src: url('../fonts/Montserrat-Regular.otf') format('OpenType');
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Montserrat-SemiBold.otf') format('OpenType');
+}
