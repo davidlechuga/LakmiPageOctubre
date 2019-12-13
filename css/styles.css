@@ -32,6 +32,15 @@ body {
 .h1_size {
 	font-size: var(--tamaño_h1);
 }
+.title-font{
+	font-weight: 600;
+}
+.btn-text{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
 
 p {
 	font-size: var(--tamaño_parrafo);
