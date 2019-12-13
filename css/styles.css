@@ -56,6 +56,13 @@ p {
 	.input-group1 {
 		display: flex;
 	}
+	.btn-search {
+		width: 17px;
+	}
+	.navbar-toggler-icon {
+		width: 22px;
+		margin-left: 80px;
+	}
 	.form-inline {
 		margin-right: 10px;
 		margin-left: 15px;
