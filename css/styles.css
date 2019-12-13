@@ -59,6 +59,9 @@ p {
 	.btn-search {
 		width: 17px;
 	}
+	.navbar-collapse {
+		text-align: center;
+	}
 	.navbar-toggler-icon {
 		width: 22px;
 		margin-left: 80px;
@@ -66,6 +69,9 @@ p {
 	.form-inline {
 		margin-right: 10px;
 		margin-left: 15px;
+	}
+	.search2 {
+		display: none;
 	}
 	/*:::: NAVBAR STYLES ::::*/
 	.navbar {
