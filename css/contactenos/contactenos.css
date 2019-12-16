@@ -3,249 +3,66 @@
 /***************************/
 
 .h1_size {
-    font-size: var(--tamaño_h1);
+	font-size: var(--tamaño_h1);
 }
 
 p {
-    font-size: var(--tamaño_parrafo);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/***************************/
-/*	 M Ó V I L     */
-/***************************/
-
-/*:::: LOGO STYLES ::::*/
-
-#logo{
-    display: none;
-}
-
-#separador{
-    display: none;
+	font-size: var(--tamaño_parrafo);
 }
 
 /*:::: CONTACTENOS IMG PRINCIPAL ::::*/
 
 .main_img_contactenos {
-    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
-    background-size: cover !important;
-    height: 140px;
-    width: 100%;
-    margin-top: 83px;
-}
-
-.form-inline{
-    margin-right: 10px;
+	background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+	background-size: cover !important;
+	height: 140px;
+	width: 100%;
+	margin-top: 83px;
 }
 
 /*::::  FORM  STYLES  ::::*/
 
 .form_main {
-    padding-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 /*:::: SECCION FORMULARIO CONTACTENOS::::*/
 
-.title_contactanos{
-    width: 82%;
-    padding: 80px 0 150px 0;
-    margin-left: 50px;
+.title_contactanos {
+	width: 82%;
+	padding: 80px 0 150px 0;
+	margin-left: 50px;
 }
 
-.btn-form{
-    background: #386F85;
-    color: white;
-    width: 83%;
+.btn-form {
+	background: #386f85;
+	color: white;
+	width: 83%;
 }
-
-
-
 
 /**************************/
 /*	 MEDIA QUERIES    	  */
 /**************************/
 
 @media (min-width: 376px) {
+	/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
+	.main_img_contactenos {
+		background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
+		background-size: cover !important;
+		height: 67%;
+		width: 100%;
+		padding-top: 206px;
+		margin-top: 84px;
+	}
 
-/*:::: CONTACTENOS IMG PRINCIPAL ::::*/
-.main_img_contactenos {
-    background: url(../../img/contactenos/mobil-contacto.svg) no-repeat !important;
-    background-size: cover !important;
-    height: 67%;
-    width: 100%;
-    padding-top: 206px;
-    margin-top: 84px;
-    }
-
-
-/*:::: LOGO STYLES ::::*/
-#separador{
-    display: flex;
+	@media (min-width: 992px) {
+		.main_img_contactenos {
+			background: url(../../img/contactenos/contacto.svg) no-repeat !important;
+			background-size: cover !important;
+			height: 100%;
+			width: 100%;
+			padding-top: 600px;
+			margin-top: 0px;
+		}
+	}
 }
-#logo{
-    display: none;
- }
- #logo1{
-     display: flex;
-     margin-left: 25px;
-     margin-right: 90px;
-  }
-  .input-group1 {
-      display: flex;
-  }
-  .form-inline{
-     margin-right: 10px;
-     margin-left: 15px;
-  }
- /*:::: NAVBAR STYLES ::::*/
- .navbar {
-     background: #FFFFFF;
-     position: fixed;
-     overflow: hidden;
-     z-index: 999;
-     width: 100%;
-     justify-content: start;
- }
- .navbar-toggler{
-     margin-right: 60px;
-     border: none;
- }
-
-
-
-}
-
-
-
-
-@media (min-width: 768px) {	
-
-/*:::: NOSOTROS IMG PRINCIPAL ::::*/
-
-.main_img_contactenos {
-
-    background: url(../../img/contactenos/contacto.svg) no-repeat !important;
-    background-size: cover !important;
-    height: 100%;
-    width: 100%;
-    padding-top: 420px;
-    margin-top: 0px;
-
-}
-
-.navbar-parent {
-	position: absolute;
-    background: transparent;
-    height: 90px;
-    z-index: 2;
-    width: 100%;
-
-}
-
-.navbar-parent:hover .navbar  {
-
-	visibility: visible; /* shows sub-menu */
-	opacity: 1;
-	z-index: 1;
-	transform: translateY(0%);
-	transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-}
-
-
-
-/*:::: NAVBAR STYLES ::::*/
-
-#logo{
-    width: 250px;
-    height: 70px;
-    display: flex;
-}
-#logo1{
-    display: none;
- }
-
- .input-group1 {
-    display: none;
-}
-
-.navbar {
-	background: #FFFFFF;
-	position: fixed;
-    overflow: hidden;
-    z-index: 999;
-	width: 100%;
-	
-
-	display: flex;
-	top: 0%;
-	left: 0;
-	width: 100%;
-	transform: translateY(-5em);
-	transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
-
-}
-
-.navbar-toggler{
-    display: none;
-}
-
-.form-inline {
-	margin-left: auto;
-    margin-right: 40px;
-}
-
-.navbar-subheader {
-	display: flex;
-    justify-content: space-between;
-}
-
-.nav-link {
-	font-size: 24px;
-	font-weight: 400;
-	color: black !important;
-}
-
-.nav-item {
-    margin-left: 10px;
-}
-
-.header-img-1 {
-	width: 100%;	
-}
-
-
-@media (min-width: 992px) { 
-
-    .main_img_contactenos {
-    
-    background: url(../../img/contactenos/contacto.svg) no-repeat !important;
-    background-size: cover !important;
-    height: 100%;
-    width: 100%;
-    padding-top: 600px;
-    margin-top: 0px;
-
-    }
-
-}
-
-
-
-}
-
-
-
-
-
