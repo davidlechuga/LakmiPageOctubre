@@ -25,12 +25,22 @@
 body {
 	font-family: 'MyriadPro', sans-serif;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	background: var(--color_cuerpo_pagina);
 }
 
 .h1_size {
 	font-size: var(--tamaño_h1);
+}
+.title-font{
+	font-weight: 600;
+	text-align: center;
+}
+.btn-text{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
 }
 
 p {
