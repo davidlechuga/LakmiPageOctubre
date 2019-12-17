@@ -218,3 +218,117 @@ p {
 		padding-right: 60px;
 	}
 }
+/**************************/
+/*	 ESTILOS GENERALES	  */
+/**************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/**************************/
+/*	 SECCION HEADER  	    */
+/**************************/
+
+.benefits {
+  padding-top: 100px;
+}
+
+.benefits__header__img {
+  background: url("../../img/beneficio/Beneficios1.svg") no-repeat center center;
+  background-size: 100% 100%;
+  height: 30vh;
+}
+
+
+/**************************************************************************/
+/*   SECCION BENEFICIOS DE LA ADMINISTRACIÓN y SECCION BENEFICIOS INTERNOS*/
+/**************************************************************************/
+
+.administration__benefits {
+  margin-bottom: 3em;
+}
+
+.internal__benefits__img {
+  background: url("../../img/beneficio/Beneficios2.svg") no-repeat center center;
+  background-size: 100% 100%;
+  height: 30vh;
+}
+
+.administration__benefits__title,
+.administration__benefits__subtitle,
+.internal__benefits__title,
+.internal__benefits__subtitle {
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.administration__benefits__title,
+.internal__benefits__title {
+  font-size: var(--h2__mobile);
+  text-align: center;
+  padding: 1em 0 3em 0;
+}
+
+.administration__benefits__subtitle,
+.internal__benefits__subtitle {
+  font-size: var(--h3__mobile);
+  padding: 0 .4em 1.2em .4em;
+}
+
+.administration__benefits__subtitle + p,
+.internal__benefits__subtitle + p {
+  line-height: 2;
+  color: rgba(0, 0, 0, .8);
+  padding: 0 .4em;
+  }
+
+.other__benefits > li {
+  line-height: 2;
+  color: rgba(0, 0, 0, .8);
+  padding: .6em .4em;
+}
+
+/**************************/
+/*      MEDIAQUERY        */
+/**************************/
+
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .benefits__header__img {
+	 height: 70vh; 
+  }
+
+  .internal__benefits__img {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .administration__benefits__title,
+  .internal__benefits__title {
+    padding: 3em 0;
+  }
+  .administration__benefits__subtitle,
+  .internal__benefits__subtitle {
+    padding: 1em 0;
+  }
+
+  .administration__benefits__subtitle + p,
+  .internal__benefits__subtitle + p,
+  .other__benefits > li {
+    line-height: 1.8;
+    padding: 0;
+  }
+
+  .other__benefits > li {
+    padding-top: 1em;
+  }
+}
+
+
