@@ -320,3 +320,80 @@ body {
 		width: 30%;
 	}
 }
+
+.nav-content-page {
+	display: none;
+}
+@media (min-width: 1024px){
+	.nav-content-page {
+		display: flex;
+		justify-content: center;
+		align-items: initial;
+		padding: 10px;
+		height: calc(80vh + 2*10px);
+		position: fixed;
+		top: calc(10vh - 10px);
+		left: 80.5vw;
+		z-index: 100;
+		font-size: 14px;
+	}
+	.nav-content_list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-right: 10px;
+		margin: 0;
+		height: 100%;
+		width: 160px;
+		opacity: 0;
+		transition: opacity 0.7s ease-out;
+	}
+	.nav-content-item {
+		padding: 4px 0;
+	}
+	.nav-content_link {
+		display: flex;
+		justify-content: center;
+		color: initial;
+		text-decoration: none;
+		line-height: 1.2em;
+		text-align: center;
+	}
+	.progress-bar {
+		width: 25px;
+		height: 100%;
+		padding: 2px;
+		border: 2px solid var(--color__red);
+		border-radius: 20px;
+		background-color: var(--background__body);
+		display: flex;
+		justify-content: flex-start;
+	}
+	.progress-view{
+		width: 100%;
+		height: 0;
+		border-radius: 25px;
+		background-color: var(--color__red);
+	}
+	.percentage-view {
+		padding-top: 12px;
+		color: var(--color__red);
+	}
+	.percentage-number {
+		display: inline-block;
+		padding-left: 8px;
+		letter-spacing: 0.09em;
+		text-align: right;
+	}
+	.content_link-active {
+		font-weight: 600;
+	}
+	.nav-content_link:hover {
+		text-decoration: none;
+		color: var(--color__red);
+	}
+	.nav-content-page:hover .nav-content_list {
+		opacity: 1;
+	}
+}
