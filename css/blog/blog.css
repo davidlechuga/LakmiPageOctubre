@@ -1,19 +1,204 @@
-/* Estilos generales */
+/******************/
+/*	 VARIABLES	  */
+/******************/
 
-.pdd-text {
-	padding: 70px;
+:root {
+	--background__body: #F9F9F9;
+  --font__mobile: 1em;
+  --h1__mobile: 1.3em;
+  --h2__mobile: 1.1em;
+  --h3__mobile: 1em;
+  --color__red: #D93955;
+  --color__white: #fff;
+  --color__red__foot1: #2B2B2B;
+  --color__red__foot2: #D93955;
 }
 
-.btn-styles {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 100px;
+/**************************/
+/*	 ESTILOS GENERALES	  */
+/**************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.img_blog_1 {
-	background-image: url(../../img/beneficio/beneficios-escritorio-1.png);
-	background-size: cover;
-	background-repeat: round;
-	height: 300px;
-	width: 100%;
+
+/**************************/
+/*   SECTION ARTICLE      */
+/**************************/
+
+.article__header {
+  padding-top: 3em;
+}
+
+.article__header__img {
+  background: url("../../img/blog/Articulo-Blog.svg") no-repeat center center;
+  background-size: 100% 100%;
+  height: 30vh;
+}
+
+.article__header__title {
+  font-size: var(--h1__mobile);
+  font-weight: bold;
+  line-height: 2;
+  padding: 0 .4em;
+  text-align: center;
+}
+
+.article__header__data {
+  padding: 0;
+  margin: 0;
+}
+
+.article__header__title + .btn {
+  background: var(--color__red__foot2);
+  border-radius: 0;
+  color: var(--color__white);
+  margin: 1em 0;
+  width: 100%;  
+}
+
+.article__header__data__info p {
+  color: rgba(0, 0, 0, .7);
+  font-size: var(--font__mobile);
+  padding: .5em .4em 0 .4em;
+}
+
+.time {
+  text-align: center;
+  padding: 0 .4em;
+}
+
+.article__header__info,
+.statements__info,
+.retrospective__info,
+.offer__info {
+  margin: 40px 0 1em 0;
+}
+
+.article__header__info > p {
+  color: rgba(0, 0, 0, .7);
+  font-size: var(--font__mobile);
+  line-height: 2;
+  padding: 0 .4em;
+}
+
+.article__header__info p:nth-child(2) {
+  padding: 1em .4em;
+}
+
+.article__benefits__info__title,
+.users__info__title,
+.statements__info__title,
+.retrospective__info__title,
+.offer__info__title {
+  color: rgba(217, 57, 85, .8);
+  font-size: var(--h2__mobile);
+  line-height: 2;
+  text-align: center;
+  padding: 0 .4em 2em .4em;
+}
+
+.article__benefits__info__title + p,
+.users__info__title + p,
+.statements__info__title + p,
+.retrospective__info__title + p,
+.offer__info__title + p {
+  line-height: 2;
+  color: rgba(0, 0, 0, .7);
+  font-size: var(--font__mobile);
+  padding: 0 .4em 0 .4em;
+}
+
+.article__benefits__list > li {
+  line-height: 2;
+  color: rgba(0, 0, 0, .7);
+  font-size: var(--font__mobile);
+  padding: 1.3em .3em 0 0;
+  margin-left: .4em;
+}
+
+.users__info {
+  padding-top: 1.5em;
+}
+
+
+/***************************/
+/*   SECTION CONTACTO      */
+/***************************/
+
+.address__contact1,
+.address__contact2 {
+  padding: 1em .4em 1em .9em; 
+}
+
+.address__contact1__name,
+.address__contact2__name {
+  color: rgba(217, 57, 85, .8);
+  font-size: var(--h2__mobile);
+  line-height: 2;
+  text-align: center;
+  padding: 0 .4em .5em .4em;
+}
+
+.address__contact1__name ~ p,
+.address__contact2__name ~ p {
+  line-height: 2;
+  color: rgba(0, 0, 0, .7);
+  font-size: var(--font__mobile);
+  padding: 0 .4em 0 .4em;
+}
+
+/***************************/
+/*   MEDIA QUERIES         */
+/***************************/
+
+ @media only screen and (min-width: 540px){ 
+  .article__header {
+    padding-top: 120px;
+  }
+
+  .article__header__img {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .article__header__title {
+    
+    padding: 1.5em .4em 0 .4em;
+  }
+
+  .article__header__title + .btn {
+    width: 30%;
+  }
+
+  .time {
+    padding-top: .5rem;
+  }
+
+  .article__benefits__info__title,
+  .users__info__title,
+  .statements__info__title,
+  .retrospective__info__title,
+  .offer__info__title {
+  text-align: left;
+}
+
+  .article__benefits__list > li {
+    margin-left: 1.4em;
+  }
+
+  .address__contact1__name,
+  .address__contact2__name {
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .article__header__img {
+    height: 60vh;
+  }
 }
