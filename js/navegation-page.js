@@ -1,4 +1,4 @@
-if(innerWidth > 1024) {
+if(innerWidth > 1023) {
     let navItems = document.querySelector('.nav-content_list'),
         progressBar = document.querySelector('.progress-view'),
         porcentNumber = document.querySelector('.percentage-number')
