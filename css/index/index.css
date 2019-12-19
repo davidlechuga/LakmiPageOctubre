@@ -1,46 +1,38 @@
-/**************************/
-/*	 ESTILOS GENERALES	  */
-/**************************/
-
-* {
-	padding: 0;
+.container-fluid{
 	margin: 0;
-	box-sizing: border-box;
+	padding: 0;
+}
+.row{
+	margin: 0;
+	justify-content: center;
 }
 
-body {
-	background: var(--background__body);
+.bg-gray {
+	background-color: var(--background2__body);
 }
-
-/**************************/
-/*	    LOGO HEADER	      */
-/**************************/
-
-.logo__header {
-	padding-top: 130px;
-	padding-bottom: 50px;
-}
-
 /**********************/
 /*      HEADER        */
 /**********************/
-
+.header {
+	padding: 130px 0 50px;
+}
+.logo__header {
+	padding-bottom: 50px;
+	margin-bottom: 1em;
+}
+.header__section {
+	padding: 0;
+}
 .header__img {
 	background: url("../../img/index/presentacion.jpg") no-repeat center center;
 	background-size: 100% 100%;
 	height: 30vh;
+	margin-bottom: 1em;
 }
-
-/*
-.header {
-  margin: 0 auto;
-  width: 90%;
-}
-*/
-
-.header__info > p {
+.header__info {
 	font-size: var(--font__mobile);
 	line-height: 1.8;
+	padding: 0 1em;
 }
 
 /**********************/
@@ -52,7 +44,7 @@ body {
 .contribute,
 .risks,
 .internal {
-	margin-top: 30px;
+	padding: 30px 0 60px;
 }
 
 .lease__img {
@@ -213,14 +205,6 @@ body {
 }
 
 @media (min-width: 770px) {
-	.lease,
-	.fintech,
-	.contribute,
-	.risks,
-	.internal {
-		margin-top: 80px;
-	}
-
 	.lease__links,
 	.fintech__links {
 		width: 60%;
@@ -253,11 +237,6 @@ body {
 }
 
 @media (min-width: 992px) {
-	.container {
-		margin: 0 auto;
-		width: 75%;
-	}
-
 	.header__img,
 	.lease__img,
 	.fintech__img,
@@ -270,14 +249,6 @@ body {
 
 	.header__img {
 		height: 60vh;
-	}
-
-	.lease,
-	.fintech,
-	.contribute,
-	.risks,
-	.internal {
-		margin-top: 120px;
 	}
 
 	.lease__title,
@@ -325,6 +296,10 @@ body {
 	display: none;
 }
 @media (min-width: 1024px){
+	.header{
+		padding-left: 12%;
+		padding-right: 12%;
+	}
 	.nav-content-page {
 		display: flex;
 		justify-content: center;
@@ -333,7 +308,7 @@ body {
 		height: calc(80vh + 2*10px);
 		position: fixed;
 		top: calc(10vh - 10px);
-		left: 80.5vw;
+		right: 4px;
 		z-index: 100;
 		font-size: 14px;
 	}
