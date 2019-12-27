@@ -5,15 +5,15 @@ if(innerWidth > 1023) {
         mainElement = document.querySelector('main')
 
     if (!(navItems && progressBar && porcentNumber && mainElement))
-        console.warn('Elementos faltantes en el DOM')
-    else {
-        if(navItems.childElementCount !== mainElement.childElementCount - 1)
+        throw "Elementos faltantes en el DOM"
+
+        const navListArray = [... navItems.querySelectorAll('[href]')],
+            secListArray = [... mainElement.getElementsByClassName('row')]
+
+        if(navListArray.length !== secListArray.length)
             throw "Longitud de elementos en nav lateral y secciones en main no coincide"
-
-        const navListArray = [... navItems.children],
-            secListArray = [... mainElement.getElementsByClassName('row')],
-            totalSecs = navItems.childElementCount
-
+        
+        const totalSecs = navListArray.length
         let indexSV = 0,
             wheelAccum = 0
 
@@ -24,15 +24,15 @@ if(innerWidth > 1023) {
             if((wheelNow === 1 && Math.floor(secView.getBoundingClientRect().bottom) < innerHeight + 2)
                 || (wheelNow === -1 && Math.floor(secView.getBoundingClientRect().top) > -2)){
                 indexSV += wheelNow
-                scrollExecute(secListArray[indexSV], navListArray[indexSV].firstElementChild)
+                scrollExecute(secListArray[indexSV], navListArray[indexSV])
             }
         }
         const scrollExecute = (secToView, linkToActive) => {
             smoothScroll.scrollTo(secToView)
             location.hash = secToView.id
             navListArray[
-                navListArray.findIndex(el => el.firstElementChild.classList.length > 1)
-            ].firstElementChild.classList.remove('content_link-active')
+                navListArray.findIndex(el => el.classList.length > 1)
+            ].classList.remove('content_link-active')
             changeDataView(linkToActive)
         }
         const changeDataView = (element) => {
@@ -44,7 +44,7 @@ if(innerWidth > 1023) {
             if(e.target.getAttribute('href') !== null){
                 e.preventDefault()
                 if(e.target.getAttribute('href') === location.hash) return
-                indexSV = navListArray.findIndex(el => el.firstElementChild === e.target)
+                indexSV = navListArray.findIndex(el => el === e.target)
                 scrollExecute(secListArray[indexSV], e.target)
             }
         })
@@ -60,8 +60,7 @@ if(innerWidth > 1023) {
         if(location.hash.length === 0)
             location.hash = secListArray[0].id
         else indexSV = navListArray.findIndex(el => 
-            el.firstElementChild.getAttribute('href') === location.hash)
+            el.getAttribute('href') === location.hash)
         
-        changeDataView(navListArray[indexSV].firstElementChild)
-    }
+        changeDataView(navListArray[indexSV])
 }
