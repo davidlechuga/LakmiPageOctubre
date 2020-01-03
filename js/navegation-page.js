@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     if(location.hash.length === 0)
-        history.pushState(null,'',`#${navListArray[0].getAttribute('href')}`)
+        history.pushState(null,'',navListArray[0].getAttribute('href'))
     else indexSV = navListArray.findIndex(el => 
         el.getAttribute('href') === location.hash)
     
