@@ -1,4 +1,4 @@
-if(innerWidth > 1023) {
+window.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelector('.nav-content_list'),
         progressBar = document.querySelector('.progress-view'),
         porcentNumber = document.querySelector('.percentage-number'),
@@ -17,19 +17,24 @@ if(innerWidth > 1023) {
     let indexSV = 0,
         wheelAccum = 0
 
-    const scrollCheck = (secView, wheelNow) => {
-        if(indexSV < 1 && wheelNow === -1) return
-        if(indexSV > totalSecs - 2 && wheelNow === 1) return
+    const scrollCheck = (secView, wheelNow, e) => {
+        if((indexSV < 1 && wheelNow === -1) || 
+            (indexSV > totalSecs - 2 && wheelNow === 1)){
+            wheelAccum = 0
+            return
+        } else if( Math.abs(wheelAccum) < 5.9) return
         
         if((wheelNow === 1 && Math.floor(secView.getBoundingClientRect().bottom) < innerHeight + 2)
             || (wheelNow === -1 && Math.floor(secView.getBoundingClientRect().top) > -2)){
+            e.preventDefault()
+            wheelAccum = 0
             indexSV += wheelNow
-            scrollExecute(secListArray[indexSV], navListArray[indexSV])
+            scrollExecute(secListArray[indexSV], navListArray[indexSV], innerWidth < 1024 ? false : true)
         }
     }
-    const scrollExecute = (secToView, linkToActive) => {
-        smoothScroll.scrollTo(secToView)
-        location.hash = secToView.id
+    const scrollExecute = (secToView, linkToActive, doScroll = true) => {
+        if(doScroll) smoothScroll.scrollTo(secToView)
+        history.pushState(null,'',linkToActive.getAttribute('href'))
         navListArray[
             navListArray.findIndex(el => el.classList.length > 1)
         ].classList.remove('content_link-active')
@@ -50,17 +55,15 @@ if(innerWidth > 1023) {
     })
     mainElement.addEventListener('wheel', e => {
         wheelAccum += e.deltaY
-        if( Math.abs(wheelAccum) > 0.9) {
-            indexSV = secListArray.findIndex(el => el.id === location.hash.slice(1))
-            scrollCheck(secListArray[indexSV], wheelAccum > 0 ? 1 : -1)
-            wheelAccum = 0
-        }
+        wheelAccum = parseFloat(wheelAccum.toFixed(3))
+        indexSV = secListArray.findIndex(el => el.id === location.hash.slice(1))
+        scrollCheck(secListArray[indexSV], wheelAccum > 0 ? 1 : -1, e)
     })
 
     if(location.hash.length === 0)
-        location.hash = secListArray[0].id
+        history.pushState(null,'',`#${navListArray[0].getAttribute('href')}`)
     else indexSV = navListArray.findIndex(el => 
         el.getAttribute('href') === location.hash)
     
     changeDataView(navListArray[indexSV])
-}
+})
