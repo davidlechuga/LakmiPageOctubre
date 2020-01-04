@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     const scrollExecute = (secToView, linkToActive, doScroll = true) => {
         if(doScroll) smoothScroll.scrollTo(secToView)
-        history.pushState(null,'',linkToActive.getAttribute('href'))
+        history.replaceState(null,'',linkToActive.getAttribute('href'))
         navListArray[
             navListArray.findIndex(el => el.classList.length > 1)
         ].classList.remove('content_link-active')
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     if(location.hash.length === 0)
-        history.pushState(null,'',navListArray[0].getAttribute('href'))
+        history.replaceState(null,'',navListArray[0].getAttribute('href'))
     else indexSV = navListArray.findIndex(el => 
         el.getAttribute('href') === location.hash)
     
