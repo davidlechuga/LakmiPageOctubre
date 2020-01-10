@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     const changeDataView = (element) => {
         progressBar.style.height = `${Math.round((indexSV + 1)/totalSecs * 100)}%`
-        porcentNumber.textContent = Math.round((indexSV + 1)/totalSecs * 100)
+        porcentNumber.textContent = Math.floor((indexSV + 1)/totalSecs * 100)
         element.classList.add('content_link-active')
         YscrollOld = scrollY
     }
