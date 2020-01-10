@@ -15,25 +15,28 @@ window.addEventListener('DOMContentLoaded', () => {
     
     const totalSecs = navListArray.length
     let indexSV = 0,
-        wheelAccum = 0
+        wheelAccum = 0,
+        YscrollOld,
+        isRunScroll = false
 
-    const scrollCheck = (secView, wheelNow, e) => {
-        if((indexSV < 1 && wheelNow === -1) || 
-            (indexSV > totalSecs - 2 && wheelNow === 1)){
-            wheelAccum = 0
+    const scrollCheck = (secView, wheelNow) => {
+        if((indexSV === 0 && wheelNow === -1) 
+        || (indexSV === totalSecs - 1 && Math.round(secView.getBoundingClientRect().top) < -24)){
+            YscrollOld = scrollY
             return
-        } else if( Math.abs(wheelAccum) < 5.9) return
+        } else if( Math.abs(wheelAccum) < 30) return
         
-        if((wheelNow === 1 && Math.floor(secView.getBoundingClientRect().bottom) < innerHeight + 2)
-            || (wheelNow === -1 && Math.floor(secView.getBoundingClientRect().top) > -2)){
-            e.preventDefault()
-            wheelAccum = 0
-            indexSV += wheelNow
+        if((wheelNow === 1 && Math.round(secView.getBoundingClientRect().bottom) < innerHeight + 2)
+        || (wheelNow === -1 && Math.round(secView.getBoundingClientRect().top) > -2)){
+            indexSV += wheelNow 
             scrollExecute(secListArray[indexSV], navListArray[indexSV], innerWidth < 1024 ? false : true)
         }
     }
     const scrollExecute = (secToView, linkToActive, doScroll = true) => {
-        if(doScroll) smoothScroll.scrollTo(secToView)
+        if(doScroll) {
+            isRunScroll = true
+            smoothScroll.scrollTo(secToView)
+        }
         history.replaceState(null,'',linkToActive.getAttribute('href'))
         navListArray[
             navListArray.findIndex(el => el.classList.length > 1)
@@ -42,8 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     const changeDataView = (element) => {
         progressBar.style.height = `${Math.round((indexSV + 1)/totalSecs * 100)}%`
-        porcentNumber.textContent = Math.floor((indexSV + 1)/totalSecs * 100)
+        porcentNumber.textContent = Math.round((indexSV + 1)/totalSecs * 100)
         element.classList.add('content_link-active')
+        YscrollOld = scrollY
     }
     navItems.addEventListener('click', e => {
         if(e.target.getAttribute('href') !== null){
@@ -53,17 +57,20 @@ window.addEventListener('DOMContentLoaded', () => {
             scrollExecute(secListArray[indexSV], e.target)
         }
     })
-    mainElement.addEventListener('wheel', e => {
-        wheelAccum += e.deltaY
-        wheelAccum = parseFloat(wheelAccum.toFixed(3))
-        indexSV = secListArray.findIndex(el => el.id === location.hash.slice(1))
-        scrollCheck(secListArray[indexSV], wheelAccum > 0 ? 1 : -1, e)
+    addEventListener('scroll', () => {
+        if(!isRunScroll){
+            wheelAccum = scrollY - YscrollOld
+            indexSV = secListArray.findIndex(el => el.id === location.hash.slice(1))
+            scrollCheck(secListArray[indexSV], wheelAccum > 0 ? 1 : -1)
+        } else if(Math.round(secListArray[indexSV].getBoundingClientRect().top) === smoothScroll.offsetY){
+            YscrollOld = scrollY
+            isRunScroll = false
+        }
     })
 
     if(location.hash.length === 0)
         history.replaceState(null,'',navListArray[0].getAttribute('href'))
     else indexSV = navListArray.findIndex(el => 
         el.getAttribute('href') === location.hash)
-    
     changeDataView(navListArray[indexSV])
 })
