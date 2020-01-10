@@ -2,16 +2,17 @@ window.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelector('.nav-content_list'),
         progressBar = document.querySelector('.progress-view'),
         porcentNumber = document.querySelector('.percentage-number'),
-        mainElement = document.querySelector('main')
+        secListArray = [... document.querySelectorAll('.scroll-container [id][section-scroll]')]
 
-    if (!(navItems && progressBar && porcentNumber && mainElement))
+    if (!(navItems && progressBar && porcentNumber && secListArray.length))
         throw "Elementos faltantes en el DOM"
 
-    const navListArray = [... navItems.querySelectorAll('[href]')],
-        secListArray = [... mainElement.getElementsByClassName('row')]
+    const navListArray = [... navItems.querySelectorAll('[href]')]        
 
     if(navListArray.length !== secListArray.length)
-        throw "Longitud de elementos en nav lateral y secciones en main no coincide"
+        throw `Longitud de elementos en nav lateral y secciones en scroll-container no coincide\n
+            items en navbar: ${navListArray.length}\n
+            items en contenedor: ${secListArray.length}`
     
     const totalSecs = navListArray.length
     let indexSV = 0,

@@ -296,11 +296,8 @@
 	display: none;
 }
 @media (min-width: 1024px){
-	main{
+	.scroll-container{
 		position: relative;
-	}
-	main > .row {
-		min-height: 100vh;
 	}
 	.header{
 		padding-left: 12%;
@@ -382,6 +379,9 @@
 	.nav-content_link:hover {
 		text-decoration: none;
 		color: var(--color__red);
+	}
+	.scroll-container [id][section-scroll] {
+		min-height: 100vh;
 	}
 	/* .nav-content-page:hover .nav-content_list {
 		opacity: 1;
