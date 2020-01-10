@@ -380,7 +380,7 @@
 		text-decoration: none;
 		color: var(--color__red);
 	}
-	.scroll-container [id][section-scroll] {
+	.scroll-container [section-scroll] {
 		min-height: 100vh;
 	}
 	/* .nav-content-page:hover .nav-content_list {
