@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelector('.nav-content_list'),
         progressBar = document.querySelector('.progress-view'),
         porcentNumber = document.querySelector('.percentage-number'),
@@ -14,7 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
             items en navbar: ${navListArray.length}\n
             items en contenedor: ${secListArray.length}`
     
-    const totalSecs = navListArray.length
+    const totalSecs = navListArray.length,
+        navPrimary = document.querySelector('.navbar')
     let indexSV = 0,
         wheelAccum = 0,
         YscrollOld,
@@ -27,11 +28,20 @@ window.addEventListener('DOMContentLoaded', () => {
             return
         } else if( Math.abs(wheelAccum) < 30) return
         
-        if((wheelNow === 1 && Math.round(secView.getBoundingClientRect().bottom) < innerHeight + 2)
-        || (wheelNow === -1 && Math.round(secView.getBoundingClientRect().top) > -2)){
-            indexSV += wheelNow 
-            scrollExecute(secListArray[indexSV], navListArray[indexSV], innerWidth < 1024 ? false : true)
+        if(innerWidth > 1023){
+            // con estas desigualdades, se cumple la condicion para hacer scroll
+            // if((wheelNow === 1 && Math.round(secView.getBoundingClientRect().bottom) < innerHeight + 2)
+            // || (wheelNow === -1 && Math.round(secView.getBoundingClientRect().top) > -2))
+            if((wheelNow === 1 && Math.round(secView.getBoundingClientRect().bottom) > innerHeight + 2)
+            || (wheelNow === -1 && Math.round(secView.getBoundingClientRect().top) < -2))
+                return
+        } else {
+            if((wheelNow === 1 && Math.round(secView.getBoundingClientRect().bottom) > navPrimary.clientHeight + 2)
+            || (wheelNow === -1 && Math.round(secView.getBoundingClientRect().top) < innerHeight - 2))
+                return
         }
+        indexSV += wheelNow 
+        scrollExecute(secListArray[indexSV], navListArray[indexSV], innerWidth < 1024 ? false : true)
     }
     const scrollExecute = (secToView, linkToActive, doScroll = true) => {
         if(doScroll) {
@@ -58,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
             scrollExecute(secListArray[indexSV], e.target)
         }
     })
-    addEventListener('scroll', () => {
+    document.addEventListener('scroll', () => {
         if(!isRunScroll){
             wheelAccum = scrollY - YscrollOld
             indexSV = secListArray.findIndex(el => el.id === location.hash.slice(1))
