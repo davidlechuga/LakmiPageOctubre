@@ -1,8 +1,8 @@
-.container-fluid{
+.container-fluid {
 	margin: 0;
 	padding: 0;
 }
-.row{
+.row {
 	margin: 0;
 	justify-content: center;
 }
@@ -174,7 +174,6 @@
 	margin-left: 1px;
 }
 
-
 /**********************/
 /*   MEDIA QUERIES    */
 /**********************/
@@ -260,8 +259,8 @@
 	}
 
 	.lease__info,
-	.fintech__info ,
-	.contribute__info, 
+	.fintech__info,
+	.contribute__info,
 	.risks__info,
 	.internal__info {
 		text-align: center;
@@ -295,15 +294,15 @@
 .nav-content-container {
 	display: none;
 }
-@media (min-width: 1024px){
-	.scroll-container{
+@media (min-width: 1024px) {
+	.scroll-container {
 		position: relative;
 	}
-	.header{
+	.header {
 		padding-left: 12%;
 		padding-right: 12%;
 	}
-	.nav-content-container{
+	.nav-content-container {
 		display: block;
 		height: 100%;
 		position: absolute;
@@ -356,7 +355,7 @@
 		display: flex;
 		justify-content: flex-start;
 	}
-	.progress-view{
+	.progress-view {
 		width: 100%;
 		height: 0;
 		border-radius: 25px;
@@ -386,4 +385,18 @@
 	/* .nav-content-page:hover .nav-content_list {
 		opacity: 1;
 	} */
+	/* Lhd nav appear and dissappear*/
+	.navbar {
+		background: #ffffff;
+		position: fixed;
+		overflow: hidden;
+		z-index: 999;
+		width: 100%;
+		display: flex;
+		top: 0%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-5em);
+		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	}
 }

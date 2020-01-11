@@ -75,70 +75,75 @@
         </nav>
         <!-- BOOTON NAVBAR -->
         <div>
-            <img src="iconos/nav/nueva-barra-roja.svg" id="separador" style="width: 100% ; position: absolute; top: 1px;">
+            <img src="iconos/nav/nueva-barra-roja.svg" id="separador" style="width: 101% ; position: absolute; top: 1px;">
         </div>
     </div>
     
     <!-- IIMAGENES CONTACTENOS -->
     <section class="container-fluid px-0 mx-0">
         <main class="row">
-            <div class="col-12 ">
-                <img class="main_img_contactenos" > 
+            <div class="col-12 p-0 ">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1894909187804!2d-99.17650958610865!3d19.404216986900465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff69722628b5%3A0x74b7f79e6afe0f67!2sAv.%20Benjam%C3%ADn%20Franklin%20186%2C%20Escand%C3%B3n%20II%20Secc%2C%20Miguel%20Hidalgo%2C%2011800%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1576984045251!5m2!1ses-419!2smx"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"  >
+                </iframe>
             </div>
         </main>
+        <h1 class="title1"> CONTACTO </h1>
 
         <div class="row title_contactanos">
             <div class="col-md-7 col-12">
-                <form class="form_main">
+                <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group col-md-10">
-                            <label for="inputEmail4">NOMBRE: * </label>
-                            <input type="email" class="form-control" id="inputEmail4" >
+                            <label for="inputEmail4" style="font-weight: 800;" >NOMBRE: * </label>
+                            <input type="text" class="form-control" id="inputEmail4" id="name">
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="inputPassword4">E-MAIL: * </label>
-                            <input type="password" class="form-control" id="inputPassword4" >
+                            <label for="inputPassword4" style="font-weight: 800;" >E-MAIL: * </label>
+                            <input type="text" class="form-control" id="inputPassword4" id="email" >
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="inputAddress">TELÉFONO: * </label>
-                            <input type="text" class="form-control" id="inputAddress" >
+                            <label for="inputAddress" style="font-weight: 800;" >TELÉFONO: </label>
+                            <input type="text" class="form-control" id="inputAddress" id="cel" >
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="inputAddress2">COMPAÑÍA / ORGANIZACIÓN: * </label>
-                            <input type="text" class="form-control" id="inputAddress2" >
+                            <label for="inputAddress2" style="font-weight: 800;" >COMPAÑÍA / ORGANIZACIÓN: </label>
+                            <input type="text" class="form-control" id="inputAddress2" id="company" >
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="exampleFormControlTextarea1">MENSAJE: *  </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" style="font-weight: 800;" >MENSAJE:  </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" id="message"></textarea>
                          </div>
                     </div>
-                    <button type="submit" class="btn btn-form">Sign in</button>
+                    <h6 style="font-size: 12px;"> Todos los campos con (*) son requeridos.</h6>
+                    <button type="submit" class="btn btn-form">Enviar</button>
                 </form>
             </div>
             <div class="col-md-5 col-12">
-                <img  src="./iconos/footer/facebook.svg">
-                <img  src="./iconos/footer/linkedin.svg">
+                <img  src="iconos/footer/fb.svg" style="width: 15%;">
+                <img  src="iconos/footer/linkedinnn.svg" style="width: 15%;">
+                <div class="ml-3">
+                    <h1 style="padding-top: 50px; font-size: 18px; font-weight: 800;"> INFORMACIÓN DE CONTACTO </h1> <br>
 
-                <h1 style="padding-top: 70px;"> INFORMACIÓN DE CONTACTO </h1> <br>
-
-                <p> Lamkmi Systems, S.A.S de C.V ("Lakmi Systems") se encuentra ubicada en Avenida Benjamín Franklin 186, Colonia Escandón II Sección, Delegación Miguel Hidalgo,
-                    C.P. 11800 Ciudad de México, México.
-                </p> <br> <br>
-                <p>
-                    División de soluciones de software <br> 
-                    +52 (55) 7587 6533 <br> 
-                    softwaresolutions@lakmisystems.com.mx
-                </p> <br> <br>
-                <p>
-                    División de asesoría y consultoría <br>
-                    +52(55) 7587 6533 <br>
-                    consultingservices@lakmisystems.com.mx
-                </p>
+                    <p> Lamkmi Systems, S.A.S de C.V ("Lakmi Systems") se encuentra ubicada en Avenida Benjamín Franklin 186, Colonia Escandón II Sección, Delegación Miguel Hidalgo,
+                        C.P. 11800 Ciudad de México, México.
+                    </p> <br> <br>
+                    <p class="mb-1" style="font-weight: bold;">
+                        División de soluciones de software </p> 
+                        <p class="mb-1">+52 (55) 7587 6533 </p>
+                        <p class=" mb-1 link-mail">  softwaresolutions@lakmisystems.com.mx </p>
+                    <br> <br>
+                    <p class="mb-1" style="font-weight: 800;">
+                        División de asesoría y consultoría  </p> 
+                        <p class="m-1"> +52(55) 7587 6533 </p>
+                    <p class="link-mail mb-1"> consultingservices@lakmisystems.com.mx </p>
+                </div>
             </div>
         </div>
     </section>   
         <!--SECTION FOOTER-->
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
             <footer class="row footer">
                 <address
                     class="col-12 col-md-12 order-md-3 col-lg-4 order-lg-1 contact__footer d-flex flex-column align-items-start align-items-sm-center">
@@ -152,7 +157,7 @@
                         <p class="text-break">consulting.services@lakmisystems.com.mx</p>
                         <h3 class="contact__foot__subtitle text-break">División de soluciones de software</h3>
                         <p class="text-break">+52 (55) 7587 6533</p>
-                        <p class="text-break">Software.solutions@lakmusystems.com.mx</p>
+                        <p class="text-break ">Software.solutions@lakmusystems.com.mx</p>
                     </div>
                 </address>
                 <address
@@ -183,15 +188,23 @@
         <!--SECTION FOOTER END-->
 
     <!-- JS , POPPER AND JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/navBar/nav-search.js"></script>
-    <!-- Google Analytics:-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>    <!-- Google Analytics:-->
     <script>
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
         ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
+
+
+</script>
 </html>

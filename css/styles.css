@@ -40,11 +40,11 @@ body {
 .h1_size {
 	font-size: var(--tamaño_h1);
 }
-.title-font{
+.title-font {
 	font-weight: 600;
 	text-align: center;
 }
-.btn-text{
+.btn-text {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
@@ -140,7 +140,6 @@ p {
 	text-align: center;
 	width: 100%;
 }
-
 
 @media (min-width: 320px) {
 	/***************************/
@@ -308,7 +307,7 @@ p {
 		top: 0%;
 		left: 0;
 		width: 100%;
-		transform: translateY(-5em);
+		/* transform: translateY(-5em); */
 		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 	}
 
@@ -345,7 +344,6 @@ p {
 	}
 }
 
-
 /****************************/
 /*   MEDIA QUERIES FOOTER   */
 /****************************/
@@ -377,4 +375,3 @@ p {
 		left: -50px;
 	}
 }
-
