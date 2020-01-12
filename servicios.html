@@ -72,56 +72,77 @@
                 </form>
             </div>
         </nav>
-        <!-- BOOTON NAVBAR -->
-        <div>
-            <img src="iconos/nav/nueva-barra-roja.svg" id="separador" style="width: 100% ; position: absolute; top: 1px;">
+
+    </div>
+    <!-- tab JavaScript plugin -->
+
+    <div class="row plugin-content">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                    href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore magnam error minus, at earum voluptas vitae dignissimos fugiat rem in officiis! Minima est exercitationem itaque, amet quam distinctio magni maiores doloremque dolorum, quibusdam asperiores accusamus illo. Qui vel est quia alias harum. Beatae molestias quaerat quo. Quo illo cum quibusdam. </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at a ipsam quis obcaecati ex quibusdam deserunt ad perferendis quae eligendi unde delectus, id amet placeat officia hic perspiciatis, fugit aliquam sint autem dolores tempore sapiente alias. Voluptatem incidunt veritatis porro atque, soluta inventore distinctio illum, praesentium facilis qui voluptate.</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus debitis quia nam ducimus at labore deserunt corporis facere? Excepturi suscipit tenetur reiciendis soluta laboriosam veniam. Consectetur mollitia, porro laboriosam voluptate voluptatibus quidem magnam repellendus exercitationem nemo consequatur cupiditate nam nulla ex error quas molestias beatae at aperiam esse dolores ad.</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita dolore odit quis ipsam quam quo et, sint facilis ullam enim quia, sequi itaque! Excepturi facilis numquam provident incidunt expedita sunt praesentium exercitationem vitae quia laudantium. Iste facilis facere, maiores natus, veniam repellendus nam beatae nesciunt fuga delectus, error pariatur.</div>
+            </div>
         </div>
     </div>
 
 
-        <!--SECTION FOOTER-->
-        <div class="container-fluid">
-            <footer class="row footer">
-                <address
-                    class="col-12 col-md-12 order-md-3 col-lg-4 order-lg-1 contact__footer d-flex flex-column align-items-start align-items-sm-center">
-                    <img srcset="iconos/footer/Contacto.svg" class="contact__foot__icon" alt="icono de contacto" width="36px">
-                    <h2 class="contact__foot__title">Contáctenos</h2>
-                    <div class="contact__foot__description">
-                        <img src="iconos/footer/facebook.svg" class="icon__face" alt="siguenos en facebook">
-                        <img src="iconos/footer/linkedin.svg" class="icon__linked" alt="siguenos en linkedin">
-                        <h3 class="contact__foot__subtitle text-break">División de Asesoría y Consultoría</h3>
-                        <p class="text-break">+52 (55) 7587 6533</p>
-                        <p class="text-break">consulting.services@lakmisystems.com.mx</p>
-                        <h3 class="contact__foot__subtitle text-break">División de soluciones de software</h3>
-                        <p class="text-break">+52 (55) 7587 6533</p>
-                        <p class="text-break">Software.solutions@lakmusystems.com.mx</p>
-                    </div>
-                </address>
-                <address
-                    class="col-12 col-md-6 order-md-1 col-lg-4 order-md-2 ubication__footer d-flex flex-column align-items-start align-items-sm-center">
-                    <img srcset="iconos/footer/ubicación.svg" class="ubication__foot__icon" alt="icono de ubicación"
-                        width="36px">
-                    <h2 class="ubication__foot__title">Ubicación</h2>
-                    <div class="ubication__foot__description">
-                        <p class="text-break">Avenida Benjamín Franklin 186, Colonia</p>
-                        <p class="text-break">Escuadrón II Sección, Delegación Miguel</p>
-                        <p class="text-break">Hidalgo, C.P.11800 Ciudad de México, México.</p>
-                    </div>
-                </address>
-                <picture
-                    class="col-12 col-md-6 order-md-2 col-lg-4 order-lg-3 legal__footer d-flex flex-column align-items-start align-items-sm-center">
-                    <img srcset="iconos/footer/legal.svg" class="legal__foot__icon" alt="icono de legal" width="36px">
-                    <h2 class="legal__foot__title">Legal</h2>
-                    <div class="legal__foot__description">
-                        <p class="text-break">Aviso de Privacidad</p>
-                        <p class="text-break">Política de Cookies y Web Beacons</p>
-                    </div>
-                </picture>
-                <picture class="foot_copyright order-4 d-flex justify-content-center align-items-center">
-                    <p class="foot_p text-break">© 2020 Lakmi Systems, S.A.S. de C.V. Todos los derechos reservados.</p>
-                </picture>
-            </footer>
-        </div>
+    <!--SECTION FOOTER-->
+    <div class="container-fluid">
+        <footer class="row footer">
+            <address
+                class="col-12 col-md-12 order-md-3 col-lg-4 order-lg-1 contact__footer d-flex flex-column align-items-start align-items-sm-center">
+                <img srcset="iconos/footer/Contacto.svg" class="contact__foot__icon" alt="icono de contacto" width="36px">
+                <h2 class="contact__foot__title">Contáctenos</h2>
+                <div class="contact__foot__description">
+                    <img src="iconos/footer/facebook.svg" class="icon__face" alt="siguenos en facebook">
+                    <img src="iconos/footer/linkedin.svg" class="icon__linked" alt="siguenos en linkedin">
+                    <h3 class="contact__foot__subtitle text-break">División de Asesoría y Consultoría</h3>
+                    <p class="text-break">+52 (55) 7587 6533</p>
+                    <p class="text-break">consulting.services@lakmisystems.com.mx</p>
+                    <h3 class="contact__foot__subtitle text-break">División de soluciones de software</h3>
+                    <p class="text-break">+52 (55) 7587 6533</p>
+                    <p class="text-break">Software.solutions@lakmusystems.com.mx</p>
+                </div>
+            </address>
+            <address
+                class="col-12 col-md-6 order-md-1 col-lg-4 order-md-2 ubication__footer d-flex flex-column align-items-start align-items-sm-center">
+                <img srcset="iconos/footer/ubicación.svg" class="ubication__foot__icon" alt="icono de ubicación"
+                    width="36px">
+                <h2 class="ubication__foot__title">Ubicación</h2>
+                <div class="ubication__foot__description">
+                    <p class="text-break">Avenida Benjamín Franklin 186, Colonia</p>
+                    <p class="text-break">Escuadrón II Sección, Delegación Miguel</p>
+                    <p class="text-break">Hidalgo, C.P.11800 Ciudad de México, México.</p>
+                </div>
+            </address>
+            <picture
+                class="col-12 col-md-6 order-md-2 col-lg-4 order-lg-3 legal__footer d-flex flex-column align-items-start align-items-sm-center">
+                <img srcset="iconos/footer/legal.svg" class="legal__foot__icon" alt="icono de legal" width="36px">
+                <h2 class="legal__foot__title">Legal</h2>
+                <div class="legal__foot__description">
+                    <p class="text-break">Aviso de Privacidad</p>
+                    <p class="text-break">Política de Cookies y Web Beacons</p>
+                </div>
+            </picture>
+            <picture class="foot_copyright order-4 d-flex justify-content-center align-items-center">
+                <p class="foot_p text-break">© 2020 Lakmi Systems, S.A.S. de C.V. Todos los derechos reservados.</p>
+            </picture>
+        </footer>
+    </div>
         <!--SECTION FOOTER END-->
     <!-- JS , POPPER AND JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
