@@ -1,3 +1,4 @@
+    
 var firebaseConfig = {
     apiKey: "AIzaSyDK6f9anyzAmETNm7--K-m6eAGA5144h6Y",
     authDomain: "lakimi-d3f57.firebaseapp.com",
@@ -8,28 +9,50 @@ var firebaseConfig = {
     appId: "1:440806976241:web:8fa5abc9fdee0852a09750"
   };
   // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
   
-var con = firebase.database().ref('users');
+const con  = firebase.database().ref('users');
 
-document.getElementById("Form").addEventListener("submit", (e) => {
+document
+    .getElementById("Form")
+    .addEventListener("submit", "formSubmit")
+  
+function formSubmit(e) {
     e.preventDefault();
 
+    //Get value from de DOM
+    let name = document.querySelector('#name').value
+    let email = document.querySelector('#email').value
+    let cel = document.querySelector('#cel').value
+    let company = document.querySelector('#company').value
+    let message = document.querySelector('#message').value
 
-    var userInfo = con.push();
-    userInfo.set({
-        name: getId("name"),
-        email: getId("email"),
-        cel: getId("cel"),
-        company: getId("company"),
-        message: getId("message")
-    });
-    alert("sent");
-    console.log("sent");
-    
+    // senden mesajes values
+    sendMessage(name, email, cel, company, message);
+
+
+    //Show Alert Message(5)
+    document.querySelector('.alert').style.display = 'block';
+
+
+    //Hide Alert Message After Seven Seconds(6)
+    setTimeout(function() {
+    document.querySelector('.alert').style.display = 'none';
+    }, 7000);
+ 
+      
     document.getElementById("Form").reset()
-});
+};
 
-function getId(id) {
-    return document.getElementById(id).value;
+//Send Message to Firebase(4)
+
+function sendMessage(name, email, cel, company, message) {
+  let newFormMessage = con.push();
+    newFormMessage.set({
+        name: name,
+        email: email,
+        cel: cel,
+        company: company,
+        message:message   
+  });
 }
