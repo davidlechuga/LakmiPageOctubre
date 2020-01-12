@@ -10,7 +10,6 @@ var firebaseConfig = {
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
   
-
 var con = firebase.database().ref('users');
 
 document.getElementById("Form").addEventListener("submit", (e) => {
