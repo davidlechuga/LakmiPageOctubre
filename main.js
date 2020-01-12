@@ -15,7 +15,7 @@ const con  = firebase.database().ref('users');
 
 document
     .getElementById("Form")
-    .addEventListener("submit", "formSubmit")
+    .addEventListener("submit", formSubmit)
   
 function formSubmit(e) {
     e.preventDefault();
@@ -30,17 +30,12 @@ function formSubmit(e) {
     // senden mesajes values
     sendMessage(name, email, cel, company, message);
 
-
-    //Show Alert Message(5)
-    document.querySelector('.alert').style.display = 'block';
-
-
-    //Hide Alert Message After Seven Seconds(6)
-    setTimeout(function() {
-    document.querySelector('.alert').style.display = 'none';
-    }, 7000);
- 
-      
+    //msm all are ok
+    function alarma() {
+        alert('Tu mensage se ha enviado.')
+    }
+    
+    alarma();
     document.getElementById("Form").reset()
 };
 
