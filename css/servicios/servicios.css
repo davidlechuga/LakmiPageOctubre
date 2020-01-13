@@ -1,8 +1,21 @@
 .plugin-content{
 
-    margin-top: 100px;
-    padding: 80px 80px 80px 80px;
+    padding: 130px 80px 80px 80px;
     z-index: 0;
     width: 100%;
     position: relative;
+}
+
+
+
+@media (max-width: 420px) { 
+
+.plugin-content{
+    padding: 130px 10px 80px 10px;
+    z-index: 0;
+    width: 100%;
+    position: relative;
+
+}
+    
 }
