@@ -3,28 +3,33 @@
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/MyriadPro-Regular.otf') format('OpenType');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MyriadPro';
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/MyriadPro-Light.otf') format('OpenType');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MyriadPro';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/MYRIADPRO-SEMIBOLD.OTF') format('OpenType');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/Montserrat-Regular.otf') format('OpenType');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/Montserrat-SemiBold.otf') format('OpenType');
+    font-display: swap;
 }
