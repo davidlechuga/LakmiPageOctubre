@@ -23,20 +23,13 @@
         content="Soluciones y servicios con un enfoque basado en la integración de la administración de riesgos con la estrategia y el desempeño de cada uno de nuestros clientes.">
     <!--Favicon-->
     <meta name="shortcut icon" href="favicon.png">
-    <!-- general images -->
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/nav/1 logotipo.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/footer/Contacto.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/footer/ubicación.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/footer/legal.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/footer/facebook.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="iconos/footer/linkedin.svg">
     <!-- view images -->
-    <link rel="icon" type="image/jpg" sizes="any" href="img/index/presentacion.jpg">
-    <link rel="icon" type="image/svg" sizes="any" href="img/index/ini1.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="img/index/ini2.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="img/index/ini3.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="img/index/ini4.svg">
-    <link rel="icon" type="image/svg" sizes="any" href="img/index/ini5.svg">
+    <link rel="preload" as="image" href="img/index/presentacion.jpg">
+    <link rel="preload" as="image" href="img/index/ini1.svg">
+    <link rel="preload" as="image" href="img/index/ini2.svg">
+    <link rel="preload" as="image" href="img/index/ini3.svg">
+    <link rel="preload" as="image" href="img/index/ini4.svg">
+    <link rel="preload" as="image" href="img/index/ini5.svg">
     <!--  CSS BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -285,8 +278,10 @@
 
     <!-- Google Analytics:-->
     <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        document.addEventListener('load', () => {
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        })
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
