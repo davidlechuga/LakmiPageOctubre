@@ -23,6 +23,9 @@
         content="Soluciones y servicios con un enfoque basado en la integración de la administración de riesgos con la estrategia y el desempeño de cada uno de nuestros clientes.">
     <!--Favicon-->
     <meta name="shortcut icon" href="favicon.png">
+    <link rel="preload" as="image" href="img/nosotros/nosotros1.svg">
+    <link rel="preload" as="image" href="img/nosotros/Nosotros2.svg">
+    <link rel="preload" as="image" href="img/nosotros/Nosotros3.svg">
     <!--  CSS BOOTSTRAP-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS/ NOSOTROS STYLE css]-->
@@ -211,8 +214,10 @@
     <script src="js/navBar/nav-search.js"></script>
     <!-- Google Analytics:-->
     <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        document.addEventListener('load', () => {
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        })
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
 
