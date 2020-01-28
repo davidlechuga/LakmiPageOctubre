@@ -30,7 +30,7 @@
 /**************************/
 
 .article__header {
-  padding-top: 3em;
+  padding-top: 120px;
 }
 
 .article__header__img {
@@ -60,7 +60,7 @@
   width: 100%;  
 }
 
-.article__header__data__info p {
+.article__header__data__info > p {
   color: rgba(0, 0, 0, .7);
   font-size: var(--font__mobile);
   padding: .5em .4em 0 .4em;
@@ -96,6 +96,7 @@
 .offer__info__title {
   color: rgba(217, 57, 85, .8);
   font-size: var(--h2__mobile);
+  font-weight: bold;
   line-height: 2;
   text-align: center;
   padding: 0 .4em 2em .4em;
@@ -110,6 +111,11 @@
   color: rgba(0, 0, 0, .7);
   font-size: var(--font__mobile);
   padding: 0 .4em 0 .4em;
+}
+
+.article__benefits__info p:nth-child(3) {
+  color: rgba(0, 0, 0, .7);
+
 }
 
 .article__benefits__list > li {
@@ -150,6 +156,51 @@
   font-size: var(--font__mobile);
   padding: 0 .4em 0 .4em;
 }
+
+/***************************/
+/*   SECTION ARROWS        */
+/***************************/
+
+.arrow_pre .anterior.
+.arrow_next .siguiente {
+  font-size: 1.2em;
+  margin: 1em;
+  list-style: none;
+}
+
+.arrow_next .siguiente a,
+.arrow_pre .anterior a {
+  color: #000;
+  text-decoration: none;
+  padding-top: 1em;
+  opacity: .7;
+} 
+
+.arrow_next .siguiente a:hover,
+.arrow_pre .anterior a:hover {
+  color: var(--color__red);
+  opacity: 1;
+}
+
+
+.arrow_pre .anterior {
+  background: url("../../iconos/blog/pre.svg") no-repeat center left / .9rem;
+  padding-left: .8em;
+}
+
+.arrow_next .siguiente {
+  background: url("../../iconos/blog/sig.svg") no-repeat center right / .9rem;
+  padding-right: .8em;
+}
+
+.arrow_pre .anterior,
+.arrow_next .siguiente {
+  font-size: 1.2em;
+  margin: 1em;
+  list-style: none;
+}
+
+
 
 /***************************/
 /*   MEDIA QUERIES         */
