@@ -305,6 +305,22 @@
 .nav-content-container {
 	display: none;
 }
+/******************************/
+/*      ESTILOS NAVBAR        */
+/******************************/
+.navbar::before {
+	content: '';
+	background-color: inherit;
+	display: none;
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -10;
+}
+.separador__img {
+	display: none;
+}
 @media (min-width: 1024px) {
 	.scroll-container {
 		position: relative;
@@ -396,18 +412,39 @@
 	/* .nav-content-page:hover .nav-content_list {
 		opacity: 1;
 	} */
-	/* Lhd nav appear and dissappear*/
+
+	/******************************/
+	/*      ESTILOS NAVBAR        */
+	/******************************/
+	.navbar-parent {
+		background-color: transparent;
+	}
 	.navbar {
-		background: #ffffff;
-		position: fixed;
-		overflow: hidden;
-		z-index: 999;
+		position: relative;
+		z-index: 100;
+		top: 0;
+		background-color: var(--color__white);
+		transform: translate3d(0,-100%,0);
+		transition:  transform 0.5s linear;
+	}
+	.navbar::before {
+		content: '';
+		background-color: inherit;
+		display: block;
+		width: 100vw;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: -10;
+	}
+	.separador__img {
+		display: block;
 		width: 100%;
-		display: flex;
-		top: 0%;
+		position: absolute;
+		top: 0;
 		left: 0;
-		width: 100%;
-		transform: translateY(-5em);
-		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	}
+	.navbar-parent:hover .navbar {
+		transform: translate3d(0,0,0);
 	}
 }
