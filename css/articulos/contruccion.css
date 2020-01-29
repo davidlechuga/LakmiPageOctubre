@@ -1,0 +1,19 @@
+/**************************/
+/*	 ESTILOS GENERALES	  */
+/**************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.article__lease {
+  padding: 170px 20% 0 20%;
+}
+
+.article__lease__img {
+  background: url("../../img/articulos/SITIO-EN-CONSTRUCCION.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  height: 60vh;
+}
