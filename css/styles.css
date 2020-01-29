@@ -230,3 +230,134 @@ p {
 	color: #000;
 	text-align: center;
 }
+
+/******************************/
+/*  ESTILOS MODAL DE BUSQUEDA */
+/******************************/
+.DS--open{
+	height: 100vh;
+	overflow-y: hidden;
+}
+.dialog-search {
+	font-size: 18px;
+	padding: 3.8em 8% 1.8em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(250, 250, 250, 0.8);
+	visibility: hidden;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
+}
+.dialog-search--show{
+	animation-name: dialog-search__animation-open;
+}
+.dialog-search--hidden {
+	animation-name: dialog-search__animation-close;
+}
+.search-container {
+	border: 2px solid var(--color__red);
+	border-radius: 30px;
+	background-color: var(--background__body);
+	overflow: hidden;
+}
+.dialog-search__input {
+	font-size: 1em;
+	padding: 0.5em 1em;
+	border-style: none;
+	background-color: transparent;
+	width: 100%;
+	visibility: inherit;
+}
+.DS__input--borderB {
+	border-bottom: 2px solid var(--color__red); /*color red*/
+}
+.box-results {
+	list-style: none;
+	height: auto;
+	max-height: 70vh;
+	overflow-y: auto;
+}
+.box-results--notEmpty {
+	margin-bottom: 10px;
+}
+.result-item {
+	padding: 0.6em 1em;
+	border-bottom: 1px solid var(--color__red); /*color red*/
+}
+.link-result {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.result-item:last-child {
+	border-bottom: none;
+}
+.result-item:hover {
+	background-color: #eee; 
+	transition: background-color 0.1s ease;
+}
+
+@keyframes dialog-search__animation-open {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		clip-path: inset(50%);
+	}
+	5% {
+		visibility: visible;
+		clip-path: inset(50%);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		clip-path: inset(0);
+	}
+}
+@keyframes dialog-search__animation-close {
+	from {
+		visibility: visible;
+		opacity: 1;
+		clip-path: inset(0);
+	}
+	95% {
+		visibility: visible;
+		opacity: 0;
+		clip-path: inset(50%);
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+		clip-path: inset(50%);
+	}
+}
+
+@media(min-width: 415px){
+	.dialog-search {
+		font-size: 15px;
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+}
+@media(min-width: 769px){
+	.dialog-search {
+		font-size: 16px;
+	}
+}
+@media(min-width: 1024px){
+	.dialog-search {
+		font-size: 17px;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+@media(min-width: 1200px){
+	.dialog-search {
+		font-size: 18px;
+	}
+}
