@@ -160,209 +160,6 @@ p {
 	text-decoration: none;
 }
 
-@media (min-width: 320px) {
-	/***************************/
-	/*	 M Ó V I L     */
-	/***************************/
-
-	/*:::: LOGO STYLES ::::*/
-	#logo {
-		display: none;
-	}
-	#logo1 {
-		display: flex;
-		margin-left: 5px;
-		margin-right: 5px;
-		width: 70px;
-		height: 35px;
-	}
-	.input-group1 {
-		display: flex;
-	}
-	.btn-search {
-		width: 17px;
-	}
-	.navbar-collapse {
-		text-align: center;
-	}
-	.navbar-toggler-icon {
-		width: 22px;
-		margin-left: 80px;
-	}
-	.form-inline {
-		margin-right: 10px;
-		margin-left: 15px;
-	}
-	.search2 {
-		display: none;
-	}
-	/*:::: NAVBAR STYLES ::::*/
-	.navbar {
-		background: #ffffff;
-		position: fixed;
-		overflow: hidden;
-		z-index: 999;
-		width: 100%;
-		justify-content: start;
-	}
-	.navbar-toggler {
-		margin-right: 0px;
-		border: none;
-	}
-}
-
-@media (min-width: 420px) {
-	/*:::: LOGO STYLES ::::*/
-	#logo {
-		display: none;
-	}
-	#logo1 {
-		display: flex;
-		margin-left: 25px;
-		margin-right: 90px;
-	}
-	.input-group1 {
-		display: flex;
-	}
-	.form-inline {
-		margin-right: 10px;
-		margin-left: 15px;
-	}
-	/*:::: NAVBAR STYLES ::::*/
-	.navbar {
-		background: #ffffff;
-		position: fixed;
-		overflow: hidden;
-		z-index: 999;
-		width: 100%;
-		justify-content: start;
-	}
-	.navbar-toggler {
-		margin-right: 60px;
-		border: none;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	/*:::: LOGO STYLES ::::*/
-	#logo {
-		display: none;
-	}
-	#logo1 {
-		display: flex;
-		margin-left: 25px;
-		margin-right: 90px;
-	}
-	.input-group1 {
-		display: flex;
-	}
-	.form-inline {
-		margin-right: 10px;
-		margin-left: 15px;
-	}
-	/*:::: NAVBAR STYLES ::::*/
-	.navbar {
-		background: #ffffff;
-		position: fixed;
-		overflow: hidden;
-		z-index: 999;
-		width: 100%;
-		justify-content: center;
-	}
-	.navbar-toggler {
-		margin-right: 60px;
-		border: none;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.navbar-parent {
-		position: absolute;
-		background: transparent;
-		height: 90px;
-		z-index: 2;
-		width: 100%;
-	}
-
-	.navbar-parent:hover .navbar {
-		visibility: visible; /* shows sub-menu */
-		opacity: 1;
-		z-index: 1;
-		transform: translateY(0%);
-		transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-	}
-
-	/*:::: NAVBAR STYLES ::::*/
-
-	#logo {
-		width: 70px;
-		height: 35px;
-		display: flex;
-		margin-left: 355px;
-		margin-right: 90px;
-	}
-	#logo1 {
-		display: none;
-	}
-
-	.input-group1 {
-		display: none;
-	}
-
-	.search2 {
-		width: 18px;
-		display: flex;
-		position: relative;
-		right: 65px;
-	}
-	.navbar {
-		background: #ffffff;
-		position: fixed;
-		overflow: hidden;
-		z-index: 999;
-		width: 100%;
-
-		display: flex;
-		top: 0%;
-		left: 0;
-		width: 100%;
-		/* transform: translateY(-5em); */
-		transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-	}
-
-	.navbar-toggler {
-		display: none;
-	}
-
-	.navbar-collapse {
-		margin-left: -195px;
-		margin-right: 335px;
-	}
-	.form-inline {
-		margin-left: 90px;
-		margin-right: 40px;
-	}
-
-	.navbar-subheader {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.nav-link {
-		font-size: 16px;
-		font-weight: 400;
-		color: black !important;
-	}
-
-	.nav-item {
-		margin-left: 10px;
-	}
-
-	.header-img-1 {
-		width: 100%;
-	}
-}
-
 /****************************/
 /*   MEDIA QUERIES FOOTER   */
 /****************************/
@@ -393,4 +190,43 @@ p {
 	.icon__linked {
 		left: -50px;
 	}
+}
+
+/******************************/
+/*      ESTILOS NAVBAR        */
+/******************************/
+.navbar-parent {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: var(--color__white);
+}
+.navbar {
+	margin: 0 auto;
+	max-width: 680px;
+	justify-content: space-around;
+	font-weight: normal;
+}
+.navbar-logo {
+	height: 30px;
+}
+.navbar-collapse {
+	flex-grow: 0;
+}
+.navbar-toggler, .btn-search {
+	border-style: none;
+}
+.btn-search {
+	height: 26px;
+	background-color: transparent;
+}
+.btn-search__img{
+	height: 100%;
+	padding: 4px;
+}
+.navbar-nav .nav-item .nav-link {
+	color: #000;
+	text-align: center;
 }
