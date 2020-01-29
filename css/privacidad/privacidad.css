@@ -1,0 +1,82 @@
+/**************************/
+/*   ESTILOS GENERALES    */
+/**************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**************************/
+/*   SECCION HEADER       */
+/**************************/
+
+.privacy {
+    padding-top: 130px;
+}
+
+.privacy__header__img {
+    background: url("../../img/privacidad/privacy.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    height: 30vh;
+}
+
+/**************************/
+/*   SECCION COMPOMISO    */
+/**************************/
+
+.privacy__info {
+    margin-top: 3em;
+}
+
+ .commitment__title,
+ .notice__title,
+ .beacoins__title {
+    color: rgba(217, 57, 85, .8);
+    font-size: var(--tamaño_h2);
+    font-weight: bold;
+    padding: 1em .6em;
+ }
+
+.commitment__title ~ p ,
+.notice__title ~ p , 
+.beacoins__title ~ p {
+    color: rgba(0, 0, 0, .8);
+    font-size: var(--tamaño_parrafo);
+    padding: .5em .7em;
+    line-height: 1.9;
+ }
+
+/********************/
+/*     MEDIA        */
+/********************/
+
+@media (min-width: 440px) {
+    .privacy__header__img {
+        height: 50vh;
+    }
+
+    .commitment__title,
+    .notice__title,
+    .beacoins__title {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .privacy__header__img {
+        
+        height: 70vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
