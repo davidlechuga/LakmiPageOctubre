@@ -1,0 +1,17 @@
+[
+    {
+        "keys": "hola buenos dias días",
+        "titulo": "saludo",
+        "href": "./index.html"
+    },
+    {
+        "keys": "adios adiós hasta pronto",
+        "titulo": "despedida",
+        "href": "./contactenos.html"
+    },
+    {
+        "keys": "adios buenas noches",
+        "titulo": "despedida nocturna",
+        "href": "./blog.html"
+    }
+]
