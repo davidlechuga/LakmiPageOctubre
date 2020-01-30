@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                     : tempEmptyResults
         boxResults.classList.add('box-results--notEmpty')
         inputSearch.classList.add('DS__input--borderB')
+    },
+    inputValueChange =  () => {
+        searchKeysPre = inputSearch.value.trim().split(' ')
+        searchKeys = [... new Set(searchKeysPre.filter(word => word.length > 2))]
+        searchKeys.length ? performSearch() : resetElementsSearch()
     }
 
     btnOpenSearch.addEventListener('click', openDialogSearch)
@@ -75,9 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
         else if(e.key === ' ' && inputSearch.value.slice(-1) === ' ') e.preventDefault()
         else if(/[^À-ÿ\w\s]/.test(e.key)) e.preventDefault()
     })
-    inputSearch.addEventListener('input', () => {
-        searchKeysPre = inputSearch.value.trim().split(' ')
-        searchKeys = [... new Set(searchKeysPre.filter(word => word.length > 2))]
-        searchKeys.length ? performSearch() : resetElementsSearch()
-    })
+    inputSearch.addEventListener('input', inputValueChange)
 })
