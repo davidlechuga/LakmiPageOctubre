@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     performSearch = () => {
         if(!arrayRegistries.length) return
-        regExpTest = new RegExp(`^(?=.*${searchKeys.join(')(?=.*')}).*$`,"g")
+        regExpTest = new RegExp(`^(?=.*${searchKeys.join(')(?=.*')}).*$`,"gi")
         arrayResults = arrayRegistries.filter(el => regExpTest.test(el.keys))
         putResultsDOM()
     },
