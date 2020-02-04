@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(!(btnOpenSearch && dialogSearch && inputSearch && boxResults && styleSheetIS ))
         throw "Elementos faltantes en el DOM"
 
-    let searchKeys, searchKeysPre, arrayResults, regExpTest
+    let searchKeys, searchKeysPre, arrayResults, regExpTest, valueDebug
 
     const toggleDialogShow = () => {
         document.body.classList.toggle('DS--open')
@@ -70,7 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputSearch.value = inputSearch.value.substring(0,inputSearch.value.length-1)
                 return
             } else if(/[^à-ÿa-z\d\s]/gi.test(inputSearch.value)){
-                inputSearch.value = inputSearch.value.match(/[à-ÿa-z\d\s]/gi).join('')
+                 valueDebug = inputSearch.value.match(/[à-ÿa-z\d\s]/gi)
+                 inputSearch.value = valueDebug
+                                        ? valueDebug.join('')
+                                        : ""
                 return
             }
         }
