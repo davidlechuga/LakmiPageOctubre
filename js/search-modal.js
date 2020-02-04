@@ -63,7 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
         boxResults.classList.add('box-results--notEmpty')
         inputSearch.classList.add('DS__input--borderB')
     },
-    inputValueChange =  () => {
+    inputValueChange =  e => {
+        if(!inputSearch.value.length) return
+        else if(e.inputType === "insertText"){
+            if(e.data === ' ' && inputSearch.value[inputSearch.value.length-2] === ' '){
+                inputSearch.value = inputSearch.value.substring(0,inputSearch.value.length-1)
+                return
+            } else if(/[^à-ÿa-z\d\s]/gi.test(inputSearch.value)){
+                inputSearch.value = inputSearch.value.match(/[à-ÿa-z\d\s]/gi).join('')
+                return
+            }
+        }
         searchKeysPre = inputSearch.value.trim().split(' ')
         searchKeys = [... new Set(searchKeysPre.filter(word => word.length > 2))]
         searchKeys.length ? performSearch() : resetElementsSearch()
@@ -77,8 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     inputSearch.parentElement.addEventListener('submit', e => e.preventDefault())
     inputSearch.addEventListener('keydown', e => {
         if(e.keyCode == 27) closeDialogSearch()
-        else if(e.key === ' ' && inputSearch.value.slice(-1) === ' ') e.preventDefault()
-        else if(/[^À-ÿ\w\s]/.test(e.key)) e.preventDefault()
     })
     inputSearch.addEventListener('input', inputValueChange)
 })
