@@ -1,5 +1,5 @@
 main{
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.8em;
 }
 .container-fluid{
@@ -11,7 +11,7 @@ main{
 	justify-content: center;
 }
 .title-font{
-	font-size: 1.8em;
+	font-size: 1.6em;
 	margin-bottom: 1.6em;
 }
 .img_header,
@@ -66,9 +66,6 @@ main{
 /**************************/
 
 @media(min-width: 415px) {
-	main{
-		font-size: 15px;
-	}
 	.title_principios {
 		display: initial;
 	}
