@@ -38,7 +38,7 @@
     <div class="navbar-parent">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        rTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-logo" href="./index.html">
@@ -83,29 +83,93 @@
     </section>
     <!-- END SEARCH MODAL -->
     <!-- tab JavaScript plugin -->
-
-    <div class="row plugin-content">
+    <header class="container services__header flex-column flex-lg-row justify-content-lg-between">
+        <h1 class="title-font h1_size services__title">Servicios</h1>
+        <ol class="breadcrumb__nav flex-row">
+            <li class="breadcrumb__item">vista</li>
+            <li class="breadcrumb__item">vista2</li>
+        </ol>
+    </header>
+    <main class="container row services__main">
         <div class="col-5 col-md-4">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-                    href="#list-home" role="tab" aria-controls="home">Home</a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                    href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-                    href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                    href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-            </div>
+            <ul class="list-group services__list" id="services-list-tab" role="tablist">
+                <li>
+                    <a class="list-group-item list-group-item-action tab-content" id="NOV-list" data-toggle="list"
+                        href="#NOV-list-tab" role="tab">Nuestra Oferta de valor</a>
+                    <ul class="list-group tab-pane fade show active" id="NOV-list-tab" role="tablist">
+                        <li>
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                                href="#list-home" role="tab">Diagnóstico</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                href="#list-profile" role="tab">Diseño del sistema de control interno</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="#list-messages" role="tab">Diseño e implementación inicial de controles asociados a los objetivos de reporte de información financiera</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="#list-settings" role="tab">Implementación inicial de controles</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="#list-settings" role="tab">Evaluación de aspectos técnicos contables</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-action tab-content" id="ArEsp-list" data-toggle="list"
+                        href="#ArEsp-list-tab" role="tab">Áreas especializadas</a>
+                    <ul class="list-group tab-pane fade" id="ArEsp-list-tab" role="tablist">
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                                href="#list-home" role="tab">Funciones y procesos de negocio</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                href="#list-profile" role="tab">Control interno asociado a la información financiera interna</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="#list-messages" role="tab">Control interno de informes financieros externos</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="#list-settings" role="tab">Control interno asociado al cumplimiento fiscal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-actio tab-content" id="fintech-list" data-toggle="list"
+                        href="#fintech-list-tab" role="tab">Sector Fintech</a>
+                    <ul class="list-group tab-pane fade" id="fintech-list-tab" role="tablist">
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                                href="#list-home" role="tab">Funciones y procesos medulares de negocio</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                href="#list-profile" role="tab">Control interno de informes financieros externos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                        href="#list-settings" role="tab">Entegables de nuestros servicios</a>
+                </li>
+            </ul>
         </div>
         <div class="col-7 col-md-8">
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content services__content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore magnam error minus, at earum voluptas vitae dignissimos fugiat rem in officiis! Minima est exercitationem itaque, amet quam distinctio magni maiores doloremque dolorum, quibusdam asperiores accusamus illo. Qui vel est quia alias harum. Beatae molestias quaerat quo. Quo illo cum quibusdam. </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at a ipsam quis obcaecati ex quibusdam deserunt ad perferendis quae eligendi unde delectus, id amet placeat officia hic perspiciatis, fugit aliquam sint autem dolores tempore sapiente alias. Voluptatem incidunt veritatis porro atque, soluta inventore distinctio illum, praesentium facilis qui voluptate.</div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus debitis quia nam ducimus at labore deserunt corporis facere? Excepturi suscipit tenetur reiciendis soluta laboriosam veniam. Consectetur mollitia, porro laboriosam voluptate voluptatibus quidem magnam repellendus exercitationem nemo consequatur cupiditate nam nulla ex error quas molestias beatae at aperiam esse dolores ad.</div>
                 <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita dolore odit quis ipsam quam quo et, sint facilis ullam enim quia, sequi itaque! Excepturi facilis numquam provident incidunt expedita sunt praesentium exercitationem vitae quia laudantium. Iste facilis facere, maiores natus, veniam repellendus nam beatae nesciunt fuga delectus, error pariatur.</div>
             </div>
         </div>
-    </div>
+    </main>
             <!--SECTION FOOTER-->
             <div class="container-fluid">
                 <footer class="row footer">
