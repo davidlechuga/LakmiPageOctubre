@@ -17,13 +17,6 @@ body {
 .breadcrumb__item{
     padding: 0;
 }
-.breadcrumb__item:not(:last-child)::after, .sublist-group .list-group-item.active::before {
-    content: '▸';
-    padding: 0 4px;
-}
-.sublist-group .list-group-item.active {
-    font-weight: unset;
-}
 
 .services__main {
     padding: 0;
@@ -38,19 +31,9 @@ body {
     color: #fff;
     border-style: none;
 }
-.list-group-item:first-child, .list-group-item:last-child {
-    border-radius: 0;
-}
+
 .sublist-group {
     font-size: 0.95em;
-}
-.list-group-item.active, .list-group-item-action:focus {
-    color: #fff;
-    background-color: var(--color__red);
-    font-weight: 600;
-}
-.sublist-group .list-group-item {
-    padding-left: 2em;
 }
 .services__list,
 .services__content{
@@ -62,4 +45,27 @@ body {
 }
 .list-group.show{
     display: flex;
+}
+.list-group-item.active, .list-group-item-action:focus {
+    color: #fff;
+    background-color: var(--color__red);
+    font-weight: 600;
+}
+.sublist-group .list-group-item {
+    padding-left: 2em;
+}
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+.breadcrumb__item:not(:last-child)::after, .sublist-group .list-group-item.active::before {
+    content: '▸';
+    padding: 0 4px;
+}
+.sublist-group .list-group-item.active, .sublist-group .list-group-item-action:focus {
+    font-weight: unset;
+}
+.sublist-group .list-group-item.active::before {
+    position: absolute;
+    top: 10px;
+    left: 0.8em;
 }
