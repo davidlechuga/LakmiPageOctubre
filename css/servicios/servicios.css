@@ -18,8 +18,8 @@ body {
     padding: 0;
 }
 .breadcrumb__item:not(:last-child)::after {
-    content: '>';
-    padding: 0 8px;
+    content: '▸';
+    padding: 0 4px;
 }
 
 .services__main {
