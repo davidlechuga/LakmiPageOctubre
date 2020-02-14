@@ -31,9 +31,21 @@ body {
 }
 .list-group-item{
     padding: 10px 1em;
+    background-color: var(--color__red);
+    color: #fff;
+    border-style: none;
+}
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+
 }
 .sublist-group {
     font-size: 0.95em;
+}
+.list-group-item.active, .list-group-item-action:focus {
+    color: #fff;
+    background-color: var(--color__red);
+    font-weight: 600;
 }
 .sublist-group .list-group-item {
     padding-left: 2em;
