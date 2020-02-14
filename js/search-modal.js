@@ -1,5 +1,5 @@
 let arrayRegistries = []
-fetch('/js/catalogo-secciones.json')
+fetch('/data/catalogo-secciones.json')
     .then( data => data.json() )
     .then(data => arrayRegistries = data)
     .catch(e => {
