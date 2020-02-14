@@ -55,7 +55,7 @@ body {
 .content__title {
     color: #fff;
     background-color: var(--color__red);
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding: 0.5em;
     margin-bottom: 1.4em;
 }
@@ -64,11 +64,27 @@ body {
     font-size: 1.2em;
     margin-bottom: 1em;
 }
+.content__circleList, .content__letterList {
+    margin-bottom: 1.6em;
+    list-style-type: none;
+}
+.content__enfasis {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+.content__ColorRed {
+    color: var(--color__red);
+}
+.content__subSection {
+    padding-left: 2em;
+}
 .content__circleList > li::before{
-    content: '•';
+    content: '⦁';
     color: var(--color__red);
     padding: 0 0.4em;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 .list-group-item.active, .list-group-item-action:focus {
