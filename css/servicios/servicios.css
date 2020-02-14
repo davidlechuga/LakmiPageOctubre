@@ -1,5 +1,6 @@
 body {
-    margin-top: calc(56px + 10px);
+    margin-top: calc(56px + 6px);
+    font-size: 14px;
 }
 
 .services__header {
@@ -13,9 +14,10 @@ body {
 .breadcrumb__nav{
     display: flex;
     list-style-type: none;
+    margin: 0;
 }
 .breadcrumb__item{
-    padding: 0;
+    padding: 0.8em 0;
 }
 
 .services__main {
@@ -46,6 +48,29 @@ body {
 .list-group.show{
     display: flex;
 }
+
+.content__section {
+    margin-bottom: 2.2em;
+}
+.content__title {
+    color: #fff;
+    background-color: var(--color__red);
+    font-size: 1.6em;
+    padding: 0.5em;
+    margin-bottom: 1.4em;
+}
+.content__subtitle {
+    color: var(--color__red);
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.content__circleList > li::before{
+    content: '•';
+    color: var(--color__red);
+    padding: 0 0.4em;
+    font-size: 1.4em;
+}
+
 .list-group-item.active, .list-group-item-action:focus {
     color: #fff;
     background-color: var(--color__red);
@@ -68,4 +93,15 @@ body {
     position: absolute;
     top: 10px;
     left: 0.8em;
+}
+
+@media(min-width:768px){
+    body {
+        font-size: 15px;
+    }
+}
+@media(min-width:1200px){
+    body {
+        font-size: 16px;
+    }
 }

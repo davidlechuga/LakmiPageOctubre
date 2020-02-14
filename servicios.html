@@ -83,11 +83,11 @@
     </section>
     <!-- END SEARCH MODAL -->
     <!-- tab JavaScript plugin -->
-    <header class="container services__header flex-column flex-lg-row justify-content-lg-between">
+    <header class="container services__header flex-column flex-lg-row justify-content-lg-between align-items-lg-baseline">
         <h1 class="title-font h1_size services__title">Servicios</h1>
         <ol class="breadcrumb__nav flex-row">
             <li class="breadcrumb__item">Asesoría y Consultoría</li>
-            <li class="breadcrumb__item">Diagnóstico</li>
+            <li class="breadcrumb__item" id="breadcrumb-change">Nuestra Oferta de valor</li>
         </ol>
     </header>
     <main class="container row services__main">
@@ -156,8 +156,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="list-group-item list-group-item-action tab-content" id="list-settings-list" data-toggle="list"
-                        href="#list-settings" role="tab">Entegables de nuestros servicios</a>
+                    <a class="list-group-item list-group-item-action tab-content" id="EntServ-list" data-toggle="list"
+                        href="#EntServ-content" role="tab">Entegables de nuestros servicios</a>
                 </li>
             </ul>
         </div>
@@ -167,6 +167,77 @@
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at a ipsam quis obcaecati ex quibusdam deserunt ad perferendis quae eligendi unde delectus, id amet placeat officia hic perspiciatis, fugit aliquam sint autem dolores tempore sapiente alias. Voluptatem incidunt veritatis porro atque, soluta inventore distinctio illum, praesentium facilis qui voluptate.</div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus debitis quia nam ducimus at labore deserunt corporis facere? Excepturi suscipit tenetur reiciendis soluta laboriosam veniam. Consectetur mollitia, porro laboriosam voluptate voluptatibus quidem magnam repellendus exercitationem nemo consequatur cupiditate nam nulla ex error quas molestias beatae at aperiam esse dolores ad.</div>
                 <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita dolore odit quis ipsam quam quo et, sint facilis ullam enim quia, sequi itaque! Excepturi facilis numquam provident incidunt expedita sunt praesentium exercitationem vitae quia laudantium. Iste facilis facere, maiores natus, veniam repellendus nam beatae nesciunt fuga delectus, error pariatur.</div>
+                <article class="tab-pane fade" id="EntServ-content" role="tabpanel" aria-labelledby="list-settings-list">
+                    <header>
+                        <h2 class="content__title">ENTREGABLES DE NUESTROS SERVICIOS</h2>
+                    </header>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Diagnóstico de control interno</h3>
+                        <p>Presenta un resumen de los resultados de nuestra evaluación del sistema de control interno, 
+                            basada en los requerimientos de un control interno efectivo establecidos en el marco COSO. 
+                            El diagnostico incluye lo siguiente:</p>
+                        <ul class="content__circleList">
+                            <li>Evaluación general. Resumen de nuestra determinación de, si cada uno de los componentes 
+                                y principios relevantes está presente y funcionando y si los componentes están operando 
+                                juntos de una manera integrada.</li>
+                            <li>Componentes y principios. Resumen de nuestra determinación de si cada uno de los 
+                                componentes y principios relevantes están presentes y funcionando. </li>
+                            <li>Controles. Resumen de los controles con los que se cubren los principios y nuestra 
+                                determinación de, si cada uno de ellos está presente y funcionando.</li>
+                            <li>Deficiencias. Un registro de todas las deficiencias de control interno identificadas que 
+                                pueden observarse en la evaluación de componentes y principios, y pueden permitir que se 
+                                agreguen otras deficiencias de control interno.</li>
+                        </ul>
+                    </section>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Documentación de los procesos de negocio</h3>
+                        <p>Documentación integral de los procesos de negocio relevantes para la empresa. La documentación 
+                            incluye lo siguiente:</p>
+                            <ul class="content__circleList">
+                                <li>Documentación del establecimiento de objetivos, desde la misión, visión y los objetivos 
+                                    a nivel entidad, hasta los objetivos particulares de cada función de negocio.</li>
+                                <li>Documentación de las políticas generales de la empresa y de cada función de negocio.</li>
+                                <li>Documentación de la estructura corporativa y organizacional, incluyendo esquemas de 
+                                    áreas funcionales y organigramas del personal.</li>
+                                <li>Descripción y diagramación de las funciones y procesos de negocio, incluyendo descripción 
+                                    de puestos.</li>
+                            </ul>
+                    </section>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Arreglos de objetivos, riesgos y controles</h3>
+                        <p>Arreglos asociativos de los objetivos de la empresa con los riesgos evaluados y las actividades 
+                            de control que contribuyen a mitigar dichos riesgos al nivel de tolerancia fijado por la 
+                            administración. Los riesgos asociados a errores en la información financiera adicionalmente 
+                            incluyen el rubro del reporte financiero y la afirmación, relacionados con el riesgo. </p>
+                    </section>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Formularios y papeles de trabajo</h3>
+                        <p>Formularios y papeles de trabajo para mejorar los procesos de negocio en donde la comunicación e 
+                            información son aspectos cruciales para la consecución de objetivos.</p>
+                    </section>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Documentos técnicos-contables</h3>
+                        <p>Documentación de las bases y la conclusión de la administración sobre la aplicación de un 
+                            tratamiento particular establecido en un marco de información financiera, a una transacción, 
+                            transformación interna u otro evento, para efectos de su reconocimiento inicial o posterior 
+                            en los estados financieros de la empresa. Este documento técnico-contable, incluye lo siguiente:</p>
+                        <ul class="content__circleList">
+                            <li>Descripción de la transacción, transformación interna u otro evento que afectó económicamente 
+                                a la empresa u organización y cuyo reconocimiento en los estados financieros requiere de una 
+                                evaluación especial para determinar el tratamiento contable más adecuado.</li>
+                            <li>Normatividad y criterios contables aplicables o supletorios considerados.</li>
+                            <li>Análisis de la aplicabilidad de las normas y/o criterios contables, cumplimiento de requisitos 
+                                establecidos en la norma y bases para conclusiones sobre el tratamiento contable de la 
+                                transacción transformación interna u otro evento.</li>
+                            <li>Conclusiones alcanzadas.</li>
+                        </ul>
+                    </section>
+                    <section class="content__section">
+                        <h3 class="content__subtitle">Capacitación</h3>
+                        <p>Capacitación a la administración y a los encargados de los procesos de negocio, a través de sesiones 
+                            de trabajo y empleando material de apoyo</p>
+                    </section>
+                </article>
             </div>
         </div>
     </main>
